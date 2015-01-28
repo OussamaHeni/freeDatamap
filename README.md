@@ -6,7 +6,7 @@
 What is freeDatamap ?
 --------------------------------------
 
-#FreeDatamap’s purpose : representing spatially, business data that have no intrinsic spatial properties.
+####FreeDatamap’s purpose : representing spatially, business data that have no intrinsic spatial properties.
 
 FreeDatamap provides a unique way to browse any kind of data.
 
@@ -17,7 +17,7 @@ FreeDatamap helps turning flat and boring sheets of data into a unique visual co
 What does freeDatamap ?
 --------------------------------------
 
-#FreeDatamap allows visualizing data.
+####FreeDatamap allows visualizing data.
 
 It displays data in a force oriented circular layout with a right panel showing the attributes of the selected node. You can browse a big bunch of data by going through any desired node and discover its underlying data. This makes freeDatamap ideal for exploring large datasets.
 
@@ -25,7 +25,7 @@ The physic engine algorithm makes nodes position themselves according to the 2D 
 
 The graph is interactive and allows users to move nodes as well as navigating through them.
 
-#FreeDatamap does analytics
+####FreeDatamap does analytics
 
 For each node of the graph, there is a set of properties displayed on the right panel. In the right panel you'll find either raw attributes for this node or aggregated ones (sum, average, whatever) with charts providing a visual representation of the data hidden under this node.
 
@@ -39,13 +39,13 @@ Use the power of multidimensional consolidation to allow the easiest interpretat
 
 FreeDatamap is built to be flexible. It was not designed for a specific kind of data. If you have data with some relationships between them, then freeDatamap is for you !
 
-#FreeDatamap does monitoring
+####FreeDatamap does monitoring
 
 Alerts and progression gauges can be added to any node and displayed at the root level but also for each level of your organization.
 
 Any warning coming from any sub-node will raise a warning icon on each node of its parent's branch. You want to see the completion percentage of an operation? Just look at the gauge and then drill down in the graph to find the red gauge and identify the bottleneck.
 
-#Easy to modify
+####Easy to modify
 
 Take the control of your data: from your map you can edit, move, delete any part of the data structure and re-launch the aggregation process to simulate the impact of the organization change.
 
@@ -53,11 +53,11 @@ The capability of changing the map from within the map can be used to measure th
 
 FreeDatamap makes the link between flexibility and ease-of-use : not bound to a dataset, but flexible enough to adapt to any kind.
 
-#Another reporting tool
+####Another reporting tool
 
 From anywhere in the map you can produce an exhaustive word report, not a pdf, but an editable word which can be the starting raw material of a hand-continued study.
 
-#Intuitive and responsive
+####Intuitive and responsive
 
 FreeDatamap delivers a fast and visually attractive user interface that runs on any support: computers, tablets or phones.
 
