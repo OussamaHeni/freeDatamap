@@ -1,0 +1,594 @@
+{
+    "$schema": "http://www.freedatamap.com/jsonSchema/schema#",
+    "$circularRefs": true,
+    "root": {
+        "name": "freeDatamap conceptual map",
+        "level": 0,
+        "dm_config": {
+            "root": null,
+            "styles": [{
+                "name": "root",
+                "level": 0,
+                "arrow": true,
+                "arc": false,
+                "rNod": 10,
+                "link": 120,
+                "color": "#1f77b4",
+                "attrPaneCol": "#aec7e8",
+                "arrow.dm_props": {
+                    "name": "arrow",
+                    "label": "arrow",
+                    "type": "text"
+                },
+                "arc.dm_props": {
+                    "name": "arc",
+                    "label": "arc",
+                    "type": "text"
+                },
+                "rNod.dm_props": {
+                    "name": "rNod",
+                    "label": "rNod",
+                    "type": "text"
+                },
+                "link.dm_props": {
+                    "name": "link",
+                    "label": "link",
+                    "type": "text"
+                },
+                "color.dm_props": {
+                    "name": "color",
+                    "label": "color",
+                    "type": "text"
+                },
+                "attrPaneCol.dm_props": {
+                    "name": "attrPaneCol",
+                    "label": "attrPaneCol",
+                    "type": "text"
+                },
+                "__dm_uniqueId.dm_props": {
+                    "name": "__dm_uniqueId",
+                    "label": "__dm_uniqueId",
+                    "type": "text"
+                }
+            }, {
+                "name": "level 1",
+                "level": 1,
+                "arrow": true,
+                "arc": false,
+                "rNod": 10,
+                "link": 80,
+                "color": "#1f77b4",
+                "attrPaneCol": "#aec7e8"
+            }, {
+                "name": "level 2",
+                "level": 2,
+                "arrow": true,
+                "arc": false,
+                "rNod": 9,
+                "link": 80,
+                "color": "#ff7f0e",
+                "attrPaneCol": "#ffbb78"
+            }, {
+                "name": "level 3",
+                "level": 3,
+                "arrow": true,
+                "arc": false,
+                "rNod": 9,
+                "link": 90,
+                "color": "#2ca02c",
+                "attrPaneCol": "#98df8a",
+                "arrow.dm_props": {
+                    "name": "arrow",
+                    "label": "arrow",
+                    "type": "text"
+                },
+                "arc.dm_props": {
+                    "name": "arc",
+                    "label": "arc",
+                    "type": "text"
+                },
+                "rNod.dm_props": {
+                    "name": "rNod",
+                    "label": "rNod",
+                    "type": "text"
+                },
+                "link.dm_props": {
+                    "name": "link",
+                    "label": "link",
+                    "type": "text"
+                },
+                "color.dm_props": {
+                    "name": "color",
+                    "label": "color",
+                    "type": "text"
+                },
+                "attrPaneCol.dm_props": {
+                    "name": "attrPaneCol",
+                    "label": "attrPaneCol",
+                    "type": "text"
+                },
+                "__dm_uniqueId.dm_props": {
+                    "name": "__dm_uniqueId",
+                    "label": "__dm_uniqueId",
+                    "type": "text"
+                }
+            }, {
+                "name": "level 4",
+                "level": 4,
+                "arrow": true,
+                "arc": false,
+                "rNod": 9,
+                "link": 90,
+                "color": "#d62728",
+                "attrPaneCol": "#ff9896",
+                "arrow.dm_props": {
+                    "name": "arrow",
+                    "label": "arrow",
+                    "type": "text"
+                },
+                "arc.dm_props": {
+                    "name": "arc",
+                    "label": "arc",
+                    "type": "text"
+                },
+                "rNod.dm_props": {
+                    "name": "rNod",
+                    "label": "rNod",
+                    "type": "text"
+                },
+                "link.dm_props": {
+                    "name": "link",
+                    "label": "link",
+                    "type": "text"
+                },
+                "color.dm_props": {
+                    "name": "color",
+                    "label": "color",
+                    "type": "text"
+                },
+                "attrPaneCol.dm_props": {
+                    "name": "attrPaneCol",
+                    "label": "attrPaneCol",
+                    "type": "text"
+                }
+            }, {
+                "name": "level 5",
+                "level": 5,
+                "arrow": true,
+                "arc": false,
+                "rNod": 8,
+                "link": 90,
+                "color": "#9467bd",
+                "attrPaneCol": "#c5b0d5"
+            }, {
+                "name": "level 6",
+                "level": 6,
+                "arrow": true,
+                "arc": false,
+                "rNod": 8,
+                "link": 90,
+                "color": "#e377c2",
+                "attrPaneCol": "#f7b6d2"
+            }, {
+                "name": "level 7",
+                "level": 7,
+                "arrow": true,
+                "arc": false,
+                "rNod": 7,
+                "link": 90,
+                "color": "#bcbd22",
+                "attrPaneCol": "#dbdb8d"
+            }, {
+                "name": "level 8",
+                "level": 8,
+                "arrow": true,
+                "arc": false,
+                "rNod": 7,
+                "link": 90,
+                "color": "#17becf",
+                "attrPaneCol": "#9edae5"
+            }, {
+                "name": "level 9",
+                "level": 9,
+                "arrow": true,
+                "arc": false,
+                "rNod": 6,
+                "link": 90,
+                "color": "#6b6ecf",
+                "attrPaneCol": "#9c9ede"
+            }, {
+                "name": "level 10",
+                "level": 10,
+                "arrow": true,
+                "arc": false,
+                "rNod": 6,
+                "link": 90,
+                "color": "#1f77b4",
+                "attrPaneCol": "#aec7e8"
+            }, {
+                "name": "level 11",
+                "level": 11,
+                "arrow": true,
+                "arc": false,
+                "rNod": 5,
+                "link": 90,
+                "color": "#ff7f0e",
+                "attrPaneCol": "#ffbb78"
+            }, {
+                "name": "level 12",
+                "level": 12,
+                "arrow": true,
+                "arc": false,
+                "rNod": 5,
+                "link": 90,
+                "color": "#2ca02c",
+                "attrPaneCol": "#98df8a"
+            }, {
+                "name": "level 13",
+                "level": 13,
+                "arrow": true,
+                "arc": false,
+                "rNod": 5,
+                "link": 90,
+                "color": "#d62728",
+                "attrPaneCol": "#ff9896"
+            }, {
+                "name": "level 14",
+                "level": 14,
+                "arrow": true,
+                "arc": false,
+                "rNod": 5,
+                "link": 90,
+                "color": "#9467bd",
+                "attrPaneCol": "#c5b0d5"
+            }, {
+                "name": "level 15",
+                "level": 15,
+                "arrow": true,
+                "arc": false,
+                "rNod": 4,
+                "link": 90,
+                "color": "#e377c2",
+                "attrPaneCol": "#f7b6d2"
+            }, {
+                "name": "level 16",
+                "level": 16,
+                "arrow": true,
+                "arc": false,
+                "rNod": 4,
+                "link": 90,
+                "color": "#bcbd22",
+                "attrPaneCol": "#dbdb8d"
+            }, {
+                "name": "level 17",
+                "level": 17,
+                "arrow": true,
+                "arc": false,
+                "rNod": 4,
+                "link": 90,
+                "color": "#17becf",
+                "attrPaneCol": "#9edae5"
+            }, {
+                "name": "level 18",
+                "level": 18,
+                "arrow": true,
+                "arc": false,
+                "rNod": 4,
+                "link": 90,
+                "color": "#6b6ecf",
+                "attrPaneCol": "#9c9ede"
+            }, {
+                "name": "leaf",
+                "level": 19,
+                "arrow": false,
+                "arc": true,
+                "rNod": 3,
+                "link": 45,
+                "color": "#c7c7c7",
+                "attrPaneCol": "#c7c7c7",
+                "txtCol": "#7f7f7f"
+            }],
+            "center": null,
+            "depth": "6",
+            "setColumns2node": [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null],
+            "aggregate": null,
+            "displayProps": [{
+                "name": "root",
+                "children": []
+            }, {
+                "name": "level 0",
+                "children": []
+            }, {
+                "name": "level 1",
+                "children": []
+            }, {
+                "name": "level 2",
+                "children": []
+            }, {
+                "name": "level 3",
+                "children": []
+            }, {
+                "name": "level 4",
+                "children": []
+            }, {
+                "name": "level 5",
+                "children": []
+            }, {
+                "name": "level 6",
+                "children": []
+            }, {
+                "name": "level 7",
+                "children": []
+            }, {
+                "name": "level 8",
+                "children": []
+            }, {
+                "name": "level 9",
+                "children": []
+            }, {
+                "name": "level 10",
+                "children": []
+            }, {
+                "name": "level 11",
+                "children": []
+            }, {
+                "name": "level 12",
+                "children": []
+            }, {
+                "name": "level 13",
+                "children": []
+            }, {
+                "name": "level 14",
+                "children": []
+            }, {
+                "name": "level 15",
+                "children": []
+            }, {
+                "name": "level 16",
+                "children": []
+            }, {
+                "name": "level 17",
+                "children": []
+            }, {
+                "name": "leaf",
+                "children": []
+            }],
+            "root.dm_props": {
+                "name": "root",
+                "label": "root",
+                "type": "text"
+            },
+            "center.dm_props": {
+                "name": "center",
+                "label": "center",
+                "type": "text"
+            },
+            "depth.dm_props": {
+                "name": "depth",
+                "label": "depth",
+                "type": "text"
+            },
+            "maxDepthForExport": 4,
+            "maxDepthForExport.dm_props": {
+                "name": "maxDepthForExport",
+                "label": "maxDepthForExport",
+                "type": "text"
+            },
+            "sortDescendant.dm_props": {
+                "name": "sortDescendant",
+                "label": "sortDescendant",
+                "type": "text"
+            },
+            "sort.dm_props": {
+                "name": "sort",
+                "label": "sort",
+                "type": "text"
+            },
+            "props4globalSearch.dm_props": {
+                "name": "props4globalSearch",
+                "label": "props4globalSearch",
+                "type": "text"
+            }
+        },
+        "rawNode": {
+            "displayName": "Concept map",
+            "displayName.dm_props": {
+                "name": "displayName",
+                "label": "displayName",
+                "type": "text",
+                "source": "user",
+                "level": 0
+            },
+            "dm_sourceFile": "freeDatamap%20conceptual%20map.json"
+        },
+        "id": 104,
+        "__dm_uniqueId": 336,
+        "children": [{
+            "name": "promotes meaningful information",
+            "level": 1,
+            "rawNode": {},
+            "id": 106,
+            "__dm_uniqueId": 331,
+            "children": [{
+                "name": "based on aggregated information",
+                "level": 2,
+                "rawNode": {},
+                "id": 128,
+                "__dm_uniqueId": 330,
+                "children": [{
+                    "name": "coming from analytics",
+                    "level": 3,
+                    "rawNode": {},
+                    "id": 138,
+                    "__dm_uniqueId": 329,
+                    "children": [{
+                        "name": "computed in backtrack",
+                        "level": 4,
+                        "rawNode": {},
+                        "id": 161,
+                        "parent": "$ref_329"
+                    }, {
+                        "name": "computed in foretrack",
+                        "level": 4,
+                        "rawNode": {},
+                        "id": 159,
+                        "parent": "$ref_329"
+                    }],
+                    "parent": "$ref_330"
+                }],
+                "parent": "$ref_331"
+            }, {
+                "name": "based on associations",
+                "level": 2,
+                "rawNode": {},
+                "id": 130,
+                "__dm_uniqueId": 332,
+                "children": [{
+                    "name": "hierarchical relations",
+                    "level": 3,
+                    "rawNode": {
+                        "connectedTo": [{
+                            "nodePath": "freeDatamap conceptual map|represents organised knowledge|through propositions|that are relationships between concepts|hierarchical"
+                        }]
+                    },
+                    "id": 140,
+                    "parent": "$ref_332"
+                }, {
+                    "name": "transversal relations",
+                    "level": 3,
+                    "rawNode": {
+                        "connectedTo": [{
+                            "nodePath": "freeDatamap conceptual map|represents organised knowledge|through propositions|that are relationships between concepts|transversal"
+                        }]
+                    },
+                    "id": 142,
+                    "parent": "$ref_332"
+                }],
+                "parent": "$ref_331"
+            }, {
+                "name": "based on atomic information",
+                "level": 2,
+                "rawNode": {},
+                "id": 126,
+                "__dm_uniqueId": 334,
+                "children": [{
+                    "name": "coming from automation",
+                    "level": 3,
+                    "rawNode": {},
+                    "id": 146,
+                    "__dm_uniqueId": 333,
+                    "children": [{
+                        "name": "JSON",
+                        "level": 4,
+                        "rawNode": {},
+                        "id": 155,
+                        "parent": "$ref_333"
+                    }, {
+                        "name": "LDAP",
+                        "level": 4,
+                        "rawNode": {},
+                        "id": 153,
+                        "parent": "$ref_333"
+                    }, {
+                        "name": "flat datasheets",
+                        "level": 4,
+                        "rawNode": {},
+                        "id": 151,
+                        "parent": "$ref_333"
+                    }],
+                    "parent": "$ref_334"
+                }, {
+                    "name": "coming from user entry",
+                    "level": 3,
+                    "rawNode": {},
+                    "id": 148,
+                    "__dm_uniqueId": 335,
+                    "children": [{
+                        "name": "manual edit in the map",
+                        "level": 4,
+                        "rawNode": {},
+                        "id": 157,
+                        "parent": "$ref_335"
+                    }],
+                    "parent": "$ref_334"
+                }],
+                "parent": "$ref_331"
+            }],
+            "parent": "$ref_336"
+        }, {
+            "name": "represents organised knowledge",
+            "level": 1,
+            "rawNode": {},
+            "id": 108,
+            "__dm_uniqueId": 339,
+            "children": [{
+                "name": "through concepts",
+                "level": 2,
+                "rawNode": {},
+                "id": 110,
+                "__dm_uniqueId": 338,
+                "children": [{
+                    "name": "that are entities",
+                    "level": 3,
+                    "rawNode": {},
+                    "id": 120,
+                    "__dm_uniqueId": 337,
+                    "children": [{
+                        "name": "aggregating sub entities",
+                        "level": 4,
+                        "rawNode": {
+                            "connectedTo": [{
+                                "nodePath": "freeDatamap conceptual map|promotes meaningful information|based on aggregated information"
+                            }]
+                        },
+                        "id": 124,
+                        "parent": "$ref_337"
+                    }, {
+                        "name": "atomic",
+                        "level": 4,
+                        "rawNode": {
+                            "connectedTo": [{
+                                "nodePath": "freeDatamap conceptual map|promotes meaningful information|based on atomic information"
+                            }]
+                        },
+                        "id": 122,
+                        "parent": "$ref_337"
+                    }],
+                    "parent": "$ref_338"
+                }],
+                "parent": "$ref_339"
+            }, {
+                "name": "through propositions",
+                "level": 2,
+                "rawNode": {},
+                "id": 112,
+                "__dm_uniqueId": 341,
+                "children": [{
+                    "name": "that are relationships between concepts",
+                    "level": 3,
+                    "rawNode": {},
+                    "id": 114,
+                    "__dm_uniqueId": 340,
+                    "children": [{
+                        "name": "hierarchical",
+                        "level": 4,
+                        "rawNode": {},
+                        "id": 116,
+                        "parent": "$ref_340"
+                    }, {
+                        "name": "transversal",
+                        "level": 4,
+                        "rawNode": {},
+                        "id": 118,
+                        "parent": "$ref_340"
+                    }],
+                    "parent": "$ref_341"
+                }],
+                "parent": "$ref_339"
+            }],
+            "parent": "$ref_336"
+        }],
+        "dm_DatamapName": "freeDatamap%20conceptual%20map.json",
+        "$circularRefs": true
+    }
+}
