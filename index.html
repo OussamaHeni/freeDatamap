@@ -638,9 +638,10 @@ copy or paste, edit node's properties, etc."
 			</tr>
 		</table>
 		
+		<!--div id="attributes-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="Attributes" aria-hidden="true" style="max-width: 900px;"-->
 		<div id="attributes-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="Attributes" aria-hidden="true">
 			<div id="attributes-modal-header" class="modal-header">
-				<table align="center" style="width: 100%">
+				<table align="center" style="width: 100%;">
 					<tr>
 						<td align="left" text-align="left">
 							<!--h3 id="attributes-modal-label"></h3-->
@@ -1057,14 +1058,52 @@ title=
 				</table>
 			</div>
 			<div id="openFile-modal-body" class="modal-body" style="background-color: #F1D9C1; text-align: center; height: 100%;">
-				<!--input type="file" id="filesRequester" name="files[]" multiple style:"opacity: 0"/-->
-				<!--div id="myDropzone" style="z-index:1;position:absolute;width:98%;">
-				</div-->
-				<!--input type="file" id="filesRequester" name="files[]" style="opacity: 0"/-->
-				<!--output id="list"></output-->
-				<div id="openFileIFrameContainer" height="250px;" style="display:none;">
-					<!--iframe id="openFileFreeDatamapIFrame" src="http://127.0.0.1/freedatamap/app/" width="100%" style="height: 100%;">
-					</iframe-->
+				<div class="tabbable"> <!-- Only required for left/right tabs -->
+					<ul class="nav nav-tabs" id='openFile-tabs'>
+						<li class="active">
+							<a href="#tab1" data-toggle="tab">
+								<img src="images/1.png" width=24 height=24 style="margin:0px"/>
+								<img src="images/load all.png" width=24 height=24 style="margin:0px"/>
+							</a>
+						</li>
+						<li>
+							<a href="#tab2" data-toggle="tab">
+								<img src="images/2.png" width=24 height=24 style="margin:0px"/>
+								<img src="images/table.png" width=24 height=24 style="margin:0px"/>
+							</a>
+						</li>
+						<li>
+							<a href="#tab3" data-toggle="tab">
+								<img src="images/3.png" width=24 height=24 style="margin:0px"/>
+								<img src="images/tree.png" width=24 height=24 style="margin:0px"/>
+							</a>
+						</li>
+						<li>
+							<a href="#tab4" data-toggle="tab">
+								<img src="images/4.png" width=24 height=24 style="margin:0px"/>
+								<img src="images/logo_freeDatamap.png" width=24 height=24 style="margin:0px"/>
+							</a>
+						</li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane active" id="tab1">
+							<div id="dropzone-area">
+								<!--font color='#555555'><h3><br/><i>Drag and drop your file here</i></h3></font-->
+							</div>
+						</div>
+						<div class="tab-pane" id="tab2">
+							<div id="dataSheetContainer">
+							</div>
+						</div>
+						<div class="tab-pane" id="tab3">
+							<div id="configMapContainer" style="overflow:hidden;">
+							</div>
+						</div>
+						<div class="tab-pane" id="tab4">
+							<div id="openFileIFrameContainer" style="overflow:hidden;">
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -1262,7 +1301,7 @@ title=
 			</div>
 		</div>
 
-		<div id="config-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="config" aria-hidden="true">
+		<!--div id="config-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="config" aria-hidden="true">
 			<div id="config-modal-header" class="modal-header">
 				<table align="center" style="width: 100%">
 					<tr>
@@ -1275,7 +1314,6 @@ title=
 									<td>
 										<button class="btn btn-large btn-success dm_resizableBtn" data-dismiss="modal" id="config-exit">
 											<img src="images/KO.png" width=24 height=24 style="margin:0px; min-width:16px;"/>
-											<!--i class="icon-large icon-remove icon-white"></i-->
 										</button>
 									</td>
 								</tr>
@@ -1285,7 +1323,7 @@ title=
 				</table>
 			</div>
 			<div id="config-modal-body" class="modal-body" style="background-color: #aaaaaa; text-align: center;">
-				<div class="tabbable"> <!-- Only required for left/right tabs -->
+				<div class="tabbable">
 					<ul class="nav nav-tabs">
 						<li class="active">
 							<a href="#tab1" data-toggle="tab">
@@ -1310,7 +1348,7 @@ title=
 					</div>
 				</div>
 			</div>
-		</div>
+		</div-->
 
 		<div id="hiddenOdtStuff-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="ODT XML" aria-hidden="true">
 			<div id="dm_odtContainer">

@@ -1,0 +1,510 @@
+{
+	"$schema": "http://www.freedatamap.com/jsonConfigSchema/schema#",
+    "config": {
+        "root": null,
+        "styles": [{
+            "name": "root",
+            "level": 0,
+            "arrow": true,
+            "arc": false,
+            "rNod": 10,
+            "link": 90,
+            "color": "#1f77b4",
+            "attrPaneCol": "#aec7e8",
+            "icon": "../../config/images/config/config_root.png",
+            "icon.dm_props": {
+                "width": 180,
+                "height": 180,
+                "scaleFactor": 4.5,
+                "panelMaxHeight": 180,
+                "visible": true,
+                "textX": 0,
+                "type": "image"
+            }
+        }, {
+            "name": "level 1",
+            "level": 1,
+            "arrow": true,
+            "arc": false,
+            "rNod": 10,
+            "link": 110,
+            "color": "#1f77b4",
+            "attrPaneCol": "#aec7e8",
+            "icon": "../../config/images/config/config.png",
+            "icon.dm_props": {
+                "width": 178,
+                "height": 180,
+                "scaleFactor": 4.5,
+                "panelMaxHeight": 180,
+                "visible": true,
+                "textX": 0,
+                "type": "image"
+            }
+        }, {
+            "name": "level 2",
+            "level": 2,
+            "arrow": true,
+            "arc": false,
+            "rNod": 9,
+            "link": 120,
+            "color": "#ff7f0e",
+            "attrPaneCol": "#ffbb78"
+        }, {
+            "name": "level 3",
+            "level": 3,
+            "arrow": true,
+            "arc": false,
+            "rNod": 9,
+            "link": 140,
+            "color": "#2ca02c",
+            "attrPaneCol": "#98df8a"
+        }, {
+            "name": "level 4",
+            "level": 4,
+            "arrow": true,
+            "arc": false,
+            "rNod": 9,
+            "link": 90,
+            "color": "#d62728",
+            "attrPaneCol": "#ff9896"
+        }, {
+            "name": "level 5",
+            "level": 5,
+            "arrow": true,
+            "arc": false,
+            "rNod": 8,
+            "link": 90,
+            "color": "#9467bd",
+            "attrPaneCol": "#c5b0d5"
+        }, {
+            "name": "level 6",
+            "level": 6,
+            "arrow": true,
+            "arc": false,
+            "rNod": 8,
+            "link": 90,
+            "color": "#e377c2",
+            "attrPaneCol": "#f7b6d2"
+        }, {
+            "name": "level 7",
+            "level": 7,
+            "arrow": true,
+            "arc": false,
+            "rNod": 7,
+            "link": 90,
+            "color": "#bcbd22",
+            "attrPaneCol": "#dbdb8d"
+        }, {
+            "name": "level 8",
+            "level": 8,
+            "arrow": true,
+            "arc": false,
+            "rNod": 7,
+            "link": 90,
+            "color": "#17becf",
+            "attrPaneCol": "#9edae5"
+        }, {
+            "name": "level 9",
+            "level": 9,
+            "arrow": true,
+            "arc": false,
+            "rNod": 6,
+            "link": 90,
+            "color": "#6b6ecf",
+            "attrPaneCol": "#9c9ede"
+        }, {
+            "name": "level 10",
+            "level": 10,
+            "arrow": true,
+            "arc": false,
+            "rNod": 6,
+            "link": 90,
+            "color": "#1f77b4",
+            "attrPaneCol": "#aec7e8"
+        }, {
+            "name": "level 11",
+            "level": 11,
+            "arrow": true,
+            "arc": false,
+            "rNod": 5,
+            "link": 90,
+            "color": "#ff7f0e",
+            "attrPaneCol": "#ffbb78"
+        }, {
+            "name": "level 12",
+            "level": 12,
+            "arrow": true,
+            "arc": false,
+            "rNod": 5,
+            "link": 90,
+            "color": "#2ca02c",
+            "attrPaneCol": "#98df8a"
+        }, {
+            "name": "level 13",
+            "level": 13,
+            "arrow": true,
+            "arc": false,
+            "rNod": 5,
+            "link": 90,
+            "color": "#d62728",
+            "attrPaneCol": "#ff9896"
+        }, {
+            "name": "level 14",
+            "level": 14,
+            "arrow": true,
+            "arc": false,
+            "rNod": 5,
+            "link": 90,
+            "color": "#9467bd",
+            "attrPaneCol": "#c5b0d5"
+        }, {
+            "name": "level 15",
+            "level": 15,
+            "arrow": true,
+            "arc": false,
+            "rNod": 4,
+            "link": 90,
+            "color": "#e377c2",
+            "attrPaneCol": "#f7b6d2"
+        }, {
+            "name": "level 16",
+            "level": 16,
+            "arrow": true,
+            "arc": false,
+            "rNod": 4,
+            "link": 90,
+            "color": "#bcbd22",
+            "attrPaneCol": "#dbdb8d"
+        }, {
+            "name": "level 17",
+            "level": 17,
+            "arrow": true,
+            "arc": false,
+            "rNod": 4,
+            "link": 90,
+            "color": "#17becf",
+            "attrPaneCol": "#9edae5"
+        }, {
+            "name": "level 18",
+            "level": 18,
+            "arrow": true,
+            "arc": false,
+            "rNod": 4,
+            "link": 90,
+            "color": "#6b6ecf",
+            "attrPaneCol": "#9c9ede"
+        }, {
+            "name": "leaf",
+            "level": 19,
+            "arrow": false,
+            "arc": true,
+            "rNod": 3,
+            "link": 45,
+            "color": "#c7c7c7",
+            "attrPaneCol": "#c7c7c7",
+            "txtCol": "#7f7f7f"
+        }],
+        "center": null,
+        "depth": 2,
+        "setColumns2node": [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null],
+        "aggregate": null,
+        "sortDescendant": false,
+        "displayProps": [{
+            "name": "root",
+            "children": [],
+            "visible": true
+        }, {
+            "name": "level 0",
+            "children": [
+            	{
+	                "name": "noLeafInReport",
+	                "label": "No leaf in report",
+	                "type": "boolean"
+            	},
+            	{
+	                "name": "sortDescendant",
+	                "label": "Sort descendant",
+	                "type": "boolean"
+            	}
+            ],
+            "visible": true
+        }, {
+            "name": "level 1",
+            "children": [],
+            "visible": true
+        }, {
+            "name": "level 2",
+            "children": [],
+            "visible": true
+        }, {
+            "name": "level 3",
+            "children": [],
+            "visible": true
+        }, {
+            "name": "level 4",
+            "children": [],
+            "visible": true
+        }, {
+            "name": "level 5",
+            "children": [],
+            "visible": true
+        }, {
+            "name": "level 6",
+            "children": [],
+            "visible": true
+        }, {
+            "name": "level 7",
+            "children": [],
+            "visible": true
+        }, {
+            "name": "level 8",
+            "children": [],
+            "visible": true
+        }, {
+            "name": "level 9",
+            "children": [],
+            "visible": true
+        }, {
+            "name": "level 10",
+            "children": [],
+            "visible": true
+        }, {
+            "name": "level 11",
+            "children": [],
+            "visible": true
+        }, {
+            "name": "level 12",
+            "children": [],
+            "visible": true
+        }, {
+            "name": "level 13",
+            "children": [],
+            "visible": true
+        }, {
+            "name": "level 14",
+            "children": [],
+            "visible": true
+        }, {
+            "name": "level 15",
+            "children": [],
+            "visible": true
+        }, {
+            "name": "level 16",
+            "children": [],
+            "visible": true
+        }, {
+            "name": "level 17",
+            "children": [],
+            "visible": true
+        }, {
+            "name": "leaf",
+            "children": []
+        }],
+        "specifics": [
+        {
+            "name": "config|columns",
+            "rawNode": {
+                "icon": "../../config/images/config/columns.png",
+                "icon.dm_props": {
+                    "width": 121,
+                    "height": 66,
+                    "scaleFactor": 6,
+                    "panelMaxHeight": 180,
+                    "visible": true,
+                    "textX": 3,
+                    "type": "image",
+                    "name": "icon",
+                    "imageName": "../../config/images/config/columns.png",
+                    "tintedSrc": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHkAAABCCAYAAABzR3knAAAL70lEQVR4Xu2dC1CVZRrHfwdNTVNpcxWvo4i75IWbO2vuluWV0moLzB2gLbU0ziSLwVBRmZiSZWmRGJZdsFQ2B900ZyKz0rZGbZS4hGKy6qRmGGPakiEK3877nfMdj4fD+S7nO5xDc94ZR/R7n8v3/N/L8z7f87xYCDZTLLB7WaJUXV1NXV0d3bt3JzIyklsWbLOYwtxLJgGhhJfv4Ffy7QumSK+/vr1VHW66aSDpxcf9ame/CvcrOiYIf3RsiHTkSLPMaerU4QwbNoywsDDOnDnD0aNHKSnZR309dO4M67/Db7b2m2ATbOxXFhuscdLmzaWEh4eQnp5Ov/DwFvo0nD3LqlWr2LPnB/r3h7xS/wAdBNngUJneB+maayAvbwE9evdunUtjIw9bMzl9GubNu90v+3QQZAMgf/DozdLatbtIShpLQnKyKoeyPXvIzV3PmDF9yNpa2+Y2b3OBqhZpBx2WxIdKZWVnWbr0ISJGjlTV+FJ9PUlJ2X7bm4Mgq0LUsoPicOXlPeJ2L25B0dhISlImjY1QXNv2+3IQZAMgK06X1XobE6ZOVeXw/ZEjpKe/xPXXX83inb+2uc3bXKCqRdpBh28KZko5OYVERnZhcW4udOrkUevlubmyhy328MSXd7e5zdtcoFYMB0OXnjAJGCNBBBCJ7e9r3PA4C1QDZcAh8XMTfFEF9Vrl6e2nLNnifDzrgQdaBXpbcTHCSfPnWTmgQBbAdodbgUQL3NUKoFrxaLBACbDpErzvC8BTBiFduAADBkBS0j3ExcXRUZyrgAOlpWzZsoXS0jPyv3NyZjLSWugXe/tFqDuUokC4qe8CMU7Pv7DATgmqmqGmI9SUgZi1V7TR0KsJRoo/IfBHycbjBqCjvaMMuAXyymCn1lGipZ9z1Ev0FxiLKJfSevSA7OyHGDb7Nb/Z2m+CnQ0YBfOBpUAXC9Q0w9oOsK4MjmkxtLs+AviLcK9YFYAblT4S7OwAi8wEuzQvWfrkk08oK6tFzGzRYmJCiY6O5o5lu/xuY78rEAU5wEI7CKubIMvspTUKBgCZQKoYSEKWAFuCrG9gn9GB5I5u9jDbEu7PWLWrXn4FeRRMssCHdqWSKqDYTIO78hoBYR1sQKcDocAl4I0QyHa3DRjRRYQ7BZ0/zsOt6es3kO3LaSUQJsGCSlhixKhGaGIgtNm2esyz79t1QHYFvGGEnzNNEGQnazgt0yUVcJu3xjVCb3f2CpQ9275fz/LGFwiCbEfCPpOOiiUzBGLLbOdbv7UoeBB4wb6E10uQXQn5RhQKgmy3WjQ8Ltm86R0VMNmIMc2msTtnYlbfrjhmzZBUBT/okRUE2W6tKDgoIlgS3F0J7+sxoq/7ilkdAmuE9zR2BKyuavlBIW/6QKm1lJ4gyLZIR0wzfA3U/wy/PwYNvgZOL/8YGBw1hKPnz9tSdzIzk4lL3yA7qSJhb/nyTQ7v+fBbD0knT550iMjP3yb/LBIElNajRw8HvV5dzOjf5t51NKRKsFKCf1XCP8x4CV/x2DR/rFRUtFtmryTkKaFM5ywPcTb++Wf3WvgzZq1o1OYgC8Hi+NQAHfXud74CU42vOxBdszyUZdqVlz9j1i1A3pdzR9f9+/ervW+7fD569Gj+lPPBeW+UTx2BVCdO0/bmOkNFaPPZZzdcIeL++28OnLDm4ik9l/17+7ksEf75LTbxleKuKT1ffHr7uSwj7yf23ezs11qQuka13C3vRuRppdGa0G9Ju43Ouz4MPOdH64vq6Zcwc/DVOYXHdDt6yj7sKmvOnMkIp0o4Yq01XyTXK85fazKnTRvBrLeqHFux5cfNj38wMeG5y66gHqu1s747ih/d1nv6sjv0qC0qJMrLy+nUqZP8VUlpXbt2pahoI8eP2/5n3LhBxMbGOpLrDx06xKefVpieXP/CnX2kvXtrW5VZUlIh55I553lbTm3MlOJnLNfz3u22b8l7GfT7+wpTnM2di2+XxHFJfD9OT08h5gbx+frKZiS5/rv1/5QGpbziVkctMutOnCA393lOnABlRgdBNjhkFW/6ySdtAJfv3Ute3jq+rYHwweJsfS/RY8YgppWe5HoB5DvvbOOtwy2DMK4yW1NdDC6rdYG8igi/IQiyAZCVGSWW6LSsLBng+9LWteC0+vkExo4fj57keoW38N6zsy+nDLnKVFN7+9atrFnzMZMmRRAEWc1abp6vTomQduyoQZnFs5PT2F8DYVdD7a/Qwf6hesQA2LB5JWIJtVqf11QPpYCpiFWOYa4y1dR2lhkEWc1abp6nxyGJSGZBwWP0GjCAG/+cxv9AXl/ljAF7uwrY99VK+V8piWmyQ2SkidlYVVXDqVOXZWrho8gMgqzFWi59FA930aJZDI+L474ZaZQfg2tD4KdmCAFEQWtkX3hvy0qUMhkDomQSkQw4cGA3qqp+QZGpxkuRKWgdIN8UBfmff6RG6/F5QkQ8/62DV5fexV+tVuO8GhqIDvubTF/+zZu2nFcv2rxx8fynAszyrl0L3nZ/9hmpj21uoWHeM9O45dZb5fTchQvf1lTw5rpci9LYZbubLXqL7Jxl+hTknIQE3dDkvPwy9O4d0CCLY05Gxivy8amgYDFdQkMRQOfnb+bb4xDeF6xWG8CiLcjKorq6gblzpzBl8XaPRzhnkMUynbq+Ru7vTqYn4zrL9CnI0aHxukEu/3IFDB0a0CCLl1KW7FGjuvPEE084kupdX/jdNWvYurWCsDDIL1cvdlNAdhf31itTCYgEQdY9DC8TKOHO0FCYM6dlBUVRUZE8g0Xr1g3WHlEHWYQs+/fvT2sBET0yldh6EGQvQBakSq2ywsa1guK668TC1JuvvjotdzGj6E1NZq9eV2a0BB7IXyyHiIiAX66dx4aWCgpRCbl0aaFcYaE4U67jy1NakWtfLTIVGp+CTFWV/nkydKhME8jetaeXUsvxUmqn1NKK9BuudQrfgmxU0wA/QnkDsqDVmlZk1HyudA6Q+3WD6dNFCbDxtnZtNeeA8XEwapRxXk1NTaxad1hWZObd/eRvtt604uJqvv/FvHOytyAr9FrSirx57xbLtRnMAp2HWcEQs0AWfNTSisywqWMmi7ky/HrvWH59EETl5pDfQZ8+xnlJEuwV9wYAseG2tFhv2oGDIJIpAw1kLWlFWlN8PNnHAfK4aFi5y5ywZsFzd/OXVFE8aLA578kHC6FvX4OMbGRpN8fzeXnggewprchisWDWnZ0+dbzujYrnKvEpRmNraoJ3Nr0q5660F+/aaHK91rQiM+7s9CnIv+WwpvO4NTO53hd3dgZB1rjKqHUzK7neF3d2BkFWQ0/jczOS6/V+TtSaVhR4ILfDsKYyDrxNrvfVnZ0+BZnKSggReRI6WjsNa4qjzoEDB/jyy4MIBzI5eTLxSz7Wlf7rqzs7fQuyDmyv6NqOwpp6qxk8mcRXd3Y6QB7eH556aqZRWGS6jIxCfvgVHrxnEBMmTDDM69KlS8xMWyfnSb22LFH+xR3etCVLCjlw0vxzspFqBk/v4as7O4OJfAZHj9FqBjVxvriz0wGyqPy71vNlr2r6caYRmoCuIhPCS14/2tNXe10FFl07W0s1f2q0XdhlZljTaDWDqhFF+q7Jd3Y6QL4lFvI+8y6sOf0P8Rw+bVtib5g7V8v7uO9z4QJxfe6UB0x5zXoQqQ5etPTx8ez82jyQvalmUBLz1F7HzDs7fep4LUpMpEMHUU+gvT314osBn63pTTWDnt8ooyf7w5OFfQrybzWs6VpBoWUIK9UM/riOMQiyFoRc+rhWUKixcK5mcFetqEbv7fMgyAYsqDf8qKeCwoA6qiQ+BTk2NF490dhFxdJ2ENb0pppBrYJCFTEDHXwKMtX29A49ig0ZApIU8N+TjVYz6DGFWX0ttRszn548Y/mivl1hxYpZXvGdP/9tahtsEa+JEyca5nXx4kVHUXd+7p1cJzLUvWgZGW9z6jx8tPGRhX1nvPSMF6yuIDVSzWCWbD18LK+kRXR+Y2WN7htx9AgJlL5Gb//xpL/eagZ/2EKOJU3rifX4OV71hwJtIVP8PoLZKREPp66v8ck7mnWe9ZUt/g+XO/e9fdquogAAAABJRU5ErkJggg==",
+                    "level": 2,
+                    "label": "icon",
+                    "source": "user"
+                },
+                "description": "
+<div class=\"dm_normal\">First column name is used to create the first level of the tree, second column name will help freeDatamap to create the second level of the graph, etc.</div>
+",
+                "description.dm_props": {
+                    "name": "description",
+                    "label": "description",
+                    "visible": true,
+                    "type": "rich text",
+                    "source": "user",
+                    "level": 2
+                },
+                "columnNameDropdown": null,
+                "columnNameDropdown.dm_props": {
+                    "type": "dropdown",
+                    "visible": true,
+                    "dropdownList": "
+var getColumnNames = function(node) {
+    var output = null ;
+    if(node && node.parent && node.parent.children) {
+        var colNamesNode = dm_Tools.getChild(node.parent, 'columnNames') ;
+        if(colNamesNode && colNamesNode.children && (colNamesNode.children.length > 0)) {
+            output = [] ;
+            var child ;
+            for(var i=0; i<colNamesNode.children.length; i++) {
+                child = colNamesNode.children[i] ;
+                if(child) {
+                    output.push(child.name) ;
+                }
+            }
+        }
+    }
+    return output ;
+} ;
+getColumnNames(node) ;
+                    ",
+                    "name": "columnNameDropdown",
+                    "level": 2,
+                    "label": "columnNameDropdown",
+                    "source": "user"
+                },
+                "addColumnBtn": "Add column",
+                "addColumnBtn.dm_props": {
+                    "name": "addColumnBtn",
+                    "label": "Add column",
+                    "visible": true,
+                    "type": "action",
+                    "source": "user",
+                    "level": 2,
+                    "image": "../../images/plus.png",
+                    "imageName": "../../images/plus.png",
+                    "class": "btn-info",
+                    "content.exec" : "
+var doit = function(node) {
+    var columnName = null ;
+    var newNode ;
+    if(node && node.rawNode) columnName = node.rawNode.columnNameDropdown ;
+    if(columnName) {
+        newNode = dm_Datamap.createNode(node, columnName) ;
+        if(newNode.rawNode) newNode.rawNode = {} ;
+        newNode.rawNode['array index'] = node.children.length - 1 ;
+        newNode.rawNode['columnIndex'] = dm_Tools.getChildIndex(dm_Tools.getChild(node.parent, 'columnNames'), columnName) ;
+    }
+} ;
+doit(node) ;
+dm_Datamap.refreshGraph(node);
+"
+                },
+                "description2": "
+<div class=\"dm_normal\">Order children in the map according to your needs and then hit the following button.</div>
+",
+                "description2.dm_props": {
+                    "name": "description",
+                    "label": "description",
+                    "visible": true,
+                    "type": "rich text",
+                    "source": "user",
+                    "level": 2
+                },
+                "orderChildrenBtn": "Order columns",
+                "orderChildrenBtn.dm_props": {
+                    "name": "orderChildrenBtn",
+                    "label": "Order columns",
+                    "visible": true,
+                    "type": "action",
+                    "source": "user",
+                    "level": 2,
+                    "image": "../../images/tree.png",
+                    "imageName": "../../images/tree.png",
+                    "class": "btn-success",
+                    "content.exec" : "
+dm_Tools.sortChildrenByPos(node);
+"
+                }
+            }
+        },
+        {
+            "name": "config|displayProps",
+            "rawNode": {
+                "icon": "../../config/images/config/displayProps.png",
+                "icon.dm_props": {
+                    "width": 165,
+                    "height": 180,
+                    "scaleFactor": 4.5,
+                    "panelMaxHeight": 180,
+                    "visible": true,
+                    "textX": 3,
+                    "type": "image"
+                }
+            }
+        },
+        {
+            "name": "config|aggregate",
+            "rawNode": {
+                "icon": "../../config/images/config/aggregate.png",
+                "icon.dm_props": {
+                    "width": 243,
+                    "height": 180,
+                    "scaleFactor": 5,
+                    "panelMaxHeight": 180,
+                    "visible": true,
+                    "textX": 3,
+                    "type": "image"
+                }
+            }
+        },
+        {
+            "name": "config|columnNames",
+            "rawNode": {
+                "icon": "../../config/images/config/columnNames.png",
+                "icon.dm_props": {
+                    "width": 146,
+                    "height": 102,
+                    "scaleFactor": 5,
+                    "panelMaxHeight": 180,
+                    "visible": true,
+                    "textX": 3,
+                    "type": "image"
+                }
+            }
+        },
+        {
+            "name": "config|setColumns2node",
+            "rawNode": {
+                "icon": "../../config/images/config/columns2node.png",
+                "icon.dm_props": {
+                    "width": 210,
+                    "height": 180,
+                    "scaleFactor": 5,
+                    "panelMaxHeight": 180,
+                    "visible": true,
+                    "textX": 3,
+                    "type": "image"
+                }
+            }
+        },
+        {
+            "name": "config|styles",
+            "rawNode": {
+                "icon": "../../config/images/config/styles.png",
+                "icon.dm_props": {
+                    "width": 195,
+                    "height": 180,
+                    "scaleFactor": 5,
+                    "panelMaxHeight": 180,
+                    "visible": true,
+                    "textX": 3,
+                    "type": "image"
+                }
+            }
+        },
+        {
+            "name": "config|specifics",
+            "rawNode": {
+                "icon": "../../config/images/config/specifics.png",
+                "icon.dm_props": {
+                    "width": 180,
+                    "height": 180,
+                    "scaleFactor": 5,
+                    "panelMaxHeight": 180,
+                    "visible": true,
+                    "textX": 3,
+                    "type": "image"
+                }
+            }
+        }
+        ]
+    }
+}

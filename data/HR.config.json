@@ -1,5 +1,219 @@
 {
-    "config": {"root":"HR","center":"HR","noLeafInReport":false,"columnNames":["Nom","Pr_nom","Code_Ville_ou_CASA","Libell__Ville_ou_CASA","Code_DGS_ou_CMUN","Libell__DGS_ou_CMUN","Code_DGA","Libell__DGA","Code_Direction","Libell__Direction","Code_Service","Libell__Service","Code_Unit_","Libell__Unit_","Code_Equipe","Libell__Equipe","Libelle_fonction","Libell__long_grade","Mail","Matricule","Sexe","Code_cat_gorie","Code_grade","Code_position","Code_statut","D_nomination_du_poste","T_l_phone","Mobile","Login","","","",""],"columns":[3,5,7,9,11,13,15,[0,1]],"styles":[{"name":"racine","level":0,"arrow":true,"arrow.dm_props":{"type":"boolean","name":"arrow","label":"arrow"},"arc":false,"arc.dm_props":{"type":"boolean","name":"arc","label":"arc"},"rNod":10,"link":120,"color":"#9467bd","attrPaneCol":"#c5b0d5","rNod.dm_props":{"name":"rNod","label":"rNod","type":"text"},"link.dm_props":{"name":"link","label":"link","type":"text"},"color.dm_props":{"name":"color","label":"color","type":"text"},"attrPaneCol.dm_props":{"name":"attrPaneCol","label":"attrPaneCol","type":"text"},"__dm_uniqueId.dm_props":{"name":"__dm_uniqueId","label":"__dm_uniqueId","type":"text"},"backgroundImage":"freeDatamap-www/ressources-humaines.jpg","backgroundImage.dm_props":{"name":"backgroundImage","label":"backgroundImage","visible":true,"type":"image","edit":false,"imageName":"freeDatamap-www/ressources-humaines.jpg","width":452,"height":401,"panelMaxHeight":401,"scaleFactor":1}},{"name":"Entité","level":1,"arrow":true,"arrow.dm_props":{"type":"boolean"},"arc":false,"arc.dm_props":{"type":"boolean"},"rNod":10,"link":120,"icon":"freeDatamap-www/org.png","icon.dm_props":{"width":300,"height":300,"scaleFactor":4.5,"panelMaxHeight":180,"visible":true,"type":"image","name":"icon","imageName":"freeDatamap-www/org.png","tintedSrc":"data:image/png;base64,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"},"color":"#9467bd","attrPaneCol":"#c5b0d5","backgroundImage":"freeDatamap-www/ressources-humaines.jpg"},{"name":"DG","level":2,"arrow":true,"arrow.dm_props":{"type":"boolean"},"arc":false,"arc.dm_props":{"type":"boolean"},"rNod":10,"link":120,"color":"#ff7f0e","attrPaneCol":"#ffbb78","backgroundImage":"freeDatamap-www/ressources-humaines.jpg"},{"name":"DGA","level":3,"arrow":true,"arrow.dm_props":{"type":"boolean"},"arc":false,"arc.dm_props":{"type":"boolean"},"rNod":10,"icon":"freeDatamap-www/TeamIcon.png","icon.dm_props":{"width":500,"height":280,"scaleFactor":4.5,"panelMaxHeight":180,"visible":true,"type":"image"},"link":120,"color":"#ff7f0e","attrPaneCol":"#ffbb78","backgroundImage":"freeDatamap-www/ressources-humaines.jpg"},{"name":"Direction","level":4,"arrow":true,"arrow.dm_props":{"type":"boolean"},"arc":false,"arc.dm_props":{"type":"boolean"},"rNod":8,"link":120,"color":"#d62728","attrPaneCol":"#ff9896","backgroundImage":"freeDatamap-www/ressources-humaines.jpg"},{"name":"Service","level":5,"arrow":true,"arrow.dm_props":{"type":"boolean"},"arc":false,"arc.dm_props":{"type":"boolean"},"rNod":6,"link":120,"color":"#2ca02c","attrPaneCol":"#98df8a","backgroundImage":"freeDatamap-www/ressources-humaines.jpg"},{"name":"Unité","level":6,"arrow":true,"arrow.dm_props":{"type":"boolean"},"arc":false,"arc.dm_props":{"type":"boolean"},"rNod":5,"link":120,"color":"#1f77b4","attrPaneCol":"#aec7e8","backgroundImage":"freeDatamap-www/ressources-humaines.jpg"},{"name":"Equipe","level":7,"arrow":true,"arrow.dm_props":{"type":"boolean"},"arc":false,"arc.dm_props":{"type":"boolean"},"rNod":4,"link":120,"color":"#9467bd","attrPaneCol":"#c5b0d5","backgroundImage":"freeDatamap-www/ressources-humaines.jpg"},{"name":"Agent","level":8,"arrow":false,"arrow.dm_props":{"type":"boolean"},"arc":true,"arc.dm_props":{"type":"boolean"},"rNod":3,"link":60,"icon":"freeDatamap-www/account.png","icon.dm_props":{"width":512,"height":512,"scaleFactor":10,"panelMaxHeight":180,"visible":true,"textX":0,"type":"image"},"color":"#c7c7c7","attrPaneCol":"#c7c7c7","txtCol":"#7f7f7f","backgroundImage":"freeDatamap-www/ressources-humaines.jpg"}],"depth":2,"setColumns2node":[[],[2,3],[2,3,4,5],[2,3,4,5,6,7],[2,3,4,5,6,7,8,9],[2,3,4,5,6,7,8,9,10,11],[2,3,4,5,6,7,8,9,10,11,12,13],[2,3,4,5,6,7,8,9,10,11,12,13,14,15],null],"aggregate":[{"name":"nbAgents","execAfterChildrenVisit":true,"value":"var doit = function () {\r
+    "$schema": "http://www.freedatamap.com/jsonConfigSchema/schema#",
+    "config": {
+        "root": "HR",
+        "center": "HR",
+        "noLeafInReport": false,
+        "columnNames": ["Nom", "Pr_nom", "Code_Ville_ou_CASA", "Libell__Ville_ou_CASA", "Code_DGS_ou_CMUN", "Libell__DGS_ou_CMUN", "Code_DGA", "Libell__DGA", "Code_Direction", "Libell__Direction", "Code_Service", "Libell__Service", "Code_Unit_", "Libell__Unit_", "Code_Equipe", "Libell__Equipe", "Libelle_fonction", "Libell__long_grade", "Mail", "Matricule", "Sexe", "Code_cat_gorie", "Code_grade", "Code_position", "Code_statut", "D_nomination_du_poste", "T_l_phone", "Mobile", "Login", "", "", "", ""],
+        "columns": [3, 5, 7, 9, 11, 13, 15, [0, 1]],
+        "styles": [{
+            "name": "racine",
+            "level": 0,
+            "arrow": true,
+            "arrow.dm_props": {
+                "type": "boolean",
+                "name": "arrow",
+                "label": "arrow"
+            },
+            "arc": false,
+            "arc.dm_props": {
+                "type": "boolean",
+                "name": "arc",
+                "label": "arc"
+            },
+            "rNod": 10,
+            "link": 120,
+            "color": "#9467bd",
+            "attrPaneCol": "#c5b0d5",
+            "backgroundImage": "freeDatamap-www/ressources-humaines.jpg",
+            "backgroundImage.dm_props": {
+                "name": "backgroundImage",
+                "label": "backgroundImage",
+                "visible": true,
+                "type": "image",
+                "edit": false,
+                "imageName": "freeDatamap-www/ressources-humaines.jpg",
+                "width": 452,
+                "height": 401,
+                "panelMaxHeight": 401,
+                "scaleFactor": 1
+            }
+        }, {
+            "name": "Entité",
+            "level": 1,
+            "arrow": true,
+            "arrow.dm_props": {
+                "type": "boolean"
+            },
+            "arc": false,
+            "arc.dm_props": {
+                "type": "boolean"
+            },
+            "rNod": 10,
+            "link": 120,
+            "icon": "freeDatamap-www/org.png",
+            "icon.dm_props": {
+                "width": 300,
+                "height": 300,
+                "scaleFactor": 4.5,
+                "panelMaxHeight": 180,
+                "visible": true,
+                "type": "image",
+                "name": "icon",
+                "imageName": "freeDatamap-www/org.png",
+                "tintedSrc": "data:image/png;base64,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"
+            },
+            "color": "#9467bd",
+            "attrPaneCol": "#c5b0d5",
+            "backgroundImage": "freeDatamap-www/ressources-humaines.jpg"
+        }, {
+            "name": "DG",
+            "level": 2,
+            "arrow": true,
+            "arrow.dm_props": {
+                "type": "boolean"
+            },
+            "arc": false,
+            "arc.dm_props": {
+                "type": "boolean"
+            },
+            "rNod": 10,
+            "link": 120,
+            "color": "#ff7f0e",
+            "attrPaneCol": "#ffbb78",
+            "backgroundImage": "freeDatamap-www/ressources-humaines.jpg"
+        }, {
+            "name": "DGA",
+            "level": 3,
+            "arrow": true,
+            "arrow.dm_props": {
+                "type": "boolean"
+            },
+            "arc": false,
+            "arc.dm_props": {
+                "type": "boolean"
+            },
+            "rNod": 10,
+            "icon": "freeDatamap-www/TeamIcon.png",
+            "icon.dm_props": {
+                "width": 500,
+                "height": 280,
+                "scaleFactor": 4.5,
+                "panelMaxHeight": 180,
+                "visible": true,
+                "type": "image"
+            },
+            "link": 120,
+            "color": "#ff7f0e",
+            "attrPaneCol": "#ffbb78",
+            "backgroundImage": "freeDatamap-www/ressources-humaines.jpg"
+        }, {
+            "name": "Direction",
+            "level": 4,
+            "arrow": true,
+            "arrow.dm_props": {
+                "type": "boolean"
+            },
+            "arc": false,
+            "arc.dm_props": {
+                "type": "boolean"
+            },
+            "rNod": 8,
+            "link": 120,
+            "color": "#d62728",
+            "attrPaneCol": "#ff9896",
+            "backgroundImage": "freeDatamap-www/ressources-humaines.jpg"
+        }, {
+            "name": "Service",
+            "level": 5,
+            "arrow": true,
+            "arrow.dm_props": {
+                "type": "boolean"
+            },
+            "arc": false,
+            "arc.dm_props": {
+                "type": "boolean"
+            },
+            "rNod": 6,
+            "link": 120,
+            "color": "#2ca02c",
+            "attrPaneCol": "#98df8a",
+            "backgroundImage": "freeDatamap-www/ressources-humaines.jpg"
+        }, {
+            "name": "Unité",
+            "level": 6,
+            "arrow": true,
+            "arrow.dm_props": {
+                "type": "boolean"
+            },
+            "arc": false,
+            "arc.dm_props": {
+                "type": "boolean"
+            },
+            "rNod": 5,
+            "link": 120,
+            "color": "#1f77b4",
+            "attrPaneCol": "#aec7e8",
+            "backgroundImage": "freeDatamap-www/ressources-humaines.jpg"
+        }, {
+            "name": "Equipe",
+            "level": 7,
+            "arrow": true,
+            "arrow.dm_props": {
+                "type": "boolean"
+            },
+            "arc": false,
+            "arc.dm_props": {
+                "type": "boolean"
+            },
+            "rNod": 4,
+            "link": 120,
+            "color": "#9467bd",
+            "attrPaneCol": "#c5b0d5",
+            "backgroundImage": "freeDatamap-www/ressources-humaines.jpg"
+        }, {
+            "name": "Agent",
+            "level": 8,
+            "arrow": false,
+            "arrow.dm_props": {
+                "type": "boolean"
+            },
+            "arc": true,
+            "arc.dm_props": {
+                "type": "boolean"
+            },
+            "rNod": 3,
+            "link": 60,
+            "icon": "freeDatamap-www/account.png",
+            "icon.dm_props": {
+                "width": 512,
+                "height": 512,
+                "scaleFactor": 10,
+                "panelMaxHeight": 180,
+                "visible": true,
+                "textX": 0,
+                "type": "image"
+            },
+            "color": "#c7c7c7",
+            "attrPaneCol": "#c7c7c7",
+            "txtCol": "#7f7f7f",
+            "backgroundImage": "freeDatamap-www/ressources-humaines.jpg"
+        }],
+        "depth": 2,
+        "setColumns2node": [
+            [],
+            [2, 3],
+            [2, 3, 4, 5],
+            [2, 3, 4, 5, 6, 7],
+            [2, 3, 4, 5, 6, 7, 8, 9],
+            [2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+            [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
+            [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], null
+        ],
+        "aggregate": [{
+            "name": "nbAgents",
+            "execAfterChildrenVisit": true,
+            "value": "var doit = function () {\r
             var output = 1;\r
             if (node && node.children) {\r
                 output = 0;\r
@@ -8,7 +222,8 @@
                 });\r
             }\r
             return output;\r
-        } ; return doit() ;","toExecute":"function nbAgents_aggregateFunc(node, nodes) { 
+        } ; return doit() ;",
+            "toExecute": "function nbAgents_aggregateFunc(node, nodes) { 
   if(!node.rawNode) { node.rawNode = {} ; } 
   node.rawNode['nbAgents.label'] = 'Number of people' ;
   node.rawNode['nbAgents.visible'] = 'true' ;
@@ -25,7 +240,15 @@
             return output;\r
         } ; return doit() ;
 }
-","label":"Number of people","visible":true,"type":"text","source":"aggregation"},{"name":"codeFinance","execAfterChildrenVisit":true,"value":"var doit = function () {
+",
+            "label": "Number of people",
+            "visible": true,
+            "type": "text",
+            "source": "aggregation"
+        }, {
+            "name": "codeFinance",
+            "execAfterChildrenVisit": true,
+            "value": "var doit = function () {
             var codeVilleOuCASA = 'Code_Ville_ou_CASA',
                 codeDGSouCmun = 'Code_DGS_ou_CMUN',
                 codeDGA = 'Code_DGA',
@@ -62,7 +285,8 @@
                 }
             }
             return output;
-        } ; return doit() ;","toExecute":"function codeFinance_aggregateFunc(node, nodes) { 
+        } ; return doit() ;",
+            "toExecute": "function codeFinance_aggregateFunc(node, nodes) { 
   if(!node.rawNode) { node.rawNode = {} ; } 
   node.rawNode['codeFinance.label'] = 'codeFinance' ;
   node.rawNode['codeFinance.type'] = 'text' ;
@@ -106,7 +330,14 @@
             return output;
         } ; return doit() ;
 }
-","label":"codeFinance","type":"text","source":"aggregation"},{"name":"nbCatA","execAfterChildrenVisit":true,"value":"var doit = function (cat) {
+",
+            "label": "codeFinance",
+            "type": "text",
+            "source": "aggregation"
+        }, {
+            "name": "nbCatA",
+            "execAfterChildrenVisit": true,
+            "value": "var doit = function (cat) {
             var codeCategorieColumnName = \"Code_cat_gorie\";
             var output = (node.rawNode[codeCategorieColumnName] == cat) ? 1 : 0;
             if (node && node.children) {
@@ -116,7 +347,8 @@
                 });
             }
             return output;
-        } ; return doit('A') ;","toExecute":"function nbCatA_aggregateFunc(node, nodes) { 
+        } ; return doit('A') ;",
+            "toExecute": "function nbCatA_aggregateFunc(node, nodes) { 
   if(!node.rawNode) { node.rawNode = {} ; } 
   node.rawNode['nbCatA.label'] = 'Category A' ;
   node.rawNode['nbCatA.visible'] = 'true' ;
@@ -134,7 +366,15 @@
             return output;
         } ; return doit('A') ;
 }
-","label":"Category A","visible":true,"type":"text","source":"aggregation"},{"name":"nbCatB","execAfterChildrenVisit":true,"value":"var doit = function (cat) {
+",
+            "label": "Category A",
+            "visible": true,
+            "type": "text",
+            "source": "aggregation"
+        }, {
+            "name": "nbCatB",
+            "execAfterChildrenVisit": true,
+            "value": "var doit = function (cat) {
             var codeCategorieColumnName = \"Code_cat_gorie\";
             var output = (node.rawNode[codeCategorieColumnName] == cat) ? 1 : 0;
             if (node && node.children) {
@@ -144,7 +384,8 @@
                 });
             }
             return output;
-        } ; return doit('B') ;","toExecute":"function nbCatB_aggregateFunc(node, nodes) { 
+        } ; return doit('B') ;",
+            "toExecute": "function nbCatB_aggregateFunc(node, nodes) { 
   if(!node.rawNode) { node.rawNode = {} ; } 
   node.rawNode['nbCatB.label'] = 'Category B' ;
   node.rawNode['nbCatB.visible'] = 'true' ;
@@ -162,7 +403,15 @@
             return output;
         } ; return doit('B') ;
 }
-","label":"Category B","visible":true,"type":"text","source":"aggregation"},{"name":"nbCatC","execAfterChildrenVisit":true,"value":"var doit = function (cat) {\r
+",
+            "label": "Category B",
+            "visible": true,
+            "type": "text",
+            "source": "aggregation"
+        }, {
+            "name": "nbCatC",
+            "execAfterChildrenVisit": true,
+            "value": "var doit = function (cat) {\r
             var codeCategorieColumnName = \"Code_cat_gorie\";\r
             var output = (node.rawNode[codeCategorieColumnName] == cat) ? 1 : 0;\r
             if (node && node.children) {\r
@@ -172,7 +421,8 @@
                 });\r
             }\r
             return output;\r
-        } ; return doit('C') ;","toExecute":"function nbCatC_aggregateFunc(node, nodes) { 
+        } ; return doit('C') ;",
+            "toExecute": "function nbCatC_aggregateFunc(node, nodes) { 
   if(!node.rawNode) { node.rawNode = {} ; } 
   node.rawNode['nbCatC.label'] = 'Category C' ;
   node.rawNode['nbCatC.visible'] = 'true' ;
@@ -190,7 +440,15 @@
             return output;\r
         } ; return doit('C') ;
 }
-","label":"Category C","visible":true,"type":"text","source":"aggregation"},{"name":"nbDGA","execAfterChildrenVisit":true,"value":"var doit = function (level, org) {\r
+",
+            "label": "Category C",
+            "visible": true,
+            "type": "text",
+            "source": "aggregation"
+        }, {
+            "name": "nbDGA",
+            "execAfterChildrenVisit": true,
+            "value": "var doit = function (level, org) {\r
             var output;\r
             if (node) {\r
                 if (node.level == level) {\r
@@ -205,7 +463,8 @@
                 }\r
             }\r
             return output;\r
-        } ; return doit(3, 'DGA') ;","toExecute":"function nbDGA_aggregateFunc(node, nodes) { 
+        } ; return doit(3, 'DGA') ;",
+            "toExecute": "function nbDGA_aggregateFunc(node, nodes) { 
   if(!node.rawNode) { node.rawNode = {} ; } 
   node.rawNode['nbDGA.label'] = 'Number of Departments' ;
   node.rawNode['nbDGA.visible'] = 'true' ;
@@ -228,7 +487,15 @@
             return output;\r
         } ; return doit(3, 'DGA') ;
 }
-","label":"Number of Departments","visible":true,"type":"text","source":"aggregation"},{"name":"nbDir","execAfterChildrenVisit":true,"value":"var doit = function (level, org) {
+",
+            "label": "Number of Departments",
+            "visible": true,
+            "type": "text",
+            "source": "aggregation"
+        }, {
+            "name": "nbDir",
+            "execAfterChildrenVisit": true,
+            "value": "var doit = function (level, org) {
             var output;
             if (node) {
                 if (node.level == level) {
@@ -243,7 +510,8 @@
                 }
             }
             return output;
-        } ; return doit(4, 'Dir') ;","toExecute":"function nbDir_aggregateFunc(node, nodes) { 
+        } ; return doit(4, 'Dir') ;",
+            "toExecute": "function nbDir_aggregateFunc(node, nodes) { 
   if(!node.rawNode) { node.rawNode = {} ; } 
   node.rawNode['nbDir.label'] = 'Number of Business units' ;
   node.rawNode['nbDir.visible'] = 'true' ;
@@ -266,7 +534,15 @@
             return output;
         } ; return doit(4, 'Dir') ;
 }
-","label":"Number of Business units","visible":true,"type":"text","source":"aggregation"},{"name":"nbServ","execAfterChildrenVisit":true,"value":"var doit = function (level, org) {
+",
+            "label": "Number of Business units",
+            "visible": true,
+            "type": "text",
+            "source": "aggregation"
+        }, {
+            "name": "nbServ",
+            "execAfterChildrenVisit": true,
+            "value": "var doit = function (level, org) {
             var output;
             if (node) {
                 if (node.level == level) {
@@ -281,7 +557,8 @@
                 }
             }
             return output;
-        } ; return doit(5, 'Serv') ;","toExecute":"function nbServ_aggregateFunc(node, nodes) { 
+        } ; return doit(5, 'Serv') ;",
+            "toExecute": "function nbServ_aggregateFunc(node, nodes) { 
   if(!node.rawNode) { node.rawNode = {} ; } 
   node.rawNode['nbServ.label'] = 'Number of Services' ;
   node.rawNode['nbServ.visible'] = 'true' ;
@@ -304,7 +581,15 @@
             return output;
         } ; return doit(5, 'Serv') ;
 }
-","label":"Number of Services","visible":true,"type":"text","source":"aggregation"},{"name":"nbUnites","execAfterChildrenVisit":true,"value":"var doit = function (level, org) {
+",
+            "label": "Number of Services",
+            "visible": true,
+            "type": "text",
+            "source": "aggregation"
+        }, {
+            "name": "nbUnites",
+            "execAfterChildrenVisit": true,
+            "value": "var doit = function (level, org) {
             var output;
             if (node) {
                 if (node.level == level) {
@@ -319,7 +604,8 @@
                 }
             }
             return output;
-        } ; return doit(6, 'Unites') ;","toExecute":"function nbUnites_aggregateFunc(node, nodes) { 
+        } ; return doit(6, 'Unites') ;",
+            "toExecute": "function nbUnites_aggregateFunc(node, nodes) { 
   if(!node.rawNode) { node.rawNode = {} ; } 
   node.rawNode['nbUnites.label'] = 'Number of projects' ;
   node.rawNode['nbUnites.visible'] = 'true' ;
@@ -342,7 +628,15 @@
             return output;
         } ; return doit(6, 'Unites') ;
 }
-","label":"Number of projects","visible":true,"type":"text","source":"aggregation"},{"name":"nbEquipes","execAfterChildrenVisit":true,"value":"var doit = function (level, org) {
+",
+            "label": "Number of projects",
+            "visible": true,
+            "type": "text",
+            "source": "aggregation"
+        }, {
+            "name": "nbEquipes",
+            "execAfterChildrenVisit": true,
+            "value": "var doit = function (level, org) {
             var output;
             if (node) {
                 if (node.level == level) {
@@ -357,7 +651,8 @@
                 }
             }
             return output;
-        } ; return doit(7, 'Equipes') ;","toExecute":"function nbEquipes_aggregateFunc(node, nodes) { 
+        } ; return doit(7, 'Equipes') ;",
+            "toExecute": "function nbEquipes_aggregateFunc(node, nodes) { 
   if(!node.rawNode) { node.rawNode = {} ; } 
   node.rawNode['nbEquipes.label'] = 'Number of teams' ;
   node.rawNode['nbEquipes.visible'] = 'true' ;
@@ -382,7 +677,15 @@
             return output;\r
         } ; return doit(7, 'Equipes') ;
 }
-","label":"Number of teams","visible":true,"type":"text","source":"aggregation"},{"name":"nbAgParEntite","execAfterChildrenVisit":true,"value":"var doit = function (level, prop) {
+",
+            "label": "Number of teams",
+            "visible": true,
+            "type": "text",
+            "source": "aggregation"
+        }, {
+            "name": "nbAgParEntite",
+            "execAfterChildrenVisit": true,
+            "value": "var doit = function (level, prop) {
             var dive = function(node) {
                     var totalNbAgents = 0;
                     if (node && node.children) {
@@ -402,7 +705,8 @@
                 output = totalNbAgents / node.rawNode['nb' + prop];
             }
             return output;
-        } ; return doit(1, 'Entite') ;","toExecute":"function nbAgParEntite_aggregateFunc(node, nodes) { 
+        } ; return doit(1, 'Entite') ;",
+            "toExecute": "function nbAgParEntite_aggregateFunc(node, nodes) { 
   if(!node.rawNode) { node.rawNode = {} ; } 
   node.rawNode['nbAgParEntite.label'] = 'nbAgParEntite' ;
   node.rawNode['nbAgParEntite.type'] = 'text' ;
@@ -431,7 +735,14 @@
             return output;\r
         } ; return doit(1, 'Entite') ;
 }
-","label":"nbAgParEntite","type":"text","source":"aggregation"},{"name":"nbAgParDG","execAfterChildrenVisit":true,"value":"var doit = function (level, prop) {
+",
+            "label": "nbAgParEntite",
+            "type": "text",
+            "source": "aggregation"
+        }, {
+            "name": "nbAgParDG",
+            "execAfterChildrenVisit": true,
+            "value": "var doit = function (level, prop) {
             var dive = function(node) {
                     var totalNbAgents = 0;
                     if (node && node.children) {
@@ -451,7 +762,8 @@
                 output = totalNbAgents / node.rawNode['nb' + prop];
             }
             return output;
-        } ; return doit(2, 'DG') ;","toExecute":"function nbAgParDG_aggregateFunc(node, nodes) { 
+        } ; return doit(2, 'DG') ;",
+            "toExecute": "function nbAgParDG_aggregateFunc(node, nodes) { 
   if(!node.rawNode) { node.rawNode = {} ; } 
   node.rawNode['nbAgParDG.label'] = 'nbAgParDG' ;
   node.rawNode['nbAgParDG.type'] = 'text' ;
@@ -480,7 +792,14 @@
             return output;\r
         } ; return doit(2, 'DG') ;
 }
-","label":"nbAgParDG","type":"text","source":"aggregation"},{"name":"nbAgParDGA","execAfterChildrenVisit":true,"value":"var doit = function (level, prop) {
+",
+            "label": "nbAgParDG",
+            "type": "text",
+            "source": "aggregation"
+        }, {
+            "name": "nbAgParDGA",
+            "execAfterChildrenVisit": true,
+            "value": "var doit = function (level, prop) {
             var dive = function(node) {
                     var totalNbAgents = 0;
                     if (node && node.children) {
@@ -500,7 +819,8 @@
                 output = totalNbAgents / node.rawNode['nb' + prop];
             }
             return output;
-        } ; return doit(3, 'DGA') ;","toExecute":"function nbAgParDGA_aggregateFunc(node, nodes) { 
+        } ; return doit(3, 'DGA') ;",
+            "toExecute": "function nbAgParDGA_aggregateFunc(node, nodes) { 
   if(!node.rawNode) { node.rawNode = {} ; } 
   node.rawNode['nbAgParDGA.label'] = 'People per Department' ;
   node.rawNode['nbAgParDGA.visible'] = 'true' ;
@@ -530,7 +850,15 @@
             return output;\r
         } ; return doit(3, 'DGA') ;
 }
-","label":"People per Department","visible":true,"type":"text","source":"aggregation"},{"name":"nbAgParDir","execAfterChildrenVisit":true,"value":"var doit = function (level, prop) {
+",
+            "label": "People per Department",
+            "visible": true,
+            "type": "text",
+            "source": "aggregation"
+        }, {
+            "name": "nbAgParDir",
+            "execAfterChildrenVisit": true,
+            "value": "var doit = function (level, prop) {
             var dive = function(node) {
                     var totalNbAgents = 0;
                     if (node && node.children) {
@@ -550,7 +878,8 @@
                 output = totalNbAgents / node.rawNode['nb' + prop];
             }
             return output;
-        } ; return doit(4, 'Dir') ;","toExecute":"function nbAgParDir_aggregateFunc(node, nodes) { 
+        } ; return doit(4, 'Dir') ;",
+            "toExecute": "function nbAgParDir_aggregateFunc(node, nodes) { 
   if(!node.rawNode) { node.rawNode = {} ; } 
   node.rawNode['nbAgParDir.label'] = 'People per Business unit' ;
   node.rawNode['nbAgParDir.visible'] = 'true' ;
@@ -580,7 +909,15 @@
             return output;\r
         } ; return doit(4, 'Dir') ;
 }
-","label":"People per Business unit","visible":true,"type":"text","source":"aggregation"},{"name":"nbAgParServ","execAfterChildrenVisit":true,"value":"var doit = function (level, prop) {
+",
+            "label": "People per Business unit",
+            "visible": true,
+            "type": "text",
+            "source": "aggregation"
+        }, {
+            "name": "nbAgParServ",
+            "execAfterChildrenVisit": true,
+            "value": "var doit = function (level, prop) {
             var dive = function(node) {
                     var totalNbAgents = 0;
                     if (node && node.children) {
@@ -600,7 +937,8 @@
                 output = totalNbAgents / node.rawNode['nb' + prop];
             }
             return output;
-        } ; return doit(5, 'Serv') ;","toExecute":"function nbAgParServ_aggregateFunc(node, nodes) { 
+        } ; return doit(5, 'Serv') ;",
+            "toExecute": "function nbAgParServ_aggregateFunc(node, nodes) { 
   if(!node.rawNode) { node.rawNode = {} ; } 
   node.rawNode['nbAgParServ.label'] = 'People per Service' ;
   node.rawNode['nbAgParServ.visible'] = 'true' ;
@@ -630,7 +968,15 @@
             return output;\r
         } ; return doit(5, 'Serv') ;
 }
-","label":"People per Service","visible":true,"type":"text","source":"aggregation"},{"name":"nbAgParUnite","execAfterChildrenVisit":true,"value":"var doit = function (level, prop) {
+",
+            "label": "People per Service",
+            "visible": true,
+            "type": "text",
+            "source": "aggregation"
+        }, {
+            "name": "nbAgParUnite",
+            "execAfterChildrenVisit": true,
+            "value": "var doit = function (level, prop) {
             var dive = function(node) {
                     var totalNbAgents = 0;
                     if (node && node.children) {
@@ -650,7 +996,8 @@
                 output = totalNbAgents / node.rawNode['nb' + prop];
             }
             return output;
-        } ; return doit(6, 'Unites') ;","toExecute":"function nbAgParUnite_aggregateFunc(node, nodes) { 
+        } ; return doit(6, 'Unites') ;",
+            "toExecute": "function nbAgParUnite_aggregateFunc(node, nodes) { 
   if(!node.rawNode) { node.rawNode = {} ; } 
   node.rawNode['nbAgParUnite.label'] = 'People per Project' ;
   node.rawNode['nbAgParUnite.visible'] = 'true' ;
@@ -680,7 +1027,15 @@
             return output;\r
         } ; return doit(6, 'Unites') ;
 }
-","label":"People per Project","visible":true,"type":"text","source":"aggregation"},{"name":"nbAgParEquipe","execAfterChildrenVisit":true,"value":"var doit = function (level, prop) {
+",
+            "label": "People per Project",
+            "visible": true,
+            "type": "text",
+            "source": "aggregation"
+        }, {
+            "name": "nbAgParEquipe",
+            "execAfterChildrenVisit": true,
+            "value": "var doit = function (level, prop) {
             var dive = function(node) {
                     var totalNbAgents = 0;
                     if (node && node.children) {
@@ -700,7 +1055,8 @@
                 output = totalNbAgents / node.rawNode['nb' + prop];
             }
             return output;
-        } ; return doit(7, 'Equipes') ;","toExecute":"function nbAgParEquipe_aggregateFunc(node, nodes) { 
+        } ; return doit(7, 'Equipes') ;",
+            "toExecute": "function nbAgParEquipe_aggregateFunc(node, nodes) { 
   if(!node.rawNode) { node.rawNode = {} ; } 
   node.rawNode['nbAgParEquipe.label'] = 'People per Team' ;
   node.rawNode['nbAgParEquipe.visible'] = 'true' ;
@@ -730,13 +1086,22 @@
             return output;\r
         } ; return doit(7, 'Equipes') ;
 }
-","label":"People per Team","visible":true,"type":"text","source":"aggregation"},{"name":"updateNodeName","execAfterChildrenVisit":true,"value":"var doit = function () {\r
+",
+            "label": "People per Team",
+            "visible": true,
+            "type": "text",
+            "source": "aggregation"
+        }, {
+            "name": "updateNodeName",
+            "execAfterChildrenVisit": true,
+            "value": "var doit = function () {\r
             if (node.children) {\r
                 var total = node.rawNode[\"nbAgents\"];\r
                 var newName = node.name + ((total) ? \" (\" + total + \")\" : \"\");\r
                 node.rawNode['displayName'] = newName;\r
             }\r
-        }; return doit() ;","toExecute":"function updateNodeName_aggregateFunc(node, nodes) { 
+        }; return doit() ;",
+            "toExecute": "function updateNodeName_aggregateFunc(node, nodes) { 
   if(!node.rawNode) { node.rawNode = {} ; } 
   node.rawNode['updateNodeName.label'] = 'updateNodeName' ;
   node.rawNode['updateNodeName.type'] = 'text' ;
@@ -749,7 +1114,14 @@
             }\r
         }; return doit() ;
 }
-","label":"updateNodeName","type":"text","source":"aggregation"},{"name":"obfuscate","execAfterChildrenVisit":false,"value":"var doit = function (obfuscateIt, us) {
+",
+            "label": "updateNodeName",
+            "type": "text",
+            "source": "aggregation"
+        }, {
+            "name": "obfuscate",
+            "execAfterChildrenVisit": false,
+            "value": "var doit = function (obfuscateIt, us) {
             if (!obfuscateIt) return;
 
             if (!nodes.obfuscateIdxes) nodes.obfuscateIdxes = [0, 0, 0, 0, 0, 0, 0, 0, 0];
@@ -853,7 +1225,8 @@
                 }
             }
             updateNode(node);
-        } ; doit(true, true) ;","toExecute":"function obfuscate_aggregateFunc(node, nodes) { 
+        } ; doit(true, true) ;",
+            "toExecute": "function obfuscate_aggregateFunc(node, nodes) { 
   if(!node.rawNode) { node.rawNode = {} ; } 
   node.rawNode['obfuscate.label'] = 'obfuscate' ;
   node.rawNode['obfuscate.type'] = 'text' ;
@@ -963,7 +1336,14 @@
             updateNode(node);\r
         } ; doit(true, true) ;
 }
-","label":"obfuscate","type":"text","source":"aggregation"},{"name":"addFranceLabsSearch","execAfterChildrenVisit":true,"value":"var doit = function (FranceLabsIntegration, us, FranceLabsURL, FranceLabsUI_URL) {
+",
+            "label": "obfuscate",
+            "type": "text",
+            "source": "aggregation"
+        }, {
+            "name": "addFranceLabsSearch",
+            "execAfterChildrenVisit": true,
+            "value": "var doit = function (FranceLabsIntegration, us, FranceLabsURL, FranceLabsUI_URL) {
             var key = ((us) ? \"HR\" : \"DRH\");
             var FranceLabsExec = function(key, us, FranceLabsURL, FranceLabsUI_URL) {
 
@@ -1047,7 +1427,8 @@
                 //\"'http://127.0.0.1:8080/francellio-solr/FileShare/graph?q=' + '\" + key + \"' + ' ' +\" + \"dm_Tools.getNodePath(node, ' ', null, 'originalName', 2)\" ;
             }
         }; return doit(false, true, 'http://127.0.0.1:8080/francellio-solr/FileShare/graph?q.op=AND&q=',
-                'http://127.0.0.1:8080/AntibesSearch/search.jsp?searchType=allWords&query=') ;","toExecute":"function addFranceLabsSearch_aggregateFunc(node, nodes) { 
+                'http://127.0.0.1:8080/AntibesSearch/search.jsp?searchType=allWords&query=') ;",
+            "toExecute": "function addFranceLabsSearch_aggregateFunc(node, nodes) { 
   if(!node.rawNode) { node.rawNode = {} ; } 
   node.rawNode['addFranceLabsSearch.label'] = 'addFranceLabsSearch' ;
   node.rawNode['addFranceLabsSearch.type'] = 'text' ;
@@ -1136,7 +1517,44 @@
             }\r
         }; return doit(false, true, 'http://127.0.0.1:8080/francellio-solr/FileShare/graph?q.op=AND&q=', 'http://127.0.0.1:8080/AntibesSearch/search.jsp?searchType=allWords&query=') ;
 }
-","label":"addFranceLabsSearch","type":"text","source":"aggregation"}],"sort":"nbAgents","sortDescendant":true,"displayProps":[{"name":"racine","children":[{"name":"nbDGA","label":"Number of Departments","edit":false},{"name":"nbDir","label":"Number of Business units","edit":false},{"name":"nbServ","label":"Number of Services","edit":false},{"name":"nbUnites","label":"Number of projects","edit":false},{"name":"nbEquipes","label":"Number of teams","edit":false},{"name":"nbAgents","label":"Number of people","edit":false},{"name":"nbAgParEntitePie","graph":"pie","doTransition":true,"input":"var doit = function (level) {
+",
+            "label": "addFranceLabsSearch",
+            "type": "text",
+            "source": "aggregation"
+        }],
+        "sort": "nbAgents",
+        "sortDescendant": true,
+        "displayProps": [{
+            "name": "racine",
+            "children": [{
+                "name": "nbDGA",
+                "label": "Number of Departments",
+                "edit": false
+            }, {
+                "name": "nbDir",
+                "label": "Number of Business units",
+                "edit": false
+            }, {
+                "name": "nbServ",
+                "label": "Number of Services",
+                "edit": false
+            }, {
+                "name": "nbUnites",
+                "label": "Number of projects",
+                "edit": false
+            }, {
+                "name": "nbEquipes",
+                "label": "Number of teams",
+                "edit": false
+            }, {
+                "name": "nbAgents",
+                "label": "Number of people",
+                "edit": false
+            }, {
+                "name": "nbAgParEntitePie",
+                "graph": "pie",
+                "doTransition": true,
+                "input": "var doit = function (level) {
             var output, elt;
             var doIt = function(node) {
                 if (!output) {
@@ -1167,7 +1585,18 @@
             };
             dive(node);
             return output;
-        } ; return doit(1) ;","visible":true,"type":"graph"},{"name":"nbAgParDGA","label":"People per Department","edit":false},{"name":"nbAgParDGAPie","graph":"pie","doTransition":true,"input":"var doit = function (level) {
+        } ; return doit(1) ;",
+                "visible": true,
+                "type": "graph"
+            }, {
+                "name": "nbAgParDGA",
+                "label": "People per Department",
+                "edit": false
+            }, {
+                "name": "nbAgParDGAPie",
+                "graph": "pie",
+                "doTransition": true,
+                "input": "var doit = function (level) {
             var output, elt;
             var doIt = function(node) {
                 if (!output) {
@@ -1198,7 +1627,18 @@
             };
             dive(node);
             return output;
-        } ; return doit(3) ;","visible":true,"type":"graph"},{"name":"nbAgParDir","label":"People per Business unit","edit":false},{"name":"nbAgParDirPie","graph":"pie","doTransition":true,"input":"var doit = function (level) {
+        } ; return doit(3) ;",
+                "visible": true,
+                "type": "graph"
+            }, {
+                "name": "nbAgParDir",
+                "label": "People per Business unit",
+                "edit": false
+            }, {
+                "name": "nbAgParDirPie",
+                "graph": "pie",
+                "doTransition": true,
+                "input": "var doit = function (level) {
             var output, elt;
             var doIt = function(node) {
                 if (!output) {
@@ -1229,7 +1669,38 @@
             };
             dive(node);
             return output;
-        } ; return doit(4) ;","visible":true,"type":"graph"},{"name":"nbAgParServ","label":"People per Service","edit":false},{"name":"nbAgParUnite","label":"People per Project","edit":false},{"name":"nbAgParEquipe","label":"People per Team","edit":false},{"name":"nbCatA","label":"Category A","edit":false},{"name":"nbCatB","label":"Category B","edit":false},{"name":"nbCatC","label":"Category C","edit":false},{"name":"nbAgParCatPie","graph":"pie","doTransition":true,"input":"var doit = function () {
+        } ; return doit(4) ;",
+                "visible": true,
+                "type": "graph"
+            }, {
+                "name": "nbAgParServ",
+                "label": "People per Service",
+                "edit": false
+            }, {
+                "name": "nbAgParUnite",
+                "label": "People per Project",
+                "edit": false
+            }, {
+                "name": "nbAgParEquipe",
+                "label": "People per Team",
+                "edit": false
+            }, {
+                "name": "nbCatA",
+                "label": "Category A",
+                "edit": false
+            }, {
+                "name": "nbCatB",
+                "label": "Category B",
+                "edit": false
+            }, {
+                "name": "nbCatC",
+                "label": "Category C",
+                "edit": false
+            }, {
+                "name": "nbAgParCatPie",
+                "graph": "pie",
+                "doTransition": true,
+                "input": "var doit = function () {
             var output;
             if (node && node.children) {
                 output = [{
@@ -1247,7 +1718,47 @@
                 }];
             }
             return output;
-        } ; return doit() ;","visible":true,"type":"graph"},{"name":"nodeZik","value":"music/ultranova105_shard.mp3","type":"music","ifCenter":"true","visible":true}]},{"name":"entité","children":[{"name":"nbDGA","label":"Number of Departments","edit":false},{"name":"nbDir","label":"Number of Business units","edit":false},{"name":"nbServ","label":"Number of Services","edit":false},{"name":"nbUnites","label":"Number of projects","edit":false},{"name":"nbEquipes","label":"Number of teams","edit":false},{"name":"nbAgents","label":"Number of people","edit":false},{"name":"nbAgParEntitePie","graph":"pie","doTransition":true,"input":"var doit = function (level) {\r
+        } ; return doit() ;",
+                "visible": true,
+                "type": "graph"
+            }, {
+                "name": "nodeZik",
+                "value": "music/ultranova105_shard.mp3",
+                "type": "music",
+                "ifCenter": "true",
+                "visible": true
+            }]
+        }, {
+            "name": "entité",
+            "children": [{
+                "name": "nbDGA",
+                "label": "Number of Departments",
+                "edit": false
+            }, {
+                "name": "nbDir",
+                "label": "Number of Business units",
+                "edit": false
+            }, {
+                "name": "nbServ",
+                "label": "Number of Services",
+                "edit": false
+            }, {
+                "name": "nbUnites",
+                "label": "Number of projects",
+                "edit": false
+            }, {
+                "name": "nbEquipes",
+                "label": "Number of teams",
+                "edit": false
+            }, {
+                "name": "nbAgents",
+                "label": "Number of people",
+                "edit": false
+            }, {
+                "name": "nbAgParEntitePie",
+                "graph": "pie",
+                "doTransition": true,
+                "input": "var doit = function (level) {\r
             //var delay = dm_Tools.getDelay() ; if(delay > 20) console.log('nbAgParXPie '+delay) ;\r
             //return \"var output, elt, doIt = function(node) { if(!output) { output = [] ; } elt = {} ; output.push(elt) ; elt.value = node.rawNode.nbAgents ; elt.name = node.name ; elt.unit = 'agent(s)' ; }, dive = function(node) { if(node) { if(node.level == \" + level + \") { doIt(node) ; } else if((node.level == \" + (level-1) + \") && (node.children)) { node.children.forEach(function(child) { if(child.level == \" + level + \") { doIt(child) ; } }) ; } else if((node.level < \" + (level-1) + \") && (node.children)) { node.children.forEach(function(child) { dive(child) ; }) ; } } } ; dive(node) ; return output ;\" ;\r
             var output, elt;\r
@@ -1280,7 +1791,16 @@
             };\r
             dive(node);\r
             return output;\r
-        } ; return doit(1) ;"},{"name":"nbAgParDGA","label":"People per Department","edit":false},{"name":"nbAgParDGAPie","graph":"pie","doTransition":true,"input":"var doit = function (level) {\r
+        } ; return doit(1) ;"
+            }, {
+                "name": "nbAgParDGA",
+                "label": "People per Department",
+                "edit": false
+            }, {
+                "name": "nbAgParDGAPie",
+                "graph": "pie",
+                "doTransition": true,
+                "input": "var doit = function (level) {\r
             //var delay = dm_Tools.getDelay() ; if(delay > 20) console.log('nbAgParXPie '+delay) ;\r
             //return \"var output, elt, doIt = function(node) { if(!output) { output = [] ; } elt = {} ; output.push(elt) ; elt.value = node.rawNode.nbAgents ; elt.name = node.name ; elt.unit = 'agent(s)' ; }, dive = function(node) { if(node) { if(node.level == \" + level + \") { doIt(node) ; } else if((node.level == \" + (level-1) + \") && (node.children)) { node.children.forEach(function(child) { if(child.level == \" + level + \") { doIt(child) ; } }) ; } else if((node.level < \" + (level-1) + \") && (node.children)) { node.children.forEach(function(child) { dive(child) ; }) ; } } } ; dive(node) ; return output ;\" ;\r
             var output, elt;\r
@@ -1313,7 +1833,16 @@
             };\r
             dive(node);\r
             return output;\r
-        } ; return doit(3) ;"},{"name":"nbAgParDir","label":"People per Business unit","edit":false},{"name":"nbAgParDirPie","graph":"pie","doTransition":true,"input":"var doit = function (level) {\r
+        } ; return doit(3) ;"
+            }, {
+                "name": "nbAgParDir",
+                "label": "People per Business unit",
+                "edit": false
+            }, {
+                "name": "nbAgParDirPie",
+                "graph": "pie",
+                "doTransition": true,
+                "input": "var doit = function (level) {\r
             //var delay = dm_Tools.getDelay() ; if(delay > 20) console.log('nbAgParXPie '+delay) ;\r
             //return \"var output, elt, doIt = function(node) { if(!output) { output = [] ; } elt = {} ; output.push(elt) ; elt.value = node.rawNode.nbAgents ; elt.name = node.name ; elt.unit = 'agent(s)' ; }, dive = function(node) { if(node) { if(node.level == \" + level + \") { doIt(node) ; } else if((node.level == \" + (level-1) + \") && (node.children)) { node.children.forEach(function(child) { if(child.level == \" + level + \") { doIt(child) ; } }) ; } else if((node.level < \" + (level-1) + \") && (node.children)) { node.children.forEach(function(child) { dive(child) ; }) ; } } } ; dive(node) ; return output ;\" ;\r
             var output, elt;\r
@@ -1346,7 +1875,36 @@
             };\r
             dive(node);\r
             return output;\r
-        } ; return doit(4) ;"},{"name":"nbAgParServ","label":"People per Service","edit":false},{"name":"nbAgParUnite","label":"People per Project","edit":false},{"name":"nbAgParEquipe","label":"People per Team","edit":false},{"name":"nbCatA","label":"Category A","edit":false},{"name":"nbCatB","label":"Category B","edit":false},{"name":"nbCatC","label":"Category C","edit":false},{"name":"nbAgParCatPie","graph":"pie","doTransition":true,"input":"var doit = function () {\r
+        } ; return doit(4) ;"
+            }, {
+                "name": "nbAgParServ",
+                "label": "People per Service",
+                "edit": false
+            }, {
+                "name": "nbAgParUnite",
+                "label": "People per Project",
+                "edit": false
+            }, {
+                "name": "nbAgParEquipe",
+                "label": "People per Team",
+                "edit": false
+            }, {
+                "name": "nbCatA",
+                "label": "Category A",
+                "edit": false
+            }, {
+                "name": "nbCatB",
+                "label": "Category B",
+                "edit": false
+            }, {
+                "name": "nbCatC",
+                "label": "Category C",
+                "edit": false
+            }, {
+                "name": "nbAgParCatPie",
+                "graph": "pie",
+                "doTransition": true,
+                "input": "var doit = function () {\r
             //var delay = dm_Tools.getDelay() ; if(delay > 20) console.log('nbAgParCatPie '+delay) ;\r
             //return \"var output ; if(node && node.children) { output = [ {\"value\": node.rawNode.nbCatA, \"name\": 'A', unit: 'agent(s)'}, {\"value\": node.rawNode.nbCatB, \"name\": 'B', unit: 'agent(s)'}, {\"value\": node.rawNode.nbCatC, \"name\": 'C', unit: 'agent(s)'} ] ; } return output ;\" ;\r
             var output;\r
@@ -1366,7 +1924,48 @@
                 }];\r
             }\r
             return output;\r
-        } ; return doit() ;"},{"name":"nodeZik","value":"music/ultranova105_shard.mp3","type":"music","ifCenter":"true"}]},{"name":"DG","children":[{"name":"nbDGA","label":"Number of Departments","edit":false},{"name":"nbDir","label":"Number of Business units","edit":false},{"name":"nbServ","label":"Number of Services","edit":false},{"name":"nbUnites","label":"Number of projects","edit":false},{"name":"nbEquipes","label":"Number of teams","edit":false},{"name":"nbAgents","label":"Number of people","edit":false},{"name":"nbAgParDGA","label":"People per Department","edit":false},{"name":"nbAgParDGAPie","graph":"pie","doTransition":true,"input":"var doit = function (level) {\r
+        } ; return doit() ;"
+            }, {
+                "name": "nodeZik",
+                "value": "music/ultranova105_shard.mp3",
+                "type": "music",
+                "ifCenter": "true"
+            }]
+        }, {
+            "name": "DG",
+            "children": [{
+                "name": "nbDGA",
+                "label": "Number of Departments",
+                "edit": false
+            }, {
+                "name": "nbDir",
+                "label": "Number of Business units",
+                "edit": false
+            }, {
+                "name": "nbServ",
+                "label": "Number of Services",
+                "edit": false
+            }, {
+                "name": "nbUnites",
+                "label": "Number of projects",
+                "edit": false
+            }, {
+                "name": "nbEquipes",
+                "label": "Number of teams",
+                "edit": false
+            }, {
+                "name": "nbAgents",
+                "label": "Number of people",
+                "edit": false
+            }, {
+                "name": "nbAgParDGA",
+                "label": "People per Department",
+                "edit": false
+            }, {
+                "name": "nbAgParDGAPie",
+                "graph": "pie",
+                "doTransition": true,
+                "input": "var doit = function (level) {\r
             //var delay = dm_Tools.getDelay() ; if(delay > 20) console.log('nbAgParXPie '+delay) ;\r
             //return \"var output, elt, doIt = function(node) { if(!output) { output = [] ; } elt = {} ; output.push(elt) ; elt.value = node.rawNode.nbAgents ; elt.name = node.name ; elt.unit = 'agent(s)' ; }, dive = function(node) { if(node) { if(node.level == \" + level + \") { doIt(node) ; } else if((node.level == \" + (level-1) + \") && (node.children)) { node.children.forEach(function(child) { if(child.level == \" + level + \") { doIt(child) ; } }) ; } else if((node.level < \" + (level-1) + \") && (node.children)) { node.children.forEach(function(child) { dive(child) ; }) ; } } } ; dive(node) ; return output ;\" ;\r
             var output, elt;\r
@@ -1399,7 +1998,16 @@
             };\r
             dive(node);\r
             return output;\r
-        } ; return doit(3) ;"},{"name":"nbAgParDir","label":"People per Business unit","edit":false},{"name":"nbAgParDirPie","graph":"pie","doTransition":true,"input":"var doit = function (level) {\r
+        } ; return doit(3) ;"
+            }, {
+                "name": "nbAgParDir",
+                "label": "People per Business unit",
+                "edit": false
+            }, {
+                "name": "nbAgParDirPie",
+                "graph": "pie",
+                "doTransition": true,
+                "input": "var doit = function (level) {\r
             //var delay = dm_Tools.getDelay() ; if(delay > 20) console.log('nbAgParXPie '+delay) ;\r
             //return \"var output, elt, doIt = function(node) { if(!output) { output = [] ; } elt = {} ; output.push(elt) ; elt.value = node.rawNode.nbAgents ; elt.name = node.name ; elt.unit = 'agent(s)' ; }, dive = function(node) { if(node) { if(node.level == \" + level + \") { doIt(node) ; } else if((node.level == \" + (level-1) + \") && (node.children)) { node.children.forEach(function(child) { if(child.level == \" + level + \") { doIt(child) ; } }) ; } else if((node.level < \" + (level-1) + \") && (node.children)) { node.children.forEach(function(child) { dive(child) ; }) ; } } } ; dive(node) ; return output ;\" ;\r
             var output, elt;\r
@@ -1432,7 +2040,36 @@
             };\r
             dive(node);\r
             return output;\r
-        } ; return doit(4) ;"},{"name":"nbAgParServ","label":"People per Service","edit":false},{"name":"nbAgParUnite","label":"People per Project","edit":false},{"name":"nbAgParEquipe","label":"People per Team","edit":false},{"name":"nbCatA","label":"Category A","edit":false},{"name":"nbCatB","label":"Category B","edit":false},{"name":"nbCatC","label":"Category C","edit":false},{"name":"nbAgParCatPie","graph":"pie","doTransition":true,"input":"var doit = function () {\r
+        } ; return doit(4) ;"
+            }, {
+                "name": "nbAgParServ",
+                "label": "People per Service",
+                "edit": false
+            }, {
+                "name": "nbAgParUnite",
+                "label": "People per Project",
+                "edit": false
+            }, {
+                "name": "nbAgParEquipe",
+                "label": "People per Team",
+                "edit": false
+            }, {
+                "name": "nbCatA",
+                "label": "Category A",
+                "edit": false
+            }, {
+                "name": "nbCatB",
+                "label": "Category B",
+                "edit": false
+            }, {
+                "name": "nbCatC",
+                "label": "Category C",
+                "edit": false
+            }, {
+                "name": "nbAgParCatPie",
+                "graph": "pie",
+                "doTransition": true,
+                "input": "var doit = function () {\r
             //var delay = dm_Tools.getDelay() ; if(delay > 20) console.log('nbAgParCatPie '+delay) ;\r
             //return \"var output ; if(node && node.children) { output = [ {\"value\": node.rawNode.nbCatA, \"name\": 'A', unit: 'agent(s)'}, {\"value\": node.rawNode.nbCatB, \"name\": 'B', unit: 'agent(s)'}, {\"value\": node.rawNode.nbCatC, \"name\": 'C', unit: 'agent(s)'} ] ; } return output ;\" ;\r
             var output;\r
@@ -1452,7 +2089,47 @@
                 }];\r
             }\r
             return output;\r
-        } ; return doit() ;"},{"name":"nodeZik","value":"music/ultranova105_shard.mp3","type":"music","ifCenter":"true"}]},{"name":"DGA","children":[{"name":"Libell__DGA","label":"Department"},{"name":"nbDir","label":"Number of Business units","edit":false},{"name":"nbServ","label":"Number of Services","edit":false},{"name":"nbUnites","label":"Number of projects","edit":false},{"name":"nbEquipes","label":"Number of teams","edit":false},{"name":"nbAgents","label":"Number of people","edit":false},{"name":"nbAgParDir","label":"People per Business unit","edit":false},{"name":"nbAgParDirPie","graph":"pie","doTransition":true,"input":"var doit = function (level) {\r
+        } ; return doit() ;"
+            }, {
+                "name": "nodeZik",
+                "value": "music/ultranova105_shard.mp3",
+                "type": "music",
+                "ifCenter": "true"
+            }]
+        }, {
+            "name": "DGA",
+            "children": [{
+                "name": "Libell__DGA",
+                "label": "Department"
+            }, {
+                "name": "nbDir",
+                "label": "Number of Business units",
+                "edit": false
+            }, {
+                "name": "nbServ",
+                "label": "Number of Services",
+                "edit": false
+            }, {
+                "name": "nbUnites",
+                "label": "Number of projects",
+                "edit": false
+            }, {
+                "name": "nbEquipes",
+                "label": "Number of teams",
+                "edit": false
+            }, {
+                "name": "nbAgents",
+                "label": "Number of people",
+                "edit": false
+            }, {
+                "name": "nbAgParDir",
+                "label": "People per Business unit",
+                "edit": false
+            }, {
+                "name": "nbAgParDirPie",
+                "graph": "pie",
+                "doTransition": true,
+                "input": "var doit = function (level) {\r
             //var delay = dm_Tools.getDelay() ; if(delay > 20) console.log('nbAgParXPie '+delay) ;\r
             //return \"var output, elt, doIt = function(node) { if(!output) { output = [] ; } elt = {} ; output.push(elt) ; elt.value = node.rawNode.nbAgents ; elt.name = node.name ; elt.unit = 'agent(s)' ; }, dive = function(node) { if(node) { if(node.level == \" + level + \") { doIt(node) ; } else if((node.level == \" + (level-1) + \") && (node.children)) { node.children.forEach(function(child) { if(child.level == \" + level + \") { doIt(child) ; } }) ; } else if((node.level < \" + (level-1) + \") && (node.children)) { node.children.forEach(function(child) { dive(child) ; }) ; } } } ; dive(node) ; return output ;\" ;\r
             var output, elt;\r
@@ -1485,7 +2162,16 @@
             };\r
             dive(node);\r
             return output;\r
-        } ; return doit(4) ;"},{"name":"nbAgParServ","label":"People per Service","edit":false},{"name":"nbAgParServPie","graph":"pie","doTransition":true,"input":"var doit = function (level) {\r
+        } ; return doit(4) ;"
+            }, {
+                "name": "nbAgParServ",
+                "label": "People per Service",
+                "edit": false
+            }, {
+                "name": "nbAgParServPie",
+                "graph": "pie",
+                "doTransition": true,
+                "input": "var doit = function (level) {\r
             //var delay = dm_Tools.getDelay() ; if(delay > 20) console.log('nbAgParXPie '+delay) ;\r
             //return \"var output, elt, doIt = function(node) { if(!output) { output = [] ; } elt = {} ; output.push(elt) ; elt.value = node.rawNode.nbAgents ; elt.name = node.name ; elt.unit = 'agent(s)' ; }, dive = function(node) { if(node) { if(node.level == \" + level + \") { doIt(node) ; } else if((node.level == \" + (level-1) + \") && (node.children)) { node.children.forEach(function(child) { if(child.level == \" + level + \") { doIt(child) ; } }) ; } else if((node.level < \" + (level-1) + \") && (node.children)) { node.children.forEach(function(child) { dive(child) ; }) ; } } } ; dive(node) ; return output ;\" ;\r
             var output, elt;\r
@@ -1518,7 +2204,32 @@
             };\r
             dive(node);\r
             return output;\r
-        } ; return doit(5) ;"},{"name":"nbAgParUnite","label":"People per Project","edit":false},{"name":"nbAgParEquipe","label":"People per Team","edit":false},{"name":"nbCatA","label":"Category A","edit":false},{"name":"nbCatB","label":"Category B","edit":false},{"name":"nbCatC","label":"Category C","edit":false},{"name":"nbAgParCatPie","graph":"pie","doTransition":true,"input":"var doit = function () {\r
+        } ; return doit(5) ;"
+            }, {
+                "name": "nbAgParUnite",
+                "label": "People per Project",
+                "edit": false
+            }, {
+                "name": "nbAgParEquipe",
+                "label": "People per Team",
+                "edit": false
+            }, {
+                "name": "nbCatA",
+                "label": "Category A",
+                "edit": false
+            }, {
+                "name": "nbCatB",
+                "label": "Category B",
+                "edit": false
+            }, {
+                "name": "nbCatC",
+                "label": "Category C",
+                "edit": false
+            }, {
+                "name": "nbAgParCatPie",
+                "graph": "pie",
+                "doTransition": true,
+                "input": "var doit = function () {\r
             //var delay = dm_Tools.getDelay() ; if(delay > 20) console.log('nbAgParCatPie '+delay) ;\r
             //return \"var output ; if(node && node.children) { output = [ {\"value\": node.rawNode.nbCatA, \"name\": 'A', unit: 'agent(s)'}, {\"value\": node.rawNode.nbCatB, \"name\": 'B', unit: 'agent(s)'}, {\"value\": node.rawNode.nbCatC, \"name\": 'C', unit: 'agent(s)'} ] ; } return output ;\" ;\r
             var output;\r
@@ -1538,7 +2249,50 @@
                 }];\r
             }\r
             return output;\r
-        } ; return doit() ;"},{"name":"codeFinance","label":"Financial code","edit":false},{"name":"nodeZik","value":"music/ultranova105_shard.mp3","type":"music","ifCenter":"true"}]},{"name":"Direction","children":[{"name":"Libell__DGA","label":"Department"},{"name":"Libell__Direction","label":"Business unit"},{"name":"nbServ","label":"Number of Services","edit":false},{"name":"nbUnites","label":"Number of projects","edit":false},{"name":"nbEquipes","label":"Number of teams","edit":false},{"name":"nbAgents","label":"Number of people","edit":false},{"name":"nbAgParServ","label":"People per Service","edit":false},{"name":"nbAgParServPie","graph":"pie","doTransition":true,"input":"var doit = function (level) {\r
+        } ; return doit() ;"
+            }, {
+                "name": "codeFinance",
+                "label": "Financial code",
+                "edit": false
+            }, {
+                "name": "nodeZik",
+                "value": "music/ultranova105_shard.mp3",
+                "type": "music",
+                "ifCenter": "true"
+            }]
+        }, {
+            "name": "Direction",
+            "children": [{
+                "name": "Libell__DGA",
+                "label": "Department"
+            }, {
+                "name": "Libell__Direction",
+                "label": "Business unit"
+            }, {
+                "name": "nbServ",
+                "label": "Number of Services",
+                "edit": false
+            }, {
+                "name": "nbUnites",
+                "label": "Number of projects",
+                "edit": false
+            }, {
+                "name": "nbEquipes",
+                "label": "Number of teams",
+                "edit": false
+            }, {
+                "name": "nbAgents",
+                "label": "Number of people",
+                "edit": false
+            }, {
+                "name": "nbAgParServ",
+                "label": "People per Service",
+                "edit": false
+            }, {
+                "name": "nbAgParServPie",
+                "graph": "pie",
+                "doTransition": true,
+                "input": "var doit = function (level) {\r
             //var delay = dm_Tools.getDelay() ; if(delay > 20) console.log('nbAgParXPie '+delay) ;\r
             //return \"var output, elt, doIt = function(node) { if(!output) { output = [] ; } elt = {} ; output.push(elt) ; elt.value = node.rawNode.nbAgents ; elt.name = node.name ; elt.unit = 'agent(s)' ; }, dive = function(node) { if(node) { if(node.level == \" + level + \") { doIt(node) ; } else if((node.level == \" + (level-1) + \") && (node.children)) { node.children.forEach(function(child) { if(child.level == \" + level + \") { doIt(child) ; } }) ; } else if((node.level < \" + (level-1) + \") && (node.children)) { node.children.forEach(function(child) { dive(child) ; }) ; } } } ; dive(node) ; return output ;\" ;\r
             var output, elt;\r
@@ -1571,7 +2325,16 @@
             };\r
             dive(node);\r
             return output;\r
-        } ; return doit(5) ;"},{"name":"nbAgParUnite","label":"People per Project","edit":false},{"name":"nbAgParUnitePie","graph":"pie","doTransition":true,"input":"var doit = function (level) {\r
+        } ; return doit(5) ;"
+            }, {
+                "name": "nbAgParUnite",
+                "label": "People per Project",
+                "edit": false
+            }, {
+                "name": "nbAgParUnitePie",
+                "graph": "pie",
+                "doTransition": true,
+                "input": "var doit = function (level) {\r
             //var delay = dm_Tools.getDelay() ; if(delay > 20) console.log('nbAgParXPie '+delay) ;\r
             //return \"var output, elt, doIt = function(node) { if(!output) { output = [] ; } elt = {} ; output.push(elt) ; elt.value = node.rawNode.nbAgents ; elt.name = node.name ; elt.unit = 'agent(s)' ; }, dive = function(node) { if(node) { if(node.level == \" + level + \") { doIt(node) ; } else if((node.level == \" + (level-1) + \") && (node.children)) { node.children.forEach(function(child) { if(child.level == \" + level + \") { doIt(child) ; } }) ; } else if((node.level < \" + (level-1) + \") && (node.children)) { node.children.forEach(function(child) { dive(child) ; }) ; } } } ; dive(node) ; return output ;\" ;\r
             var output, elt;\r
@@ -1604,7 +2367,28 @@
             };\r
             dive(node);\r
             return output;\r
-        } ; return doit(6) ;"},{"name":"nbAgParEquipe","label":"People per Team","edit":false},{"name":"nbCatA","label":"Category A","edit":false},{"name":"nbCatB","label":"Category B","edit":false},{"name":"nbCatC","label":"Category C","edit":false},{"name":"nbAgParCatPie","graph":"pie","doTransition":true,"input":"var doit = function () {\r
+        } ; return doit(6) ;"
+            }, {
+                "name": "nbAgParEquipe",
+                "label": "People per Team",
+                "edit": false
+            }, {
+                "name": "nbCatA",
+                "label": "Category A",
+                "edit": false
+            }, {
+                "name": "nbCatB",
+                "label": "Category B",
+                "edit": false
+            }, {
+                "name": "nbCatC",
+                "label": "Category C",
+                "edit": false
+            }, {
+                "name": "nbAgParCatPie",
+                "graph": "pie",
+                "doTransition": true,
+                "input": "var doit = function () {\r
             //var delay = dm_Tools.getDelay() ; if(delay > 20) console.log('nbAgParCatPie '+delay) ;\r
             //return \"var output ; if(node && node.children) { output = [ {\"value\": node.rawNode.nbCatA, \"name\": 'A', unit: 'agent(s)'}, {\"value\": node.rawNode.nbCatB, \"name\": 'B', unit: 'agent(s)'}, {\"value\": node.rawNode.nbCatC, \"name\": 'C', unit: 'agent(s)'} ] ; } return output ;\" ;\r
             var output;\r
@@ -1624,7 +2408,49 @@
                 }];\r
             }\r
             return output;\r
-        } ; return doit() ;"},{"name":"codeFinance","label":"Financial code","edit":false},{"name":"nodeZik","value":"music/ultranova105_shard.mp3","type":"music","ifCenter":"true"}]},{"name":"service","children":[{"name":"Libell__DGA","label":"Department"},{"name":"Libell__Direction","label":"Business unit"},{"name":"Libell__Service","label":"Service"},{"name":"nbUnites","label":"Number of projects","edit":false},{"name":"nbEquipes","label":"Number of teams","edit":false},{"name":"nbAgents","label":"Number of people","edit":false},{"name":"nbAgParUnite","label":"People per Project","edit":false},{"name":"nbAgParUnitePie","graph":"pie","doTransition":true,"input":"var doit = function (level) {\r
+        } ; return doit() ;"
+            }, {
+                "name": "codeFinance",
+                "label": "Financial code",
+                "edit": false
+            }, {
+                "name": "nodeZik",
+                "value": "music/ultranova105_shard.mp3",
+                "type": "music",
+                "ifCenter": "true"
+            }]
+        }, {
+            "name": "service",
+            "children": [{
+                "name": "Libell__DGA",
+                "label": "Department"
+            }, {
+                "name": "Libell__Direction",
+                "label": "Business unit"
+            }, {
+                "name": "Libell__Service",
+                "label": "Service"
+            }, {
+                "name": "nbUnites",
+                "label": "Number of projects",
+                "edit": false
+            }, {
+                "name": "nbEquipes",
+                "label": "Number of teams",
+                "edit": false
+            }, {
+                "name": "nbAgents",
+                "label": "Number of people",
+                "edit": false
+            }, {
+                "name": "nbAgParUnite",
+                "label": "People per Project",
+                "edit": false
+            }, {
+                "name": "nbAgParUnitePie",
+                "graph": "pie",
+                "doTransition": true,
+                "input": "var doit = function (level) {\r
             //var delay = dm_Tools.getDelay() ; if(delay > 20) console.log('nbAgParXPie '+delay) ;\r
             //return \"var output, elt, doIt = function(node) { if(!output) { output = [] ; } elt = {} ; output.push(elt) ; elt.value = node.rawNode.nbAgents ; elt.name = node.name ; elt.unit = 'agent(s)' ; }, dive = function(node) { if(node) { if(node.level == \" + level + \") { doIt(node) ; } else if((node.level == \" + (level-1) + \") && (node.children)) { node.children.forEach(function(child) { if(child.level == \" + level + \") { doIt(child) ; } }) ; } else if((node.level < \" + (level-1) + \") && (node.children)) { node.children.forEach(function(child) { dive(child) ; }) ; } } } ; dive(node) ; return output ;\" ;\r
             var output, elt;\r
@@ -1657,7 +2483,16 @@
             };\r
             dive(node);\r
             return output;\r
-        } ; return doit(6) ;"},{"name":"nbAgParEquipe","label":"People per Team","edit":false},{"name":"nbAgParEquipePie","graph":"pie","doTransition":true,"input":"var doit = function (level) {\r
+        } ; return doit(6) ;"
+            }, {
+                "name": "nbAgParEquipe",
+                "label": "People per Team",
+                "edit": false
+            }, {
+                "name": "nbAgParEquipePie",
+                "graph": "pie",
+                "doTransition": true,
+                "input": "var doit = function (level) {\r
             //var delay = dm_Tools.getDelay() ; if(delay > 20) console.log('nbAgParXPie '+delay) ;\r
             //return \"var output, elt, doIt = function(node) { if(!output) { output = [] ; } elt = {} ; output.push(elt) ; elt.value = node.rawNode.nbAgents ; elt.name = node.name ; elt.unit = 'agent(s)' ; }, dive = function(node) { if(node) { if(node.level == \" + level + \") { doIt(node) ; } else if((node.level == \" + (level-1) + \") && (node.children)) { node.children.forEach(function(child) { if(child.level == \" + level + \") { doIt(child) ; } }) ; } else if((node.level < \" + (level-1) + \") && (node.children)) { node.children.forEach(function(child) { dive(child) ; }) ; } } } ; dive(node) ; return output ;\" ;\r
             var output, elt;\r
@@ -1690,7 +2525,24 @@
             };\r
             dive(node);\r
             return output;\r
-        } ; return doit(7) ;"},{"name":"nbCatA","label":"Category A","edit":false},{"name":"nbCatB","label":"Category B","edit":false},{"name":"nbCatC","label":"Category C","edit":false},{"name":"nbAgParCatPie","graph":"pie","doTransition":true,"input":"var doit = function () {\r
+        } ; return doit(7) ;"
+            }, {
+                "name": "nbCatA",
+                "label": "Category A",
+                "edit": false
+            }, {
+                "name": "nbCatB",
+                "label": "Category B",
+                "edit": false
+            }, {
+                "name": "nbCatC",
+                "label": "Category C",
+                "edit": false
+            }, {
+                "name": "nbAgParCatPie",
+                "graph": "pie",
+                "doTransition": true,
+                "input": "var doit = function () {\r
             //var delay = dm_Tools.getDelay() ; if(delay > 20) console.log('nbAgParCatPie '+delay) ;\r
             //return \"var output ; if(node && node.children) { output = [ {\"value\": node.rawNode.nbCatA, \"name\": 'A', unit: 'agent(s)'}, {\"value\": node.rawNode.nbCatB, \"name\": 'B', unit: 'agent(s)'}, {\"value\": node.rawNode.nbCatC, \"name\": 'C', unit: 'agent(s)'} ] ; } return output ;\" ;\r
             var output;\r
@@ -1710,7 +2562,48 @@
                 }];\r
             }\r
             return output;\r
-        } ; return doit() ;"},{"name":"codeFinance","label":"Financial code","edit":false},{"name":"nodeZik","value":"music/ultranova105_shard.mp3","type":"music","ifCenter":"true"}]},{"name":"unité","children":[{"name":"Libell__DGA","label":"Department"},{"name":"Libell__Direction","label":"Business unit"},{"name":"Libell__Service","label":"Service"},{"name":"Libell__Unit_","label":"Project"},{"name":"nbEquipes","label":"Number of teams","edit":false},{"name":"nbAgents","label":"Number of people","edit":false},{"name":"nbAgParEquipe","label":"People per Team","edit":false},{"name":"nbAgParEquipePie","graph":"pie","doTransition":true,"input":"var doit = function (level) {\r
+        } ; return doit() ;"
+            }, {
+                "name": "codeFinance",
+                "label": "Financial code",
+                "edit": false
+            }, {
+                "name": "nodeZik",
+                "value": "music/ultranova105_shard.mp3",
+                "type": "music",
+                "ifCenter": "true"
+            }]
+        }, {
+            "name": "unité",
+            "children": [{
+                "name": "Libell__DGA",
+                "label": "Department"
+            }, {
+                "name": "Libell__Direction",
+                "label": "Business unit"
+            }, {
+                "name": "Libell__Service",
+                "label": "Service"
+            }, {
+                "name": "Libell__Unit_",
+                "label": "Project"
+            }, {
+                "name": "nbEquipes",
+                "label": "Number of teams",
+                "edit": false
+            }, {
+                "name": "nbAgents",
+                "label": "Number of people",
+                "edit": false
+            }, {
+                "name": "nbAgParEquipe",
+                "label": "People per Team",
+                "edit": false
+            }, {
+                "name": "nbAgParEquipePie",
+                "graph": "pie",
+                "doTransition": true,
+                "input": "var doit = function (level) {\r
             //var delay = dm_Tools.getDelay() ; if(delay > 20) console.log('nbAgParXPie '+delay) ;\r
             //return \"var output, elt, doIt = function(node) { if(!output) { output = [] ; } elt = {} ; output.push(elt) ; elt.value = node.rawNode.nbAgents ; elt.name = node.name ; elt.unit = 'agent(s)' ; }, dive = function(node) { if(node) { if(node.level == \" + level + \") { doIt(node) ; } else if((node.level == \" + (level-1) + \") && (node.children)) { node.children.forEach(function(child) { if(child.level == \" + level + \") { doIt(child) ; } }) ; } else if((node.level < \" + (level-1) + \") && (node.children)) { node.children.forEach(function(child) { dive(child) ; }) ; } } } ; dive(node) ; return output ;\" ;\r
             var output, elt;\r
@@ -1743,7 +2636,24 @@
             };\r
             dive(node);\r
             return output;\r
-        } ; return doit(7) ;"},{"name":"nbCatA","label":"Category A","edit":false},{"name":"nbCatB","label":"Category B","edit":false},{"name":"nbCatC","label":"Category C","edit":false},{"name":"nbAgParCatPie","graph":"pie","doTransition":true,"input":"var doit = function () {\r
+        } ; return doit(7) ;"
+            }, {
+                "name": "nbCatA",
+                "label": "Category A",
+                "edit": false
+            }, {
+                "name": "nbCatB",
+                "label": "Category B",
+                "edit": false
+            }, {
+                "name": "nbCatC",
+                "label": "Category C",
+                "edit": false
+            }, {
+                "name": "nbAgParCatPie",
+                "graph": "pie",
+                "doTransition": true,
+                "input": "var doit = function () {\r
             //var delay = dm_Tools.getDelay() ; if(delay > 20) console.log('nbAgParCatPie '+delay) ;\r
             //return \"var output ; if(node && node.children) { output = [ {\"value\": node.rawNode.nbCatA, \"name\": 'A', unit: 'agent(s)'}, {\"value\": node.rawNode.nbCatB, \"name\": 'B', unit: 'agent(s)'}, {\"value\": node.rawNode.nbCatC, \"name\": 'C', unit: 'agent(s)'} ] ; } return output ;\" ;\r
             var output;\r
@@ -1763,7 +2673,55 @@
                 }];\r
             }\r
             return output;\r
-        } ; return doit() ;"},{"name":"codeFinance","label":"Financial code","edit":false},{"name":"nodeZik","value":"music/ultranova105_shard.mp3","type":"music","ifCenter":"true"}]},{"name":"Equipe","children":[{"name":"Libell__DGA","label":"Department"},{"name":"Libell__Direction","label":"Business unit"},{"name":"Libell__Service","label":"Service"},{"name":"Libell__Unit_","label":"Project"},{"name":"Libell__Equipe","label":"Team"},{"name":"nbAgents","label":"Number of people","edit":false},{"name":"nbCatA","label":"Category A","edit":false},{"name":"nbCatB","label":"Category B","edit":false},{"name":"nbCatC","label":"Category C","edit":false},{"name":"nbAgParCatPie","graph":"pie","doTransition":true,"input":"var doit = function () {\r
+        } ; return doit() ;"
+            }, {
+                "name": "codeFinance",
+                "label": "Financial code",
+                "edit": false
+            }, {
+                "name": "nodeZik",
+                "value": "music/ultranova105_shard.mp3",
+                "type": "music",
+                "ifCenter": "true"
+            }]
+        }, {
+            "name": "Equipe",
+            "children": [{
+                "name": "Libell__DGA",
+                "label": "Department"
+            }, {
+                "name": "Libell__Direction",
+                "label": "Business unit"
+            }, {
+                "name": "Libell__Service",
+                "label": "Service"
+            }, {
+                "name": "Libell__Unit_",
+                "label": "Project"
+            }, {
+                "name": "Libell__Equipe",
+                "label": "Team"
+            }, {
+                "name": "nbAgents",
+                "label": "Number of people",
+                "edit": false
+            }, {
+                "name": "nbCatA",
+                "label": "Category A",
+                "edit": false
+            }, {
+                "name": "nbCatB",
+                "label": "Category B",
+                "edit": false
+            }, {
+                "name": "nbCatC",
+                "label": "Category C",
+                "edit": false
+            }, {
+                "name": "nbAgParCatPie",
+                "graph": "pie",
+                "doTransition": true,
+                "input": "var doit = function () {\r
             //var delay = dm_Tools.getDelay() ; if(delay > 20) console.log('nbAgParCatPie '+delay) ;\r
             //return \"var output ; if(node && node.children) { output = [ {\"value\": node.rawNode.nbCatA, \"name\": 'A', unit: 'agent(s)'}, {\"value\": node.rawNode.nbCatB, \"name\": 'B', unit: 'agent(s)'}, {\"value\": node.rawNode.nbCatC, \"name\": 'C', unit: 'agent(s)'} ] ; } return output ;\" ;\r
             var output;\r
@@ -1783,5 +2741,76 @@
                 }];\r
             }\r
             return output;\r
-        } ; return doit() ;"},{"name":"codeFinance","label":"Financial code","edit":false},{"name":"nodeZik","value":"music/ultranova105_shard.mp3","type":"music","ifCenter":"true"}]},{"name":"Agent","children":[{"name":"Nom","label":"LastName"},{"name":"Pr_nom","label":"FirstName"},{"name":"Libell__Ville_ou_CASA","label":"Site"},{"name":"Libell__DGA","label":"Department"},{"name":"Libell__Direction","label":"Business unit"},{"name":"Libell__Service","label":"Service"},{"name":"Libell__Unit_","label":"Project"},{"name":"Libell__Equipe","label":"Team"},{"name":"D_nomination_du_poste","label":"Mission code"},{"name":"Code_cat_gorie","label":"Category"},{"name":"Libelle_fonction","label":"Position"},{"name":"Libell__long_grade","label":"Rank"},{"name":"T_l_phone","label":"Phone"},{"name":"Mobile","label":"Mobile phone"},{"name":"Mail","label":"Mail"},{"name":"Login","label":"Login"},{"name":"Sexe","label":"Sexe"},{"name":"Matricule","label":"Identifier"}]}],"dm_DatamapName":"hr.config.json","root.dm_props":{"name":"root","label":"root","type":"text"},"center.dm_props":{"name":"center","label":"center","type":"text"},"noLeafInReport.dm_props":{"name":"noLeafInReport","label":"noLeafInReport","type":"text"},"columnNames.dm_props":{"name":"columnNames","label":"columnNames","type":"text"},"columns.dm_props":{"name":"columns","label":"columns","type":"text"},"depth.dm_props":{"name":"depth","label":"depth","type":"text"},"sort.dm_props":{"name":"sort","label":"sort","type":"text"},"sortDescendant.dm_props":{"name":"sortDescendant","label":"sortDescendant","type":"text"},"dm_DatamapName.dm_props":{"name":"dm_DatamapName","label":"dm_DatamapName","type":"text"},"props4globalSearch.dm_props":{"name":"props4globalSearch","label":"props4globalSearch","type":"text"},"maxDepthForExport":8,"maxDepthForExport.dm_props":{"name":"maxDepthForExport","label":"maxDepthForExport","type":"text"}}
+        } ; return doit() ;"
+            }, {
+                "name": "codeFinance",
+                "label": "Financial code",
+                "edit": false
+            }, {
+                "name": "nodeZik",
+                "value": "music/ultranova105_shard.mp3",
+                "type": "music",
+                "ifCenter": "true"
+            }]
+        }, {
+            "name": "Agent",
+            "children": [{
+                "name": "Nom",
+                "label": "LastName"
+            }, {
+                "name": "Pr_nom",
+                "label": "FirstName"
+            }, {
+                "name": "Libell__Ville_ou_CASA",
+                "label": "Site"
+            }, {
+                "name": "Libell__DGA",
+                "label": "Department"
+            }, {
+                "name": "Libell__Direction",
+                "label": "Business unit"
+            }, {
+                "name": "Libell__Service",
+                "label": "Service"
+            }, {
+                "name": "Libell__Unit_",
+                "label": "Project"
+            }, {
+                "name": "Libell__Equipe",
+                "label": "Team"
+            }, {
+                "name": "D_nomination_du_poste",
+                "label": "Mission code"
+            }, {
+                "name": "Code_cat_gorie",
+                "label": "Category"
+            }, {
+                "name": "Libelle_fonction",
+                "label": "Position"
+            }, {
+                "name": "Libell__long_grade",
+                "label": "Rank"
+            }, {
+                "name": "T_l_phone",
+                "label": "Phone"
+            }, {
+                "name": "Mobile",
+                "label": "Mobile phone"
+            }, {
+                "name": "Mail",
+                "label": "Mail"
+            }, {
+                "name": "Login",
+                "label": "Login"
+            }, {
+                "name": "Sexe",
+                "label": "Sexe"
+            }, {
+                "name": "Matricule",
+                "label": "Identifier"
+            }]
+        }],
+        "dm_DatamapName": "hr.config.json",
+        "maxDepthForExport": 8
+    }
 }
