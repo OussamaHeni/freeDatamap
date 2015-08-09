@@ -10,7 +10,7 @@
 		<title>FreeDatamap</title>
 		
 		<!--meta name="viewport" content="width=device-width, initial-scale=1.0"-->
-		<meta name = "viewport" content = "user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+		<meta name = "viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
 		<!--meta name = "viewport" content = "user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width /"-->
 		<meta name="apple-mobile-web-app-capable" content="yes"/>
 
@@ -41,8 +41,11 @@
 		<!--link href="libs/dat-gui-light-theme/dat-gui-light-theme.min.css" rel="stylesheet"-->
 		<!-- WARNING CSSMIN WILL MANGLE PROPERTIES THAT MAY BE ACCESSED FROM JS, SO JS CALLS DOES NOT WORK WITH MANGLED CSS-->
 		<link href="styles/default.min.css" rel="stylesheet">
-		<link href="libs/dataTables/media/css/jquery.dataTables.min.css" rel="stylesheet"></link>
+		<!--link href="libs/dataTables/media/css/jquery.dataTables.min.css" rel="stylesheet"></link-->
 		<link href="libs/handsontable/handsontable.full.min.css" rel="stylesheet" media="screen"></link>
+		<link href="libs/leaflet/leaflet.min.css" rel="stylesheet"></link>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 		<!--link href="libs/jquery-mobile/jquery.mobile-1.4.3.min.css" rel="stylesheet"-->
 		<!--link rel="shortcut icon" href="libs/bootstrap/ico/favicon.ico">
 		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="libs/bootstrap/ico/apple-touch-icon-144-precomposed.png">
@@ -72,7 +75,6 @@
 	</head>
 	<!--body onload="onBodyLoad()"-->
 	<body id="freeDatamapBody">
-
 		<script type="text/javascript" charset="utf-8">
 			dm_UI_minimumWidthToDisplayAttrPanel = 540 ;
 		</script>
@@ -110,6 +112,7 @@
 		<script type="text/javascript" charset="utf-8" src="libs/jquery-getBrowser-hack.js"></script>
 		
 		<!--script type="text/javascript" charset="utf-8" src="libs/jquery.xdomainajax.min.js"></script-->
+		<!--script type="text/javascript" charset="utf-8" src="libs/topojson/distillery_lib.min.js"></script-->
 		<script type="text/javascript" charset="utf-8" src="libs/d3/d3.v3.min.js"></script>
 		<!-- before anything because used inside html-->
 		<script type="text/javascript" charset="utf-8">
@@ -309,7 +312,7 @@
 							<abbr
 title=
 "Go back to the previous selected node."
-								style="border-bottom: none;">
+style="border-bottom:none; text-decoration:none;">
 								<img src="images/prev.png" width=24 height=24 style="margin:0px"/>
 								<!--i class="icon-arrow-left icon-white"></i-->
 							</abbr>
@@ -320,7 +323,7 @@ title=
 								<abbr
 title=
 "Go to the root node of this map."
-									style="border-bottom: none;">
+style="border-bottom:none; text-decoration:none;">
 									<img src="images/homepage.png" width=24 height=24 style="margin:0px"/>
 									<!--i class="icon-home"></i-->
 								</abbr>
@@ -360,7 +363,7 @@ title=
 								<abbr
 title=
 "Load, save, etc..."
-									style="border-bottom: none;">
+style="border-bottom:none; text-decoration:none;">
 									<!--i class="icon-cogs icon-large icon-white"></i-->
 									<img src="images/configure.png" width=24 height=24 style="margin:0px"/>
 									<span class="caret"></span>
@@ -391,7 +394,7 @@ title=
 "Load all sub maps.
 When some nodes of your current map point to nested maps,
 you can load all the nested maps, in one shot, using this button."
-										style="border-bottom: none;">
+style="border-bottom:none; text-decoration:none;">
 											<img src="images/load all.png" width=24 height=24 style="margin:0px"/>
 											<!--i class="icon-share-alt icon-large icon-white"></i-->
 												&nbsp;&nbsp;Load all
@@ -406,7 +409,7 @@ you can load all the nested maps, in one shot, using this button."
 title=
 "Save your map in different formats.
 Automatically builds a report from where you are in the map."
-										style="border-bottom: none;">
+style="border-bottom:none; text-decoration:none;">
 											<img src="images/save.png" width=24 height=24 style="margin:0px"/>
 											<!--i class="icon-download-alt icon-large"></i-->
 											&nbsp;&nbsp;Save as...
@@ -421,19 +424,19 @@ Automatically builds a report from where you are in the map."
 title=
 "Load another map or data source from your local file system,
 and add this map as a child of the focused node."
-										style="border-bottom: none;">
+style="border-bottom:none; text-decoration:none;">
 											<img src="images/importFile.png" width=24 height=24 style="margin:0px"/>
 											&nbsp;&nbsp;Open file
 										</abbr>
 									</button>
 								</li>
-								<!--li id="adminButtonContainer">
+								<li id="adminButtonContainer">
 									<button class="btn btn-large btn-warning dm_resizableBtn"
 									id="adminButton"
 									style="font-size:12px; margin-left:5px; min-width: 130px; text-align: left;">
 									<img src="images/customize.png" width=24 height=24 style="margin:0px"/>
-									&nbsp;&nbsp;Admin</button>
-								</li-->
+									&nbsp;&nbsp;Config</button>
+								</li>
 							</ul>
 							<script type="text/javascript" charset="utf-8">
 								if(dm_BeforeAll.readOnlyConfig) {
@@ -450,11 +453,20 @@ and add this map as a child of the focused node."
 						<button id="bottomRefreshButton" class="btn btn-large dm_resizableBtn" style="position:absolute; top:-200px; left:-200px; z-index:1">
 							<abbr
 title=
-"Refresh the map : reload the source and recompute all the aggregations.
-This will discard all manual changes in node-specific properties."
-								style="border-bottom: none;">
+"Refresh the map : recompute all the aggregations."
+style="border-bottom:none; text-decoration:none;">
 								<img src="images/refresh.png" width=24 height=24 style="margin:0px"/>
 								<!--i class="icon-refresh"></i-->
+							</abbr>
+						</button>
+						<button id="bottomExitConfigButton" class="btn btn-large btn-success dm_resizableBtn" style="position:absolute; top:-200px; left:-200px; z-index:1; display:none;">
+							<abbr
+title=
+"Exit from configuration mode and go back to the datamap."
+style="border-bottom:none; text-decoration:none;">
+								<img src="images/configExit.png" width=24 height=24 style="margin:0px"/>
+								<!--i class="icon-refresh"></i-->
+								&nbsp;&nbsp;Exit configuration
 							</abbr>
 						</button>
 						<button id="bottomTooltipActionsButton" class="btn btn-large btn-info dm_resizableBtn" style="position:absolute; top:-200px; left:-200px; z-index:1">
@@ -462,7 +474,7 @@ This will discard all manual changes in node-specific properties."
 title=
 "Edit the map : add or remove a node, change its level,
 copy or paste, edit node's properties, etc."
-								style="border-bottom: none;">
+style="border-bottom:none; text-decoration:none;">
 								<img src="images/wrench.png" width=24 height=24 style="margin:0px"/>
 								<!--i class="icon-wrench icon-white"></i-->
 							</abbr>
@@ -544,8 +556,10 @@ copy or paste, edit node's properties, etc."
 								var offsetX2 = ((dm_UI_zoomLevel >= 1)?0:((dm_UI_zoomLevel > 0.5)?13:18)) ;
 								var buttonW = ((dm_UI_zoomLevel >= 1)?59:((dm_UI_zoomLevel > 0.5)?46:41)) ;
 								var buttonH = ((dm_UI_zoomLevel >= 1)?48:((dm_UI_zoomLevel > 0.5)?37:30)) ;
-								var slideBtnW = ((dm_UI_zoomLevel >= 1)?44:((dm_UI_zoomLevel > 0.5)?31:31)) ;
+								var offsetX3 = ((dm_UI_zoomLevel >= 1)?18:((dm_UI_zoomLevel > 0.5)?16:15)) ;
+								var offsetX2 = ((dm_UI_zoomLevel >= 1)?0:((dm_UI_zoomLevel > 0.5)?13:18)) ;
 								var slideBtnH = ((dm_UI_zoomLevel >= 1)?78:((dm_UI_zoomLevel > 0.5)?67:60)) ;
+								var slideBtnW = ((dm_UI_zoomLevel >= 1)?44:((dm_UI_zoomLevel > 0.5)?31:31)) ;
 								var attrPanelWidth = dm_UI_getAttributesPanelWidth() / dm_UI_calculateZoom() ;
 								d3.select("#graph_buttonsLayer").select("#navigationLeftDropDownUl")
 									.style("top", "" + (59 - offsetY2) + "px") ;
@@ -557,12 +571,16 @@ copy or paste, edit node's properties, etc."
 								d3.select("#graph_buttonsLayer").select("#bottomRefreshButton")
 								.style("top", "" + (dm_UI_getBodyHeight() - offsetY1 - 8 - 54 + offsetY2) + "px")
 								.style("left", "" + /*(79 - offsetX1)*/ 5 + "px") ;
+								var bottomLeftX = (dm_UI_getWidth() - attrPanelWidth - 54 - (15 / dm_UI_calculateZoom()) + offsetX2) ;
 								d3.select("#graph_buttonsLayer").select("#bottomTooltipActionsButton")
 								.style("top", "" + (dm_UI_getBodyHeight() - offsetY1 - 8) + "px")
-								.style("left", "" + (dm_UI_getWidth() - attrPanelWidth - 54 - (15 / dm_UI_calculateZoom()) + offsetX2) + "px") ;
+								.style("left", "" + bottomLeftX + "px") ;
+								d3.select("#graph_buttonsLayer").select("#bottomExitConfigButton")
+								.style("top", "" + (dm_UI_getBodyHeight() - offsetY1 - 8) + "px")
+								.style("left", "" + (buttonW + offsetX3) + "px") ;
 								d3.select("#graph_buttonsLayer").select("#bottomSheetButton")
 								.style("top", "" + (dm_UI_getBodyHeight() - offsetY1 - 8 - 54 + offsetY2) + "px")
-								.style("left", "" + (dm_UI_getWidth() - attrPanelWidth - 54 - (15 / dm_UI_calculateZoom()) + offsetX2) + "px") ;
+								.style("left", "" + bottomLeftX + "px") ;
 								d3.select("#graph_buttonsLayer").select("#expandOrCollapseAttrPanelButton")
 								.style("top", "" + (dm_UI_getBodyHeight()/2 - slideBtnH/*buttonH*//2) + "px")
 								.style("left", "" + (dm_UI_getWidth() - attrPanelWidth - slideBtnW/*buttonW*/ + ((dm_BeforeAll.displayAttrPanel)?2:-5)) + "px")
@@ -608,20 +626,32 @@ copy or paste, edit node's properties, etc."
 					<div id="graphArea">
 						<!--div id="graphWhitePanelBckgrd" style="background: white; opacity: 0.25; position:absolute; z-index:-50; top: 0px; left: 0px;"-->
 						<div id="graphWhitePanelBckgrd">
-							<img id="graphImageBckgrd" src="" style="background: white; opacity: 0.25; margin:0px; position:absolute; top: 0px; left: 0px; z-index:-10;"/>
+							<img id="graphImageBckgrd" src="images/empty.jpg" style="background: white; opacity: 0.25; margin:0px; position:absolute; top: 0px; left: 0px; z-index:-10;"/>
+							<div id="geoMap" style="visibility: hidden; background: white; opacity: 0.45; margin:0px; position:absolute; top: 0px; left: 0px; z-index:-5;">
+							</div>
 						</div>
 						<script type="text/javascript" charset="utf-8">
 							dm_UI_resizeGraphImgBckgrd = function() {
+								var setW = function() {
+									var attrPanel = $("#attributesPanelParentUI") ;
+									var attrPanelWidth = dm_UI_getAttributesPanelWidth() ;//(attrPanel)?attrPanel.width():480 ;
+									return "" + (window.innerWidth - attrPanelWidth - ((dm_BeforeAll.displayAttrPanel)?10:0)) + "px" ;
+								} ;
+								var setH = function() {
+									var adjustment = 1 ;
+									return "" + (window.innerHeight - adjustment) + "px" ;
+								}
 								d3.select("#graphImageBckgrd")
-									.attr("width", function() {
-										var attrPanel = $("#attributesPanelParentUI") ;
-										var attrPanelWidth = dm_UI_getAttributesPanelWidth() ;//(attrPanel)?attrPanel.width():480 ;
-										return "" + (window.innerWidth - attrPanelWidth - ((dm_BeforeAll.displayAttrPanel)?10:0)) + "px" ;
-									})
-									.attr("height", function() {
-										var adjustment = 1 ;
-										return "" + (window.innerHeight - adjustment) + "px" ;
-									})
+									.attr("width", setW)
+									.attr("height", setH)
+									.style("width", setW)
+									.style("height", setH)
+									;
+								d3.select("#geoMap")
+									.attr("width", setW)
+									.attr("height", setH)
+									.style("width", setW)
+									.style("height", setH)
 									;
 							} ;
 
@@ -655,7 +685,7 @@ copy or paste, edit node's properties, etc."
 											<abbr
 title=
 "Edit the node : change its properties."
-												style="border-bottom: none;">
+style="border-bottom:none; text-decoration:none;">
 												<img src="images/writing.png" width=24 height=24 style="margin:0px"/>
 												<!--i class="icon-edit icon-white"></i-->
 											</abbr>
@@ -666,7 +696,7 @@ title=
 											<abbr
 title=
 "Get all the data of the nodes of this branch in a table view."
-												style="border-bottom: none;">
+style="border-bottom:none; text-decoration:none;">
 												<img src="images/table.png" width=24 height=24 style="margin:0px"/>
 											</abbr>
 										</button>
@@ -689,7 +719,7 @@ title=
 title=
 "Decrease the level of the focused node.
 If not available, this is because there is at least one child that is just one level below."
-																		style="border-bottom: none;">
+style="border-bottom:none; text-decoration:none;">
 																		<img src="images/down.png" width=24 height=24 style="margin:0px"/>
 																	</abbr>
 																</button>
@@ -700,7 +730,7 @@ If not available, this is because there is at least one child that is just one l
 title=
 "Increase the level of the focused node.
 If not available, this is because the parent's node is just one level above."
-																		style="border-bottom: none;">
+style="border-bottom:none; text-decoration:none;">
 																		<img src="images/up.png" width=24 height=24 style="margin:0px"/>
 																	</abbr>
 																</button>
@@ -716,7 +746,7 @@ If not available, this is because the parent's node is just one level above."
 																	<abbr
 title=
 "Add a child to the focused node."
-																		style="border-bottom: none;">
+style="border-bottom:none; text-decoration:none;">
 																		<img src="images/plus.png" width=24 height=24 style="margin:0px"/>
 																	</abbr>
 																</button>
@@ -726,7 +756,7 @@ title=
 																	<abbr
 title=
 "Remove the focused node and all its children."
-																		style="border-bottom: none;">
+style="border-bottom:none; text-decoration:none;">
 																		<img src="images/trash.png" width=24 height=24 style="margin:0px"/>
 																	</abbr>
 																</button>
@@ -742,7 +772,7 @@ title=
 																	<abbr
 title=
 "Copy the focused node and all its children into freeDatamap's clipboard."
-																		style="border-bottom: none;">
+style="border-bottom:none; text-decoration:none;">
 																		<img src="images/copy.png" width=24 height=24 style="margin:0px"/>
 																	</abbr>
 																</button>
@@ -752,7 +782,7 @@ title=
 																	<abbr
 title=
 "Paste the node from freeDatamap's clipboard as a child of the focused one."
-																		style="border-bottom: none;">
+style="border-bottom:none; text-decoration:none;">
 																		<img src="images/paste.png" width=24 height=24 style="margin:0px"/>
 																	</abbr>
 																</button>
@@ -769,7 +799,7 @@ title=
 title=
 "Import another map or data source from your local file system,
 and add this map as a child of the focused node.."
-																		style="border-bottom: none;">
+style="border-bottom:none; text-decoration:none;">
 																		<img src="images/importFile.png" width=24 height=24 style="margin:0px"/>
 																	</abbr>
 																</button>
@@ -779,7 +809,7 @@ and add this map as a child of the focused node.."
 																	<abbr
 title=
 "Edit the properties of the focused node.."
-																		style="border-bottom: none;">
+style="border-bottom:none; text-decoration:none;">
 																		<img src="images/writing.png" width=24 height=24 style="margin:0px"/>
 																	</abbr>
 																</button>
@@ -1069,6 +1099,12 @@ title=
 						<li>
 							<a href="#tab2" data-toggle="tab">
 								<img src="images/2.png" width=24 height=24 style="margin:0px"/>
+								<img src="images/logo_freeDatamap.png" width=24 height=24 style="margin:0px"/>
+							</a>
+						</li>
+						<!--li>
+							<a href="#tab2" data-toggle="tab">
+								<img src="images/2.png" width=24 height=24 style="margin:0px"/>
 								<img src="images/table.png" width=24 height=24 style="margin:0px"/>
 							</a>
 						</li>
@@ -1083,7 +1119,7 @@ title=
 								<img src="images/4.png" width=24 height=24 style="margin:0px"/>
 								<img src="images/logo_freeDatamap.png" width=24 height=24 style="margin:0px"/>
 							</a>
-						</li>
+						</li-->
 					</ul>
 					<div class="tab-content">
 						<div class="tab-pane active" id="tab1">
@@ -1092,6 +1128,10 @@ title=
 							</div>
 						</div>
 						<div class="tab-pane" id="tab2">
+							<div id="openFileIFrameContainer" style="overflow:hidden;">
+							</div>
+						</div>
+						<!--div class="tab-pane" id="tab2">
 							<div id="dataSheetContainer">
 							</div>
 						</div>
@@ -1102,7 +1142,7 @@ title=
 						<div class="tab-pane" id="tab4">
 							<div id="openFileIFrameContainer" style="overflow:hidden;">
 							</div>
-						</div>
+						</div-->
 					</div>
 				</div>
 			</div>
@@ -1375,9 +1415,16 @@ title=
 		<script type="text/javascript" charset="utf-8" src="libs/jdataview/jdataview.min.js"></script>
 		<script type="text/javascript" charset="utf-8" src="libs/hammer/hammer.min.js"></script>
 		<script type="text/javascript" charset="utf-8" src="libs/dropzone/dropzone.min.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			(function() {
+				// dropzone workaround for safari
+				window.FileReader = window.FileReader || {} ;
+			}()) ;
+		</script>
+
 		<script type="text/javascript" charset="utf-8" src="libs/ckeditor/ckeditor.js"></script>
 		<!--script type="text/javascript" charset="utf-8" src="libs/ckeditor/ckeditor.min.js"></script-->
-		<script type="text/javascript" charset="utf-8" src="libs/dataTables/media/js/jquery.dataTables.min.js"></script>
+		<!--script type="text/javascript" charset="utf-8" src="libs/dataTables/media/js/jquery.dataTables.min.js"></script-->
 		<!-- @ifdef PROD ->
 		<script type="text/javascript" charset="utf-8" src="libs/codemirror/lib/codemirror.min.js"></script>
 		<!-- @endif -->
@@ -1413,6 +1460,7 @@ title=
 		<script type="text/javascript" charset="utf-8" src="libs/bootstrap/bootstrap.min.js"></script>
 		<script type="text/javascript" charset="utf-8" src="libs/xml2json/xml2json.min.js"></script>
 		<script type="text/javascript" charset="utf-8" src="libs/handsontable/handsontable.full.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="libs/leaflet/leaflet.min.js"></script>
 		<!--script src="libs/downloadify/js/downloadify.min.js"></script>
 		<script src="libs/downloadify/js/swfobject.js"></script-->
 
@@ -1420,246 +1468,10 @@ title=
 			dm_BeforeAll.dm_AggregationWorker_fileName = 'scripts/freeDatamapAggregWorker.min.js' ;
 		</script>
 		
-		<script type="text/javascript" charset="utf-8">
+		<script type="text/javascript" charset="utf-8" src="scripts/freeDatamap_index.min.js"></script>
+		<!-- takes time to load, so do it at the end...-->
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
 
-			function dm_Index() {}
-			
-			//console.log(dm_Tools.rgb2hex(dm_Tools.rgbParse(dm_BeforeAll.getStyleSheetRule(0, '.color-primary-0').color))) ;
-			//console.log(document.styleSheets) ;
-			
-			var loadCssPalette = function() {
-			    var selectors = ['.color-secondary-2-', '.color-secondary-1-', '.color-complement-', '.color-primary-'] ;
-			    var selector ;
-			    var hexArray = [] ;
-			    var getHexColorFromStyleSheet = function(selector) {
-			    	var css = dm_BeforeAll.getStyleSheetRule('palette_color', selector) ;
-			    	//if(!css) css = dm_BeforeAll.getStyleSheetRule('palette_color.min.css', selector) ;
-			    	var colorStr = css.color ;
-			    	var colorRgb = dm_Tools.rgbParse(colorStr) ;
-			        return dm_Tools.rgb2hex(colorRgb) ;
-			        //return dm_BeforeAll.rgb2hex(dm_Tools.rgbParse(dm_Tools.getStyleSheetRule(0, selector).color)) ;
-			    }
-			    for(var i=0; i<4; i++) {
-			        selector = selectors[i] ;
-			        hexArray.push(getHexColorFromStyleSheet(selector + 0)) ;
-			    }
-			    for(var i=0; i<4; i++) {
-			        selector = selectors[i] ;
-			        hexArray.push(getHexColorFromStyleSheet(selector + 4)) ;
-			    }
-			    for(var i=0; i<4; i++) {
-			        selector = selectors[i] ;
-			        hexArray.push(getHexColorFromStyleSheet(selector + 2)) ;
-			    }
-			    for(var i=0; i<4; i++) {
-			        selector = selectors[i] ;
-			        hexArray.push(getHexColorFromStyleSheet(selector + 3)) ;
-			    }
-			    hexArray = hexArray.concat(hexArray).concat(hexArray) ;
-			    dm_Tools.colors2 = hexArray ;
-			    dm_Tools.colorsRGB2 = [];
-			    for (var i = 0; i < dm_Tools.colors.length; i++) {
-			    	var colorI = dm_Tools.colors[i] ;
-			    	var colorRgb = dm_Tools.color2rgb(colorI) ;
-			        dm_Tools.colorsRGB2.push(colorRgb);
-			    }
-			    console.log(JSON.stringify(hexArray)) ;
-			}
-			/* Does not work in ovh production site : either because css is mangled or because in ovh css are copied pasted in the index.html
-			 */
-			//loadCssPalette() ;
-			var createColorPalette = function() {
-			    var hexArray = ["#ca9e69","#466b81","#ca7969","#4c9266","#894c00","#053957","#891800","#006425","#eccfac","#708896","#ecb7ac","#7dab8e","#a8712e","#22506b","#a8432e","#217a42","#ca9e69","#466b81","#ca7969","#4c9266","#894c00","#053957","#891800","#006425","#eccfac","#708896","#ecb7ac","#7dab8e","#a8712e","#22506b","#a8432e","#217a42","#ca9e69","#466b81","#ca7969","#4c9266","#894c00","#053957","#891800","#006425","#eccfac","#708896","#ecb7ac","#7dab8e","#a8712e","#22506b","#a8432e","#217a42"] ;
-			    hexArray = hexArray.concat(hexArray).concat(hexArray) ;
-			    dm_Tools.colors2 = hexArray ;
-			    dm_Tools.colorsRGB2 = [];
-			    for (var i = 0; i < dm_Tools.colors.length; i++) {
-			    	var colorI = dm_Tools.colors[i] ;
-			    	var colorRgb = dm_Tools.color2rgb(colorI) ;
-			        dm_Tools.colorsRGB2.push(colorRgb);
-			    }
-			}
-			createColorPalette() ;
-
-			//dm_ToolsUI.browserZoom(125) ;
-
-			var startUIWorker = function() {
-				dm_BeforeAll.dm_AggregationWorker = new Worker(dm_BeforeAll.dm_AggregationWorker_fileName);
-
-				var workerThreadMute = true ;
-
-				dm_BeforeAll.dm_AggregationWorker.addEventListener('message', function(e) {
-					var msg = e.data['admin'] ;
-					if(msg && !workerThreadMute) {					
-						console.log("THREAD AggregationWorker MESSAGE :") ;
-					    console.log("\t" + msg) ;
-					}
-					msg = e.data['console.log'] ;
-					if(msg) {					
-					    console.log(msg) ;
-					}
-				}, false);
-
-				dm_BeforeAll.dm_AggregationWorker.postMessage({'cmd': 'start', 'imports': dm_BeforeAll.dm_AggregationWorker_imports});
-			}
-			startUIWorker() ;
-
-			// bootstrap workaround for bug : dropdown does not work on ipad
-			$('body').on('touchstart.dropdown', '.dropdown-menu', function (e) {
-				dm_UI.fixTapEvent(e) ;
-			});
-			//$('.dropdown-menu').on('touchstart.dropdown.data-api', function(e) { e.stopPropagation() }) ;
-			/*
-			$('a.dropdown-toggle').on('touchstart', function(e) {
-      			console.log("touch down in bootstrap dropdown") ;
-			});
-			*/
-
-			/*			
-			var createDownloadify = function(hookId, filename, data, onCancel, onError, onComplete, dataType) {
-				if($("#" + hookId).length > 0) {
-					var downloadifyConfigObj = {
-						'filename': filename,
-						'data': data,
-						'onCancel': onCancel,
-						'onError': onError,
-						'onComplete': onComplete,
-						swf: 'libs/downloadify/media/downloadify.swf',
-						downloadImage: 'libs/downloadify/images/download.png',
-						width: 140,
-						height: 30,
-						transparent: true,
-						append: false
-					} ;
-					if(dataType) {
-						downloadifyConfigObj.dataType = dataType ;
-					}
-					Downloadify.create(hookId, downloadifyConfigObj);
-				}
-			}
-			*/
-						
-			var dm_tooltip = function() {
-				if(dm_UI.isTooltipDisplayed) {
-					dm_UI.destroyPreviousTooltip() ;
-				} else {
-					dm_UI.nodeOntoDisplayTooltip = dm_UI.lastMouseOverNode || dm_Datamap.currentDatamap.graph.center ;
-					if(dm_UI.nodeOntoDisplayTooltip) {
-						dm_UI.destroyPreviousTooltip() ;
-						dm_UI.displayTooltip() ;
-					}
-				}
-			}
-
-			/*
-			var dm_searchItem = function() {
-				dm_UI.expandWindow("search", null, true) ;
-			}
-
-			var dm_search = function() {
-				dm_Datamap.currentDatamap.graph.init("FreeDatamap|FranceLabs search") ;
-				dm_UI.autoResize() ;
-			}
-			*/
-
-			var dm_about = function() {
-				dm_Physics.draw('#bodyCanvasContainer') ;
-				/*
-				dm_Physics.constants.disableClearAll = true;
-				dm_Physics.constants.playing = true;
-				dm_UI.resizeBodyCanvas('#bodyCanvasContainer');
-				d3.select('#bodyCanvasContainer')
-					.append('img')
-					.attr('src', 'data/images/freeDatamap-www/antibes2.png') ;
-				*/
-			}
-
-			var dm_test = function() {
-				/*
-				var canvasContext = d3.selectAll('#bodyCanvas')[0][0].getContext('2d') ;
-	      		canvasContext.beginPath() ;
-	      		canvasContext.moveTo(100, 100) ;
-				dm_Physics.systemState.points = [[100, 100, 0]] ;
-				for(var i=0; i<80; i++) {
-					dm_Physics.tick() ;
-					console.log(dm_Physics.systemState.points[0][0], dm_Physics.systemState.points[0][1]) ;
-		      		canvasContext.lineTo(dm_Physics.systemState.points[0][0], dm_Physics.systemState.points[0][1]) ;
-				}
-				canvasContext.lineWidth = 6 ;
-				canvasContext.strokeStyle = '#0000FF' ;
-				canvasContext.stroke() ;
-				canvasContext.lineJoin = 'round' ;
-				canvasContext.closePath() ;
-				*/
-			}
-
-			/*
-			dg = new dat.GUI() ;
-			var obj = {toto: 'message', value: 25, myboolean: false, mycolor:'#25ea97', 'image.width': 300, 'image.height': 200} ;
-			dg.add(obj, 'toto', ['text1', 'text2', 'text3']) ;
-			dg.add(obj, 'value') ;
-			dg.add(obj, 'myboolean') ;
-			dg.add(obj, 'mycolor') ;
-			var f = dg.addFolder('myimage') ;
-			f.add(obj, 'image.width') ;
-			f.add(obj, 'image.height') ;
-			*/
-
-			dm_BeforeAll.FranceLabs = function() {
-				// http://127.0.0.1:8080/AntibesSearch/search.jsp?searchType=allWords&query=fiche
-				// http://127.0.0.1:8080/francellio-solr/FileShare/graph?q=fiche
-
-				// lancer le moteur d'indexation
-				// c:\DemoTeched\apache-manifoldcf-1.2\example>java -jar start.jar
-				// http://127.0.0.1:8345/mcf-crawler-ui/
-
-				// force commit en cours de crawl
-				// http://127.0.0.1:8080/francellio-solr/FileShare/update?commit=true
-//"FranceLabs.content.target" : "'http://127.0.0.1:8080/AntibesSearch/search.jsp?searchType=allWords&query='+dm_Tools.getNodePath(node, ' ', null, 'originalName')",
-			}
-
-			dm_UI_cleanOvhError() ;
-
-			var avoidURLLoop = false ; // dont know why but without this, the browser loops infinitely and needs to be killed
-
-			var loadFileName = dm_BeforeAll.getUrlParam(document.URL, "load") ;
-			console.log('load URL : ', loadFileName) ;
-			var path2load = null ;
-			var dm ;
-			if(loadFileName) {
-				var pipeIdx = dm_Tools.getIndexOfFirstPipe(loadFileName) ;
-				if(pipeIdx > 0) {
-					path2load = loadFileName.substring(pipeIdx+1) ;
-					loadFileName = loadFileName.substring(0, pipeIdx) ;
-				}
-			}
-			console.log('path to load : ', dm_BeforeAll.getUrlParam(document.URL, "path")) ;
-			var afterLoad = function() {
-				path2load = decodeURI(self.isNodeDisplayed || path2load || dm_BeforeAll.getUrlParam(document.URL, "path")) ;
-
-				if(path2load && (path2load != undefined) && (path2load != 'undefined') && !avoidURLLoop) {
-					console.log('goto : ' + path2load) ;
-					avoidURLLoop = true ;
-					dm_Datamap.gotoNodeAndLoadNeededDatamaps(path2load) ;
-				}
-
-				if(dm_BeforeAll.postWholePageInit) {
-					dm_BeforeAll.postWholePageInit() ;
-				}
-			}
-			var loadFromFileStream = dm_BeforeAll.getUrlParam(document.URL, "loadFromFileStream") ;
-			if(loadFileName) {
-				console.log(loadFileName) ;
-				if(!avoidURLLoop) {
-					dm = new dm_Datamap(loadFileName, dm_Datamap_loadWithAjaxByDefault, null, null, afterLoad) ;
-				}
-			} else if(!loadFromFileStream) {
-				console.log("no load command, load by default : freeDatamap.json") ;
-				new dm_Datamap("freeDatamap.json", null, null, null, afterLoad) ;
-			}
-
-			//console.log(dm_Tools.parseDate('11/03/2014 09:07:09')) ;
-		</script>
 <!--a class="twitter-timeline" href="https://twitter.com/freeDatamap" data-widget-id="393008478995755008">Tweets de @freeDatamap</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script-->
 	</body>

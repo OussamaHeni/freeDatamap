@@ -2,13 +2,14 @@
 	"$schema": "http://www.freedatamap.com/jsonConfigSchema/schema#",
     "config": {
         "root": null,
+        "multicolorBrothers": false,
         "styles": [{
             "name": "root",
             "level": 0,
             "arrow": true,
             "arc": false,
             "rNod": 10,
-            "link": 90,
+            "link": 130,
             "color": "#1f77b4",
             "attrPaneCol": "#aec7e8",
             "icon": "../../config/images/config/config_root.png",
@@ -20,6 +21,18 @@
                 "visible": true,
                 "textX": 0,
                 "type": "image"
+            },
+            "backgroundImage": "../../config/images/config/config.jpg",
+            "backgroundImage.dm_props": {
+                "name": "backgroundImage",
+                "visible": true,
+                "label": "backgroundImage",
+                "type": "image",
+                "edit": false,
+                "imageName": "../../config/images/config/config.jpg",
+                "width": 1200,
+                "height": 850,
+                "scaleFactor": 1
             }
         }, {
             "name": "level 1",
@@ -27,7 +40,7 @@
             "arrow": true,
             "arc": false,
             "rNod": 10,
-            "link": 110,
+            "link": 130,
             "color": "#1f77b4",
             "attrPaneCol": "#aec7e8",
             "icon": "../../config/images/config/config.png",
@@ -46,7 +59,7 @@
             "arrow": true,
             "arc": false,
             "rNod": 9,
-            "link": 120,
+            "link": 130,
             "color": "#ff7f0e",
             "attrPaneCol": "#ffbb78"
         }, {
@@ -55,7 +68,7 @@
             "arrow": true,
             "arc": false,
             "rNod": 9,
-            "link": 140,
+            "link": 130,
             "color": "#2ca02c",
             "attrPaneCol": "#98df8a"
         }, {
@@ -64,7 +77,7 @@
             "arrow": true,
             "arc": false,
             "rNod": 9,
-            "link": 90,
+            "link": 130,
             "color": "#d62728",
             "attrPaneCol": "#ff9896"
         }, {
@@ -73,7 +86,7 @@
             "arrow": true,
             "arc": false,
             "rNod": 8,
-            "link": 90,
+            "link": 130,
             "color": "#9467bd",
             "attrPaneCol": "#c5b0d5"
         }, {
@@ -82,7 +95,7 @@
             "arrow": true,
             "arc": false,
             "rNod": 8,
-            "link": 90,
+            "link": 130,
             "color": "#e377c2",
             "attrPaneCol": "#f7b6d2"
         }, {
@@ -91,7 +104,7 @@
             "arrow": true,
             "arc": false,
             "rNod": 7,
-            "link": 90,
+            "link": 130,
             "color": "#bcbd22",
             "attrPaneCol": "#dbdb8d"
         }, {
@@ -100,7 +113,7 @@
             "arrow": true,
             "arc": false,
             "rNod": 7,
-            "link": 90,
+            "link": 130,
             "color": "#17becf",
             "attrPaneCol": "#9edae5"
         }, {
@@ -109,7 +122,7 @@
             "arrow": true,
             "arc": false,
             "rNod": 6,
-            "link": 90,
+            "link": 130,
             "color": "#6b6ecf",
             "attrPaneCol": "#9c9ede"
         }, {
@@ -118,7 +131,7 @@
             "arrow": true,
             "arc": false,
             "rNod": 6,
-            "link": 90,
+            "link": 130,
             "color": "#1f77b4",
             "attrPaneCol": "#aec7e8"
         }, {
@@ -127,7 +140,7 @@
             "arrow": true,
             "arc": false,
             "rNod": 5,
-            "link": 90,
+            "link": 130,
             "color": "#ff7f0e",
             "attrPaneCol": "#ffbb78"
         }, {
@@ -136,7 +149,7 @@
             "arrow": true,
             "arc": false,
             "rNod": 5,
-            "link": 90,
+            "link": 130,
             "color": "#2ca02c",
             "attrPaneCol": "#98df8a"
         }, {
@@ -145,7 +158,7 @@
             "arrow": true,
             "arc": false,
             "rNod": 5,
-            "link": 90,
+            "link": 130,
             "color": "#d62728",
             "attrPaneCol": "#ff9896"
         }, {
@@ -154,7 +167,7 @@
             "arrow": true,
             "arc": false,
             "rNod": 5,
-            "link": 90,
+            "link": 130,
             "color": "#9467bd",
             "attrPaneCol": "#c5b0d5"
         }, {
@@ -163,7 +176,7 @@
             "arrow": true,
             "arc": false,
             "rNod": 4,
-            "link": 90,
+            "link": 130,
             "color": "#e377c2",
             "attrPaneCol": "#f7b6d2"
         }, {
@@ -172,7 +185,7 @@
             "arrow": true,
             "arc": false,
             "rNod": 4,
-            "link": 90,
+            "link": 130,
             "color": "#bcbd22",
             "attrPaneCol": "#dbdb8d"
         }, {
@@ -181,7 +194,7 @@
             "arrow": true,
             "arc": false,
             "rNod": 4,
-            "link": 90,
+            "link": 130,
             "color": "#17becf",
             "attrPaneCol": "#9edae5"
         }, {
@@ -190,7 +203,7 @@
             "arrow": true,
             "arc": false,
             "rNod": 4,
-            "link": 90,
+            "link": 130,
             "color": "#6b6ecf",
             "attrPaneCol": "#9c9ede"
         }, {
@@ -199,7 +212,7 @@
             "arrow": false,
             "arc": true,
             "rNod": 3,
-            "link": 45,
+            "link": 90,
             "color": "#c7c7c7",
             "attrPaneCol": "#c7c7c7",
             "txtCol": "#7f7f7f"
@@ -211,101 +224,247 @@
         "sortDescendant": false,
         "displayProps": [{
             "name": "root",
-            "children": [],
-            "visible": true
-        }, {
-            "name": "level 0",
             "children": [
-            	{
-	                "name": "noLeafInReport",
-	                "label": "No leaf in report",
-	                "type": "boolean"
-            	},
-            	{
-	                "name": "sortDescendant",
-	                "label": "Sort descendant",
-	                "type": "boolean"
-            	}
+                {
+                    "name": "noLeafInReport",
+                    "label": "No leaf in report",
+                    "type": "boolean"
+                },
+                {
+                    "name": "sortDescendant",
+                    "label": "Sort descendant",
+                    "type": "boolean"
+                }
             ],
-            "visible": true
+            "visible": true,
+            "edit": true
         }, {
             "name": "level 1",
             "children": [],
-            "visible": true
+            "visible": true,
+            "edit": true
         }, {
             "name": "level 2",
             "children": [],
-            "visible": true
+            "visible": true,
+            "edit": true
         }, {
             "name": "level 3",
             "children": [],
-            "visible": true
+            "visible": true,
+            "edit": true
         }, {
             "name": "level 4",
             "children": [],
-            "visible": true
+            "visible": true,
+            "edit": true
         }, {
             "name": "level 5",
             "children": [],
-            "visible": true
+            "visible": true,
+            "edit": true
         }, {
             "name": "level 6",
             "children": [],
-            "visible": true
+            "visible": true,
+            "edit": true
         }, {
             "name": "level 7",
             "children": [],
-            "visible": true
+            "visible": true,
+            "edit": true
         }, {
             "name": "level 8",
             "children": [],
-            "visible": true
+            "visible": true,
+            "edit": true
         }, {
             "name": "level 9",
             "children": [],
-            "visible": true
+            "visible": true,
+            "edit": true
         }, {
             "name": "level 10",
             "children": [],
-            "visible": true
+            "visible": true,
+            "edit": true
         }, {
             "name": "level 11",
             "children": [],
-            "visible": true
+            "visible": true,
+            "edit": true
         }, {
             "name": "level 12",
             "children": [],
-            "visible": true
+            "visible": true,
+            "edit": true
         }, {
             "name": "level 13",
             "children": [],
-            "visible": true
+            "visible": true,
+            "edit": true
         }, {
             "name": "level 14",
             "children": [],
-            "visible": true
+            "visible": true,
+            "edit": true
         }, {
             "name": "level 15",
             "children": [],
-            "visible": true
+            "visible": true,
+            "edit": true
         }, {
             "name": "level 16",
             "children": [],
-            "visible": true
+            "visible": true,
+            "edit": true
         }, {
             "name": "level 17",
             "children": [],
-            "visible": true
+            "visible": true,
+            "edit": true
+        }, {
+            "name": "level 18",
+            "children": [],
+            "visible": true,
+            "edit": true
         }, {
             "name": "leaf",
-            "children": []
+            "children": [],
+            "visible": true,
+            "edit": true
         }],
         "specifics": [
+        /* ----------------------------------------------------------------------------------------------------------------------------------------
+                     "name": "$dm_root",
+           ----------------------------------------------------------------------------------------------------------------------------------------*/
         {
-            "name": "config|columns",
+            "name": "$dm_root",
+            "rawNode": {
+                "setEmptyDefaults": "
+node.rawNode.depth = node.rawNode.depth || 2 ;
+//node.rawNode.sort = node.rawNode.sort || '' ;
+//node.rawNode.root = node.rawNode.root || '' ;
+//node.rawNode.center = node.rawNode.center || '' ;
+node.rawNode.maxNbOfColumns2tree = node.rawNode.maxNbOfColumns2tree || 10 ;
+//node.rawNode.multicolorBrothers = node.rawNode.multicolorBrothers || false ;
+if((node.rawNode.csvSepIsSemicolon !== false) && (node.rawNode.csvSepIsSemicolon !== 'false')) {
+    node.rawNode.csvSepIsSemicolon = true ;
+}
+if((node.rawNode.displayTransversalConnections !== false) && (node.rawNode.displayTransversalConnections !== 'false')) {
+    node.rawNode.displayTransversalConnections = true ;
+}
+if((node.rawNode.displayArrowsOfTransversalConnections !== false) && (node.rawNode.displayArrowsOfTransversalConnections !== 'false')) {
+    node.rawNode.displayArrowsOfTransversalConnections = true ;
+}
+'#dm_STOP_AND_REDRAW_ATTRIBUTES_PANEL#1' ;
+",
+                "setEmptyDefaults.dm_props": {
+                    "order": 0,
+                    "type": "execute"
+                },
+                "icon": "../../config/images/config/config_root.png",
+                "icon.dm_props": {
+                    "order": 1,
+                    "type": "image"
+                },
+                "depth.dm_props": {
+                    "order": 2,
+                    "visible": true,
+                    "edit": false,
+                    "type": "dropdown",
+                    "name": "depth",
+                    "dropdownList": "[1, 2, 3, 4]",
+                    "displayEvenIfUndefined": true
+                },
+                "sort.dm_props": {
+                    "order": 3,
+                    "visible": true,
+                    "edit": false,
+                    "type": "dropdown",
+                    "name": "sort",
+                    "dropdownList": "['random : no sort'].concat(dm_Tools.feedPossibleProperties(node)) ;",
+                    "displayEvenIfUndefined": true
+                },
+                "sortDescendant.dm_props": {
+                    "order": 4,
+                    "type": "boolean",
+                    "displayEvenIfUndefined": true
+                },
+                "root.dm_props": {
+                    "order": 5,
+                    "displayEvenIfUndefined": true
+                },
+                "center.dm_props": {
+                    "order": 6,
+                    "displayEvenIfUndefined": true
+                },
+                "csvSepIsSemicolon.dm_props": {
+                    "order": 7,
+                    "type": "boolean"
+                },
+                "displayTransversalConnections.dm_props": {
+                    "order": 8,
+                    "type": "boolean"
+                },
+                "displayArrowsOfTransversalConnections.dm_props": {
+                    "order": 9,
+                    "type": "boolean"
+                },
+                "noLeafInReport.dm_props": {
+                    "order": 10,
+                    "type": "boolean",
+                    "displayEvenIfUndefined": true
+                },
+                "maxDepthForExport.dm_props": {
+                    "order": 11,
+                    "displayEvenIfUndefined": true
+                },
+                "isLngFirst.dm_props": {
+                    "order": 12,
+                    "type": "boolean",
+                    "displayEvenIfUndefined": true
+                },
+                "maxNbOfColumns2tree.dm_props": {
+                    "order": 13,
+                    "type": "dropdown",
+                    "visible": true,
+                    "edit": false,
+                    "label": "max number of columns to tree",
+                    "dropdownList": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]",
+                    "displayEvenIfUndefined": true
+                },
+                "multicolorBrothers.dm_props": {
+                    "order": 14,
+                    "type": "boolean",
+                    "displayEvenIfUndefined": true
+                },
+                "reloadBtn": "Reload data file",
+                "reloadBtn.dm_props": {
+                    "order": -1,
+                    "name": "reloadBtn",
+                    "label": "Reload data file",
+                    "visible": true,
+                    "edit": false,
+                    "type": "action",
+                    "source": "user",
+                    "level": 2,
+                    "image": "../../images/load all.png",
+                    "imageName": "../../images/load all.png",
+                    "class": "btn-info",
+                    "content.exec" : "dm_Datamap.admin(true, true);"
+                }
+            }
+        },
+        /* ----------------------------------------------------------------------------------------------------------------------------------------
+                     "name": "$dm_root|columns",
+           ----------------------------------------------------------------------------------------------------------------------------------------*/
+        {
+            "name": "$dm_root|columns",
             "rawNode": {
                 "icon": "../../config/images/config/columns.png",
                 "icon.dm_props": {
+                    "edit": false,
                     "width": 121,
                     "height": 66,
                     "scaleFactor": 6,
@@ -327,17 +486,44 @@
                     "name": "description",
                     "label": "description",
                     "visible": true,
+                    "edit": false,
                     "type": "rich text",
                     "source": "user",
                     "level": 2
                 },
                 "columnNameDropdown": null,
                 "columnNameDropdown.dm_props": {
+                    "label": "Column name",
                     "type": "dropdown",
                     "visible": true,
+                    "edit": false,
                     "dropdownList": "
 var getColumnNames = function(node) {
     var output = null ;
+    var alreadyFound = function(columnName, columnNameIdx) {
+        if(node && node.children && (node.children.length > 0)) {
+            var alreadyExistingCol ;
+            var test = function(elt) {
+                //console.log('' + elt.name + ' == ' + columnName + ' ? ' + (elt.name == columnName)) ;
+                //console.log('' + elt.name + ' == ' + columnNameIdx + ' ? ' + (elt.name == ('' + columnNameIdx))) ;
+                if((elt.name == columnName) || (elt.name == ('' + columnNameIdx))) {
+                    return true ;
+                }
+            }
+            for(var i=0; i<node.children.length; i++) {
+                alreadyExistingCol = node.children[i] ;
+                if(alreadyExistingCol.children) {
+                    var leafJ ;
+                    for(var j=0; j<alreadyExistingCol.children.length; j++) {
+                        leafJ = alreadyExistingCol.children[j] ;
+                        if(test(leafJ)) return true ;
+                    }
+                } else {
+                    if(test(alreadyExistingCol)) return true ;
+                }
+            }
+        }
+    }
     if(node && node.parent && node.parent.children) {
         var colNamesNode = dm_Tools.getChild(node.parent, 'columnNames') ;
         if(colNamesNode && colNamesNode.children && (colNamesNode.children.length > 0)) {
@@ -345,7 +531,7 @@ var getColumnNames = function(node) {
             var child ;
             for(var i=0; i<colNamesNode.children.length; i++) {
                 child = colNamesNode.children[i] ;
-                if(child) {
+                if(child && child.name && !alreadyFound(child.name, i)) {
                     output.push(child.name) ;
                 }
             }
@@ -358,13 +544,15 @@ getColumnNames(node) ;
                     "name": "columnNameDropdown",
                     "level": 2,
                     "label": "columnNameDropdown",
-                    "source": "user"
+                    "source": "user",
+                    "placeHolder": "no spare column to add..."
                 },
                 "addColumnBtn": "Add column",
                 "addColumnBtn.dm_props": {
                     "name": "addColumnBtn",
                     "label": "Add column",
                     "visible": true,
+                    "edit": false,
                     "type": "action",
                     "source": "user",
                     "level": 2,
@@ -378,12 +566,59 @@ var doit = function(node) {
     if(node && node.rawNode) columnName = node.rawNode.columnNameDropdown ;
     if(columnName) {
         newNode = dm_Datamap.createNode(node, columnName) ;
-        if(newNode.rawNode) newNode.rawNode = {} ;
-        newNode.rawNode['array index'] = node.children.length - 1 ;
+        var idx = node.children.length - 1 ;
+        if(node.children && (node.children.length > 1) && (typeof(node.children[node.children.length - 2].name) == 'undefined')) {
+            node.children.splice(node.children.length - 1, 1) ;
+            node.children.splice(node.children.length - 1, 0, newNode) ;
+            idx = node.children.length - 2 ;
+        }
+        if(!newNode.rawNode) newNode.rawNode = {} ;
+        newNode.rawNode['array index'] = idx ;
         newNode.rawNode['columnIndex'] = dm_Tools.getChildIndex(dm_Tools.getChild(node.parent, 'columnNames'), columnName) ;
     }
 } ;
 doit(node) ;
+dm_Tools.alignConfigTreeToColumnsNumber(node) ;
+dm_Datamap.refreshGraph(node);
+"
+                },
+                "addLeafBtn": "Add leaf",
+                "addLeafBtn.dm_props": {
+                    "name": "addLeafBtn",
+                    "label": "Add leaf",
+                    "visible": true,
+                    "edit": false,
+                    "type": "action",
+                    "source": "user",
+                    "level": 2,
+                    "image": "../../images/plus.png",
+                    "imageName": "../../images/plus.png",
+                    "class": "btn-info",
+                    "content.exec" : "
+var doit = function(node) {
+    var columnName = null ;
+    var newNode ;
+    if(node && node.rawNode) columnName = node.rawNode.columnNameDropdown ;
+    if(columnName) {
+        var leafParent ;
+        if(node.children && (node.children.length > 0)) {
+            leafParent = node.children[node.children.length - 1] ;
+            if(leafParent.name) leafParent = null ;
+        }
+        if(!leafParent) {
+            leafParent = dm_Datamap.createNode(node, '') ;
+            if(!leafParent.rawNode) leafParent.rawNode = {} ;
+            leafParent.rawNode['array index'] = node.children.length - 1 ;
+            delete leafParent.name ;
+        }
+        leafNode = dm_Datamap.createNode(leafParent, columnName) ;
+        if(!leafNode.rawNode) leafNode.rawNode = {} ;
+        leafNode.rawNode['array index'] = leafParent.children.length - 1 ;
+        leafNode.rawNode['columnIndex'] = dm_Tools.getChildIndex(dm_Tools.getChild(node.parent, 'columnNames'), columnName) ;
+    }
+} ;
+doit(node) ;
+dm_Tools.alignConfigTreeToColumnsNumber(node) ;
 dm_Datamap.refreshGraph(node);
 "
                 },
@@ -394,6 +629,7 @@ dm_Datamap.refreshGraph(node);
                     "name": "description",
                     "label": "description",
                     "visible": true,
+                    "edit": false,
                     "type": "rich text",
                     "source": "user",
                     "level": 2
@@ -403,6 +639,7 @@ dm_Datamap.refreshGraph(node);
                     "name": "orderChildrenBtn",
                     "label": "Order columns",
                     "visible": true,
+                    "edit": false,
                     "type": "action",
                     "source": "user",
                     "level": 2,
@@ -412,26 +649,85 @@ dm_Datamap.refreshGraph(node);
                     "content.exec" : "
 dm_Tools.sortChildrenByPos(node);
 "
-                }
-            }
-        },
-        {
-            "name": "config|displayProps",
-            "rawNode": {
-                "icon": "../../config/images/config/displayProps.png",
-                "icon.dm_props": {
-                    "width": 165,
-                    "height": 180,
-                    "scaleFactor": 4.5,
-                    "panelMaxHeight": 180,
+                },
+                "reloadBtn": "Reload data file",
+                "reloadBtn.dm_props": {
+                    "name": "reloadBtn",
+                    "label": "Reload data file",
                     "visible": true,
-                    "textX": 3,
-                    "type": "image"
+                    "edit": false,
+                    "type": "action",
+                    "source": "user",
+                    "level": 2,
+                    "image": "../../images/load all.png",
+                    "imageName": "../../images/load all.png",
+                    "class": "btn-info",
+                    "content.exec" : "dm_Datamap.admin(true, true);"
                 }
             }
         },
+        /* ----------------------------------------------------------------------------------------------------------------------------------------
+                     "name": "$dm_root|columns|*",
+           ----------------------------------------------------------------------------------------------------------------------------------------*/
         {
-            "name": "config|aggregate",
+            "name": "$dm_root|columns|*",
+            "rawNode": {
+                "deleteBtn": "Delete",
+                "deleteBtn.dm_props": {
+                    "name": "deleteBtn",
+                    "label": "Delete",
+                    "visible": true,
+                    "edit": false,
+                    "type": "action",
+                    "source": "user",
+                    "level": 2,
+                    "image": "../../images/delete.png",
+                    "imageName": "../../images/delete.png",
+                    "class": "btn-danger",
+                    "content.exec" : "
+var parent = node.parent ;
+dm_Datamap.removeNode() ;
+dm_Tools.alignChildrenArrayIndex(parent) ;
+dm_Tools.alignConfigTreeToColumnsNumber(parent) ;
+"
+                }
+            }
+        },
+        /* ----------------------------------------------------------------------------------------------------------------------------------------
+                     "name": "$dm_root|columns|*|*",
+           ----------------------------------------------------------------------------------------------------------------------------------------*/
+        {
+            "name": "$dm_root|columns|*|*",
+            "rawNode": {
+                "deleteBtn": "Delete",
+                "deleteBtn.dm_props": {
+                    "name": "deleteBtn",
+                    "label": "Delete",
+                    "visible": true,
+                    "edit": false,
+                    "type": "action",
+                    "source": "user",
+                    "level": 2,
+                    "image": "../../images/delete.png",
+                    "imageName": "../../images/delete.png",
+                    "class": "btn-danger",
+                    "content.exec" : "
+var parent = node.parent ;
+dm_Datamap.removeNode() ;
+if(parent.children.length == 0) {
+    dm_Datamap.removeNode(parent) ;
+}
+dm_Tools.alignChildrenArrayIndex(parent) ;
+dm_Tools.alignConfigTreeToColumnsNumber(parent) ;
+"
+                }
+            }
+        },
+        /* ----------------------------------------------------------------------------------------------------------------------------------------
+                     "name": "$dm_root|aggregate",
+           ----------------------------------------------------------------------------------------------------------------------------------------*/
+        {
+            "name": "$dm_root|aggregate",
             "rawNode": {
                 "icon": "../../config/images/config/aggregate.png",
                 "icon.dm_props": {
@@ -440,13 +736,238 @@ dm_Tools.sortChildrenByPos(node);
                     "scaleFactor": 5,
                     "panelMaxHeight": 180,
                     "visible": true,
+                    "edit": false,
                     "textX": 3,
                     "type": "image"
+                },
+                "newAggregEltName": "",
+                "newAggregEltName.dm_props": {
+                    "edit": true,
+                    "label": "New aggregated attribute name "
+                },
+                "addAggregationBtn": "Add new aggregated attribute",
+                "addAggregationBtn.dm_props": {
+                    "name": "addAggregationBtn",
+                    "label": "Add new aggregated attribute",
+                    "visible": true,
+                    "edit": false,
+                    "type": "action",
+                    "source": "user",
+                    "level": 2,
+                    "image": "../../images/plus.png",
+                    "imageName": "../../images/plus.png",
+                    "class": "btn-info",
+                    "content.exec" : "
+// get latest entered value even if return key was not pressed
+var uiId = dm_Attributes.getId('attribute_text_', {'name': 'newAggregEltName'}, node) ;
+node.rawNode.newAggregEltName = document.getElementById(uiId).value ;
+
+if(node.rawNode.newAggregEltName) {
+    var child = dm_Tools.getChild(node, node.rawNode.newAggregEltName) ;
+    if(!child) {
+        child = dm_Datamap.createNode(node, node.rawNode.newAggregEltName) ;        
+    }
+    if(!child.rawNode) child.rawNode = {} ;
+    if(child.rawNode.execAfterChildrenVisit == null) child.rawNode.execAfterChildrenVisit = true ;
+    if(child.rawNode.funcDropdown == null) child.rawNode.funcDropdown = 'sum property' ;
+    if(child.rawNode.propertyName == null) child.rawNode.propertyName = '' ;
+    if(child.rawNode.value == null) child.rawNode.value = '' ;
+    dm_Datamap.focusNode(child) ;
+    dm_Datamap.refreshGraph(child);
+}
+"
+                },
+                "predefinedAggregateFunctions": {
+                    "count leaves" : 
+"var output = 1 ;
+if(node.children) {
+    var i = node.children.length - 1 ;
+    output = 0 ;
+    for(; i>=0; i--) {
+        output += node.children[i].rawNode[propName] ;
+    }
+}
+return output ;",
+                    "sum property" :
+"var output  ;
+if(!#replaceMeBy_onlyLeaves# || !node.children) {
+    output = node.rawNode['#replaceMeBy_propertyName#'] ;
+}
+if(node.children) {
+    for(var i=0; i<node.children.length; i++) {
+        if(!output) output = 0 ;
+        output += parseFloat(node.children[i].rawNode[propName] || 0) ;
+    }
+}
+return output ;",
+                    "conditional count" :
+"var output = 0 ;
+var conditionalResult = eval('#replaceMeBy_condition#') ;
+if(conditionalResult) {
+    output = 1 ;
+}
+if(node.children) {
+    var i = node.children.length - 1 ;
+    for(; i>=0; i--) {
+        output += node.children[i].rawNode[propName] ;
+    }
+}
+return output ;",
+                    "divide" :
+"var divider = parseFloat(node.rawNode['#replaceMeBy_propertyDivider#'] || 1) ;
+var propValue = parseFloat(node.rawNode['#replaceMeBy_propertyName#'] || 0) ;
+return (propValue / divider) ;"
+                },
+                "predefinedAggregateFunctions.dm_props": {
+                    "visible": false,
+                    "edit": false
                 }
             }
         },
+        /* ----------------------------------------------------------------------------------------------------------------------------------------
+                     "name": "$dm_root|aggregate|*",
+           ----------------------------------------------------------------------------------------------------------------------------------------*/
         {
-            "name": "config|columnNames",
+            "name": "$dm_root|aggregate|*",
+            "rawNode": {
+                "array index.dm_props": {
+                    "visible": false,
+                    "edit": false
+                },
+                "toExecute.dm_props": {
+                    "visible": false,
+                    "edit": false
+                },
+                "execAfterChildrenVisit.dm_props": {
+                    "type": "boolean",
+                    "order": 0
+                },
+                "funcDropdown.dm_props": {
+                    "type": "dropdown",
+                    "visible": true,
+                    "edit": false,
+                    "order": 1,
+                    "dropdownList": "
+['count leaves',
+'sum property',
+'conditional count',
+'divide']
+                    ",
+                    "name": "funcDropdown",
+                    "label": "function",
+                    "onChange": "
+// reset aggregation value code
+node.rawNode.value = '' ;
+
+var found = false ;
+
+if(!found) {
+    if(node.rawNode.funcDropdown == 'sum property') {
+        found = true ;
+        node.rawNode.propertyName = '' ;
+        node.rawNode.onlyLeaves = true ;
+        node.rawNode['onlyLeaves.dm_props'] = {
+            'edit': 'true',
+            'type': 'boolean',
+            'order': 3
+        } ;
+    } else {
+        delete node.rawNode.propertyName ;
+        delete node.rawNode.onlyLeaves ;
+    }
+}
+
+if(!found) {
+    if(node.rawNode.funcDropdown == 'conditional count') {
+        found = true ;
+        node.rawNode.condition = '' ;
+        node.rawNode['condition.dm_props'] = {
+            'edit': 'true',
+            'type': 'javascript',
+            'order': 2
+        } ;
+    } else {
+        delete node.rawNode.condition ;
+    }
+}
+
+if(!found) {
+    if(node.rawNode.funcDropdown == 'divide') {
+        found = true ;
+        node.rawNode.propertyName = '' ;
+        node.rawNode.propertyDivider = '' ;
+    } else {
+        delete node.rawNode.propertyName ;
+        delete node.rawNode.propertyDivider ;
+    }
+}
+
+dm_Datamap.focusNode(node) ;
+dm_Datamap.refreshGraph(node) ;
+                    "
+                },
+                "propertyName.dm_props": {
+                    "order": 2,
+                    "type": "dropdown",
+                    "visible": true,
+                    "edit": false,
+                    "dropdownList": "dm_Tools.feedPossibleProperties(node) ;",
+                    "name": "propertyName",
+                    "label": "property name",
+                    "placeHolder": "no property to add..."
+                },
+                "onlyLeaves.dm_props": {
+                    "order": 3,
+                    "type": "boolean",
+                    "visible": true,
+                    "edit": true,
+                    "label": "only leaves"
+                },
+                "propertyDivider.dm_props": {
+                    "order": 4,
+                    "type": "dropdown",
+                    "visible": true,
+                    "edit": false,
+                    "dropdownList": "dm_Tools.feedPossibleProperties(node) ;",
+                    "name": "propertyDivider",
+                    "label": "property divider",
+                    "placeHolder": "no property to add..."
+                },
+                "setFuncBtn": "Set aggregate function",
+                "setFuncBtn.dm_props": {
+                    "name": "setFuncBtn",
+                    "label": "Set chosen aggregate function",
+                    "visible": true,
+                    "edit": false,
+                    "order": 100,
+                    "type": "action",
+                    "image": "../../images/refresh.png",
+                    "imageName": "../../images/refresh.png",
+                    "class": "btn-info",
+                    "content.exec" : "
+node.rawNode.value = node.parent.rawNode.predefinedAggregateFunctions[node.rawNode.funcDropdown] ;
+node.rawNode.value = dm_Tools.replaceByProperties(node, node.rawNode.value) ;
+dm_Datamap.focusNode(node) ;
+dm_Datamap.refreshGraph(node) ;
+"
+                },
+                "br": "<br/>",
+                "br.dm_props": {
+                    "type": "rich text",
+                    "edit": false,
+                    "order": 101
+                },
+                "value.dm_props": {
+                    "type": "javascript",
+                    "order": -1
+                }
+            }
+        },
+        /* ----------------------------------------------------------------------------------------------------------------------------------------
+                     "name": "$dm_root|columnNames",
+           ----------------------------------------------------------------------------------------------------------------------------------------*/
+        {
+            "name": "$dm_root|columnNames",
             "rawNode": {
                 "icon": "../../config/images/config/columnNames.png",
                 "icon.dm_props": {
@@ -455,13 +976,17 @@ dm_Tools.sortChildrenByPos(node);
                     "scaleFactor": 5,
                     "panelMaxHeight": 180,
                     "visible": true,
+                    "edit": false,
                     "textX": 3,
                     "type": "image"
                 }
             }
         },
+        /* ----------------------------------------------------------------------------------------------------------------------------------------
+                     "name": "$dm_root|setColumns2node",
+           ----------------------------------------------------------------------------------------------------------------------------------------*/
         {
-            "name": "config|setColumns2node",
+            "name": "$dm_root|setColumns2node",
             "rawNode": {
                 "icon": "../../config/images/config/columns2node.png",
                 "icon.dm_props": {
@@ -470,13 +995,17 @@ dm_Tools.sortChildrenByPos(node);
                     "scaleFactor": 5,
                     "panelMaxHeight": 180,
                     "visible": true,
+                    "edit": false,
                     "textX": 3,
                     "type": "image"
                 }
             }
         },
+        /* ----------------------------------------------------------------------------------------------------------------------------------------
+                     "name": "$dm_root|styles",
+           ----------------------------------------------------------------------------------------------------------------------------------------*/
         {
-            "name": "config|styles",
+            "name": "$dm_root|styles",
             "rawNode": {
                 "icon": "../../config/images/config/styles.png",
                 "icon.dm_props": {
@@ -485,13 +1014,86 @@ dm_Tools.sortChildrenByPos(node);
                     "scaleFactor": 5,
                     "panelMaxHeight": 180,
                     "visible": true,
+                    "edit": false,
                     "textX": 3,
                     "type": "image"
+                },
+                "resetDefaultsBtn": "Reset defaults",
+                "resetDefaultsBtn.dm_props": {
+                    "name": "resetDefaultsBtn",
+                    "label": "Reset defaults",
+                    "visible": true,
+                    "edit": false,
+                    "type": "action",
+                    "source": "user",
+                    "level": 2,
+                    "image": "../../images/refresh.png",
+                    "imageName": "../../images/refresh.png",
+                    "class": "btn-warning",
+                    "content.exec" : "
+dm_Tools.alignConfigTreeToColumnsNumber(node, true, 'styles') ;
+dm_Datamap.refreshGraph(node);
+"
                 }
             }
         },
+        /* ----------------------------------------------------------------------------------------------------------------------------------------
+                     "name": "$dm_root|styles|*",
+           ----------------------------------------------------------------------------------------------------------------------------------------*/
         {
-            "name": "config|specifics",
+            "name": "$dm_root|styles|*",
+            "rawNode": {
+                "name.dm_props": {
+                    "order": 0,
+                    "visible": false,
+                    "edit": false
+                },
+                "array index.dm_props": {
+                    "order": 1,
+                    "visible": false,
+                    "edit": false
+                },
+                "level.dm_props": {
+                    "order": 2,
+                    "visible": false,
+                    "edit": false
+                },
+                "arrow.dm_props": {
+                    "order": 3,
+                    "type": "boolean"
+                },
+                "arc.dm_props": {
+                    "order": 4,
+                    "type": "boolean"
+                },
+                "rNod.dm_props": {
+                    "order": 5
+                },
+                "txtFontSize.dm_props": {
+                    "order": 6                    
+                },
+                "link.dm_props": {
+                    "order": 7
+                },
+                "color.dm_props": {
+                    "order": 8
+                },
+                "attrPaneCol.dm_props": {
+                    "order": 9
+                },
+                "txtCol.dm_props": {
+                    "order": 10
+                },
+                "backgroundImage.dm_props": {
+                    "order": 11
+                }
+            }
+        },
+        /* ----------------------------------------------------------------------------------------------------------------------------------------
+                     "name": "$dm_root|specifics",
+           ----------------------------------------------------------------------------------------------------------------------------------------*/
+        {
+            "name": "$dm_root|specifics",
             "rawNode": {
                 "icon": "../../config/images/config/specifics.png",
                 "icon.dm_props": {
@@ -500,8 +1102,593 @@ dm_Tools.sortChildrenByPos(node);
                     "scaleFactor": 5,
                     "panelMaxHeight": 180,
                     "visible": true,
+                    "edit": false,
                     "textX": 3,
                     "type": "image"
+                }
+            }
+        },
+         /* ----------------------------------------------------------------------------------------------------------------------------------------
+                     "name": "$dm_root|props4globalSearch",
+           ----------------------------------------------------------------------------------------------------------------------------------------*/
+        {
+            "name": "$dm_root|props4globalSearch",
+            "rawNode": {
+                "icon": "../../config/images/config/search.png",
+                "icon.dm_props": {
+                    "width": 180,
+                    "height": 180,
+                    "scaleFactor": 4,
+                    "panelMaxHeight": 180,
+                    "visible": true,
+                    "edit": false,
+                    "textX": 3,
+                    "type": "image"
+                }
+            }
+        },
+       /* ----------------------------------------------------------------------------------------------------------------------------------------
+                     "name": "$dm_root|displayProps",
+           ----------------------------------------------------------------------------------------------------------------------------------------*/
+        {
+            "name": "$dm_root|displayProps",
+            "rawNode": {
+                "icon": "../../config/images/config/displayProps.png",
+                "icon.dm_props": {
+                    "order": 0,
+                    "width": 165,
+                    "height": 180,
+                    "scaleFactor": 4.5,
+                    "panelMaxHeight": 180,
+                    "visible": true,
+                    "edit": false,
+                    "textX": 3,
+                    "type": "image"
+                },
+                "resetDefaultsBtn": "Reset defaults",
+                "resetDefaultsBtn.dm_props": {
+                    "order": 1,
+                    "name": "resetDefaultsBtn",
+                    "label": "Reset defaults",
+                    "visible": true,
+                    "edit": false,
+                    "type": "action",
+                    "source": "user",
+                    "image": "../../images/refresh.png",
+                    "imageName": "../../images/refresh.png",
+                    "class": "btn-warning",
+                    "content.exec" : "
+dm_Tools.alignConfigTreeToColumnsNumber(node, true, 'displayProps') ;
+dm_Datamap.refreshGraph(node);
+"
+                },
+                "br": "<br/>",
+                "br.dm_props": {
+                    "order": 2,
+                    "type": "rich text",
+                    "edit": false
+                },
+                "borderAddPropIn": "borderAddPropIn",
+                "borderAddPropIn.dm_props": {
+                    "order": 90,
+                    "type": "borderIn"
+                },
+                "propertyAddDropdown": "",
+                "propertyAddDropdown.dm_props": {
+                    "order": 91,
+                    "type": "dropdown",
+                    "visible": true,
+                    "edit": false,
+                    "dropdownList": "
+var doit = function() {
+    var output = dm_Tools.getDisplayPropsNames(node) ;
+    output = dm_Tools.feedPossibleProperties(node, output) ;
+    return output ;    
+}
+doit() ;
+",
+                    "name": "propertyAddDropdown",
+                    "label": "Choose existing property",
+                    "placeHolder": "no property to add...",
+                    "onChange": "
+node.rawNode.propertyAddName = node.rawNode.propertyAddDropdown ;
+node.rawNode.label = node.rawNode.propertyAddDropdown ;
+var dp = dm_Tools.getFirstDisplayProp(node, node.rawNode.propertyAddName) ;
+if(dp) {
+    dm_Tools.copyPropsFromOrderRange(dp, 100, 200, node, true) ;
+}
+if(node.rawNode.type != 'graph') {
+    delete node.rawNode.borderIn1 ;
+    delete node.rawNode.graph ;
+    delete node.rawNode.doTransition ;
+    delete node.rawNode.predefinedGraphDropdown ;
+    delete node.rawNode.graphProperty1 ;
+    delete node.rawNode.graphDepth ;
+    delete node.rawNode.textInPie ;
+    delete node.rawNode.graphUnit1 ;
+    delete node.rawNode.setFuncBtn ;
+    delete node.rawNode.br ;
+    delete node.rawNode.input ;
+    delete node.rawNode.borderOut1 ;
+}
+dm_Datamap.focusNode(node) ;
+dm_Datamap.refreshGraph(node);
+"
+                },
+                "execute1": "
+if(node.rawNode.propertyAddDropdown != node.rawNode.propertyAddName) {
+    if(!node.rawNode.propertyAddName || (node.rawNode.propertyAddName == '')) {
+        node.rawNode.propertyAddName = node.rawNode.propertyAddDropdown ;
+    }
+    var dp = dm_Tools.getFirstDisplayProp(node, node.rawNode.propertyAddName) ;
+    if(dp) {
+        dm_Tools.copyPropsFromOrderRange(dp, 100, 200, node, true) ;
+    }
+    if(!node.rawNode.label || (node.rawNode.label == '')) {
+        node.rawNode.label = node.rawNode.propertyAddDropdown ;
+    }
+    if(node.rawNode.type != 'graph') {
+        delete node.rawNode.borderIn1 ;
+        delete node.rawNode.graph ;
+        delete node.rawNode.doTransition ;
+        delete node.rawNode.predefinedGraphDropdown ;
+        delete node.rawNode.graphProperty1 ;
+        delete node.rawNode.graphDepth ;
+        delete node.rawNode.textInPie ;
+        delete node.rawNode.graphUnit1 ;
+        delete node.rawNode.setFuncBtn ;
+        delete node.rawNode.br ;
+        delete node.rawNode.input ;
+        delete node.rawNode.borderOut1 ;
+    }
+}
+",
+                "execute1.dm_props": {
+                    "order": 92,
+                    "type": "execute"
+                },
+                "propertyAddName": "",
+                "propertyAddName.dm_props": {
+                    "order": 93,
+                    "type": "text",
+                    "visible": true,
+                    "edit": true,
+                    "label": "Name of property to display"
+                },
+                /* --------------------------------------------------------------------- property options --------------------------------------------------*/
+                "execute2": "
+var output ;
+if(node.rawNode.type != 'graph') {
+    delete node.rawNode.borderIn1 ;
+    delete node.rawNode.graph ;
+    delete node.rawNode.doTransition ;
+    delete node.rawNode.predefinedGraphDropdown ;
+    delete node.rawNode.graphProperty1 ;
+    delete node.rawNode.graphDepth ;
+    delete node.rawNode.textInPie ;
+    delete node.rawNode.graphUnit1 ;
+    delete node.rawNode.setFuncBtn ;
+    delete node.rawNode.br ;
+    delete node.rawNode.input ;
+    delete node.rawNode.borderOut1 ;
+    output = '#dm_STOP_AND_REDRAW_ATTRIBUTES_PANEL#101' ;
+} else {
+    node.rawNode.borderIn1 = 'graphIn' ;
+    node.rawNode.borderOut1 = 'graphOut' ;    
+}
+output ;
+",
+                "execute2.dm_props": {
+                    "order": 100,
+                    "type": "execute"
+                },
+                "visible": true,
+                "visible.dm_props": {
+                    "type": "boolean",
+                    "order": 101
+                },
+                "edit": false,
+                "edit.dm_props": {
+                    "type": "boolean",
+                    "order": 102
+                },
+                "label": "",
+                "label.dm_props": {
+                    "order": 103,
+                    "type": "text",
+                    "visible": true,
+                    "edit": true,
+                    "label": "Label of property to display"
+                },
+                "type": "",
+                "type.dm_props": {
+                    "order": 104,
+                    "type": "dropdown",
+                    "visible": true,
+                    "edit": false,
+                    "dropdownList": "['text', 'graph', 'music']",
+                    "name": "type",
+                    "label": "type :",
+                    "onChange": "
+if(node.rawNode.type == 'graph') {
+    node.rawNode.borderIn1 = 'graphIn' ;
+    node.rawNode.graph = 'pie' ;
+    node.rawNode.doTransition = true ;
+    node.rawNode.predefinedGraphDropdown = '' ;
+    
+    var possibleProps = dm_Tools.feedPossibleProperties(node) ;
+    if(possibleProps.indexOf(node.rawNode.propertyAddName) >= 0) {
+        node.rawNode.graphProperty1 = node.rawNode.propertyAddName ;
+    } else {
+        node.rawNode.graphProperty1 = possibleProps[0] ;
+    }
+
+    node.rawNode.graphDepth = '' ;
+    node.rawNode.textInPie = false ;
+    node.rawNode.graphUnit1 = '' ;
+    node.rawNode.setFuncBtn = 'Update graph function' ;
+    //node.rawNode.br1 = '<br/>' ;
+    node.rawNode.input = '' ;
+    node.rawNode.borderOut1 = 'graphOut' ;
+} else {
+    delete node.rawNode.borderIn1 ;
+    delete node.rawNode.graph ;
+    delete node.rawNode.doTransition ;
+    delete node.rawNode.predefinedGraphDropdown ;
+    delete node.rawNode.graphProperty1 ;
+    delete node.rawNode.graphDepth ;
+    delete node.rawNode.textInPie ;
+    delete node.rawNode.graphUnit1 ;
+    delete node.rawNode.setFuncBtn ;
+    delete node.rawNode.br ;
+    delete node.rawNode.input ;
+    delete node.rawNode.borderOut1 ;
+}
+dm_Datamap.focusNode(node) ;
+dm_Datamap.refreshGraph(node);
+"
+                },
+                "borderIn1.dm_props": {
+                    "order": 110,
+                    "type": "borderIn",
+                    "visible": true,
+                    "displayEvenIfUndefined": true
+                },
+                "graph.dm_props": {
+                    "order": 111,
+                    "type": "dropdown",
+                    "visible": true,
+                    "edit": false,
+                    "dropdownList": "['pie']",
+                    "name": "graph",
+                    "label": "graph :",
+                    "source": "user"
+                },
+                "doTransition.dm_props": {
+                    "order": 112,
+                    "type": "boolean"
+                },
+                "predefinedGraphDropdown.dm_props": {
+                    "order": 113,
+                    "type": "dropdown",
+                    "visible": true,
+                    "edit": false,
+                    "dropdownList": "['pie based on property']",
+                    "name": "predefinedGraphDropdown",
+                    "label": "predefined graph :",
+                    "onChange": "
+var possibleProps = dm_Tools.feedPossibleProperties(node) ;
+if(node.rawNode.predefinedGraphDropdown == 'pie based on property') {
+    if(possibleProps.indexOf(node.rawNode.propertyAddName) >= 0) {
+        node.rawNode.graphProperty1 = node.rawNode.propertyAddName ;
+    }
+}
+"
+                },
+                "graphProperty1.dm_props": {
+                    "order": 114,
+                    "type": "dropdown",
+                    "visible": true,
+                    "edit": false,
+                    "dropdownList": "dm_Tools.feedPossibleProperties(node);",
+                    "name": "graphProperty1",
+                    "label": "property :"
+                },
+                "graphUnit1.dm_props": {
+                    "order": 115,
+                    "type": "text",
+                    "visible": true,
+                    "edit": true,
+                    "label": "Unit"
+                },
+                "graphDepth.dm_props": {
+                    "order": 116,
+                    "type": "dropdown",
+                    "visible": true,
+                    "edit": false,
+                    "dropdownList": "['1', '2', '3', '4']",
+                    "name": "graphDepth",
+                    "label": "depth level :"
+                },
+                "textInPie.dm_props": {
+                    "order": 117,
+                    "type": "boolean"
+                },
+                "br0": "<br/>",
+                "br0.dm_props": {
+                    "order": 118,
+                    "type": "rich text",
+                    "edit": false
+                },
+                "setFuncBtn.dm_props": {
+                    "order": 120,
+                    "name": "setFuncBtn",
+                    "label": "Update graph function",
+                    "visible": true,
+                    "edit": false,
+                    "type": "action",
+                    "image": "../../images/refresh.png",
+                    "imageName": "../../images/refresh.png",
+                    "class": "btn-info",
+                    "content.exec" : "
+var configRoot = node ;
+while(configRoot.parent) configRoot = configRoot.parent ;
+node.rawNode.input = dm_Tools.getChild(configRoot, 'displayProps').rawNode.predefinedGraphFunctions[node.rawNode.predefinedGraphDropdown] ;
+node.rawNode.input = dm_Tools.replaceByProperties(node, node.rawNode.input) ;
+dm_Datamap.focusNode(node) ;
+dm_Datamap.refreshGraph(node) ;
+"
+                },
+                "br1.dm_props": {
+                    "order": 121,
+                    "type": "rich text",
+                    "edit": false
+                },
+                "input.dm_props": {
+                    "order": 122,
+                    "type": "javascript",
+                    "visible": true,
+                    "edit": true
+                },
+                "borderOut1.dm_props": {
+                    "order": 130,
+                    "type": "borderOut",
+                    "visible": true,
+                    "displayEvenIfUndefined": true
+                },
+                "ifCenter.dm_props": {
+                    "type": "boolean"
+                },
+                /* -------------------------------------------------------------------- end property options -----------------------------------------------*/
+                "addPropertyBtn": "Add property to all levels",
+                "addPropertyBtn.dm_props": {
+                    "order": 201,
+                    "name": "addPropertyBtn",
+                    "label": "Add property to all levels",
+                    "visible": true,
+                    "edit": false,
+                    "type": "action",
+                    "source": "user",
+                    "image": "../../images/plus.png",
+                    "imageName": "../../images/plus.png",
+                    "class": "btn-success",
+                    "content.exec" : "
+var dpLevel, newNode ;
+var newDPName = node.rawNode.propertyAddName ;
+for(var i=0; i<node.children.length; i++) {
+    newNode = null ;
+    dpLevel = node.children[i] ;
+    if(dpLevel.children) {
+        newNode = dm_Tools.getChild(dpLevel, newDPName) ;
+    }
+    if(!newNode) {
+        newNode = dm_Datamap.createNode(dpLevel, newDPName, true, true) ;
+    }
+    if(!newNode.rawNode) newNode.rawNode = {} ;
+    dm_Tools.copyPropsFromOrderRange(node, 100, 200, newNode, true) ;
+}
+dm_Datamap.focusNode(node) ;
+dm_Datamap.refreshGraph(node);
+"
+                },
+                "borderAddPropOut": "borderAddPropOut",
+                "borderAddPropOut.dm_props": {
+                    "order": 202,
+                    "type": "borderOut"
+                },
+                "br2": "<br/>",
+                "br2.dm_props": {
+                    "order": 203,
+                    "type": "rich text",
+                    "edit": false
+                },
+                "borderDelPropIn": "borderDelPropIn",
+                "borderDelPropIn.dm_props": {
+                    "order": 204,
+                    "type": "borderIn"
+                },
+                "propertyDeleteDropdown": "",
+                "propertyDeleteDropdown.dm_props": {
+                    "order": 205,
+                    "type": "dropdown",
+                    "visible": true,
+                    "edit": false,
+                    "dropdownList": "
+var doit = function() {
+    var output ;
+    var dpLevel, dp ;
+    for(var i=0; i<node.children.length; i++) {
+        dpLevel = node.children[i] ;
+        if(dpLevel.children) {
+            for(var j=0; j<dpLevel.children.length; j++) {
+                dp = dpLevel.children[j] ;
+                if(!output) output = [] ;
+                if(output.indexOf(dp.name) < 0) {
+                    output.push(dp.name) ;
+                }
+            }
+        }
+    }
+    return output ;
+}
+doit() ;
+                    ",
+                    "name": "propertyDeleteDropdown",
+                    "label": "propertyDeleteDropdown",
+                    "source": "user",
+                    "placeHolder": "no property to delete..."
+                },
+                "deletePropertyBtn": "Delete property from all levels",
+                "deletePropertyBtn.dm_props": {
+                    "order": 206,
+                    "name": "deletePropertyBtn",
+                    "label": "Delete property from all levels",
+                    "visible": true,
+                    "edit": false,
+                    "type": "action",
+                    "source": "user",
+                    "image": "../../images/delete.png",
+                    "imageName": "../../images/delete.png",
+                    "class": "btn-danger",
+                    "content.exec" : "
+var dpLevel, newNode ;
+var newDPName = node.rawNode.propertyDeleteDropdown ;
+for(var i=0; i<node.children.length; i++) {
+    dpLevel = node.children[i] ;
+    var alreadyThere ;
+    if(dpLevel.children) {
+        alreadyThere = dm_Tools.getChild(dpLevel, newDPName) ;
+    }
+    if(alreadyThere) {
+        dm_Datamap.removeNode(alreadyThere) ;
+    }
+}
+dm_Datamap.focusNode(node) ;
+dm_Datamap.refreshGraph(node);
+"
+                },
+                "predefinedGraphFunctions": {
+                    "pie based on property": "var output, elt;
+var levelMin = node.level ;
+var doIt = function(node) {
+    if (!output) {
+        output = [] ;
+    }
+    elt = {} ;
+    output.push(elt) ;
+    elt.value = node.rawNode['#replaceMeBy_graphProperty1#'] ;
+    elt.name = dm_Tools.getNodePath(node, '\\n', true, null, levelMin+1) ;
+    elt.unit = '#replaceMeBy_graphUnit1#' ;
+};
+var parentLevel = node.level ;
+var depth = #replaceMeBy_graphDepth# ;
+var dive = function(node) {
+    if (node) {
+        if (node.level == parentLevel + depth) {
+            doIt(node);
+        } else if ((node.level < parentLevel + depth) && (node.children)) {
+            node.children.forEach(function(child) {
+                dive(child);
+            });
+        }
+    }
+} ;
+dive(node);
+return output;"
+                },
+                "borderDelPropOut": "borderDelPropOut",
+                "borderDelPropOut.dm_props": {
+                    "order": 207,
+                    "type": "borderOut"
+                },
+                "predefinedGraphFunctions.dm_props": {
+                    "visible": false,
+                    "edit": false
+                }
+            }
+        },
+        /* ----------------------------------------------------------------------------------------------------------------------------------------
+                     "name": "$dm_root|displayProps|*",
+           ----------------------------------------------------------------------------------------------------------------------------------------*/
+        {
+            "name": "$dm_root|displayProps|*",
+            "rawNode": {
+                "array index.dm_props": {
+                    "edit": false,
+                    "visible": false
+                },
+                "level.dm_props": {
+                    "edit": false,
+                    "visible": false
+                },
+                "edit.dm_props": {
+                    "type": "boolean",
+                    "order": 10,
+                    "displayEvenIfUndefined": true
+                },
+                "visible.dm_props": {
+                    "type": "boolean",
+                    "order": 11,
+                    "displayEvenIfUndefined": true
+                },
+                "applyToBrothersBtn": "Apply to all brothers",
+                "applyToBrothersBtn.dm_props": {
+                    "order": 21,
+                    "name": "applyToBrothersBtn",
+                    "label": "Apply to all brothers",
+                    "visible": true,
+                    "edit": false,
+                    "type": "action",
+                    "image": "../../images/refresh.png",
+                    "imageName": "../../images/refresh.png",
+                    "class": "btn-info",
+                    "content.exec" : "
+var child, parent = node.parent ;
+for(var i=0; i<parent.children.length; i++) {
+    child = parent.children[i] ;
+    dm_Tools.copyPropsFromOrderRange(node, 10, 20, child, true) ;
+}
+//dm_Datamap.focusNode(node) ;
+//dm_Datamap.refreshGraph(node);
+"
+                }
+            }
+        },
+        /* ----------------------------------------------------------------------------------------------------------------------------------------
+                     "name": "$dm_root|displayProps|*|*",
+           ----------------------------------------------------------------------------------------------------------------------------------------*/
+        {
+            "name": "$dm_root|displayProps|*|*",
+            "rawNode": {
+                "loadPropsFromGdParent": "
+var configRoot = node ;
+while(configRoot.parent) configRoot = configRoot.parent ;
+var displayPropsNode = dm_Tools.getChild(configRoot, 'displayProps') ;
+dm_Tools.copyPropsFromOrderRange(displayPropsNode, 100, 200, node, false, true) ;
+
+if(node.rawNode.type != 'graph') {
+    delete node.rawNode.borderIn1 ;
+    delete node.rawNode.graph ;
+    delete node.rawNode.doTransition ;
+    delete node.rawNode.predefinedGraphDropdown ;
+    delete node.rawNode.graphProperty1 ;
+    delete node.rawNode.graphDepth ;
+    delete node.rawNode.textInPie ;
+    delete node.rawNode.graphUnit1 ;
+    delete node.rawNode.setFuncBtn ;
+    delete node.rawNode.br ;
+    delete node.rawNode.input ;
+    delete node.rawNode.borderOut1 ;
+} else {
+    node.rawNode.borderIn1 = 'graphIn' ;
+    node.rawNode.borderOut1 = 'graphOut' ;    
+}
+
+'#dm_STOP_AND_REDRAW_ATTRIBUTES_PANEL#' ;
+",
+                "loadPropsFromGdParent.dm_props": {
+                    "order": 0,
+                    "type": "execute"
                 }
             }
         }

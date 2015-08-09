@@ -322,6 +322,7 @@
             }, {
                 "name": "nbOfEltsPerDomain",
                 "graph": "pie",
+                "type": "graph",
                 "doTransition": true,
                 "input": "var doit = function (depth, prop, unit, condition) {\r
         var output, elt, level;\r
@@ -381,6 +382,7 @@
             }, {
                 "name": "nbOfEltsPerOrg",
                 "graph": "pie",
+                "type": "graph",
                 "doTransition": true,
                 "input": "var doit = function (depth, prop, unit, condition) {\r
         var output, elt, level;\r
@@ -440,6 +442,7 @@
             }, {
                 "name": "nbOfEltsPerCategory",
                 "graph": "pie",
+                "type": "graph",
                 "doTransition": true,
                 "input": "var doit = function (depth, prop, unit, condition) {\r
         var output, elt, level;\r
@@ -499,6 +502,7 @@
             }, {
                 "name": "nbOfEltsPerState",
                 "graph": "pie",
+                "type": "graph",
                 "doTransition": true,
                 "input": "var doit = function (depth, prop, unit, condition) {\r
         var output, elt, level;\r
@@ -558,6 +562,7 @@
             }, {
                 "name": "nbOfEltsPerCity",
                 "graph": "pie",
+                "type": "graph",
                 "doTransition": true,
                 "input": "var doit = function (depth, prop, unit, condition) {\r
         var output, elt, level;\r
@@ -622,6 +627,7 @@
             }, {
                 "name": "nbOfEltsPerOrg",
                 "graph": "pie",
+                "type": "graph",
                 "doTransition": true,
                 "input": "var doit = function (depth, prop, unit, condition) {\r
         var output, elt, level;\r
@@ -681,6 +687,7 @@
             }, {
                 "name": "nbOfEltsPerCategory",
                 "graph": "pie",
+                "type": "graph",
                 "doTransition": true,
                 "input": "var doit = function (depth, prop, unit, condition) {\r
         var output, elt, level;\r
@@ -740,6 +747,7 @@
             }, {
                 "name": "nbOfEltsPerState",
                 "graph": "pie",
+                "type": "graph",
                 "doTransition": true,
                 "input": "var doit = function (depth, prop, unit, condition) {\r
         var output, elt, level;\r
@@ -799,6 +807,7 @@
             }, {
                 "name": "nbOfEltsPerCity",
                 "graph": "pie",
+                "type": "graph",
                 "doTransition": true,
                 "input": "var doit = function (depth, prop, unit, condition) {\r
         var output, elt, level;\r
@@ -864,6 +873,7 @@
             }, {
                 "name": "nbOfEltsPerCategory",
                 "graph": "pie",
+                "type": "graph",
                 "doTransition": true,
                 "input": "var doit = function (depth, prop, unit, condition) {\r
         var output, elt, level;\r
@@ -923,6 +933,7 @@
             }, {
                 "name": "nbOfEltsPerState",
                 "graph": "pie",
+                "type": "graph",
                 "doTransition": true,
                 "input": "var doit = function (depth, prop, unit, condition) {\r
         var output, elt, level;\r
@@ -982,6 +993,7 @@
             }, {
                 "name": "nbOfEltsPerCity",
                 "graph": "pie",
+                "type": "graph",
                 "doTransition": true,
                 "input": "var doit = function (depth, prop, unit, condition) {\r
         var output, elt, level;\r
@@ -1047,6 +1059,7 @@
             }, {
                 "name": "nbOfEltsPerState",
                 "graph": "pie",
+                "type": "graph",
                 "doTransition": true,
                 "input": "var doit = function (depth, prop, unit, condition) {\r
         var output, elt, level;\r
@@ -1106,6 +1119,7 @@
             }, {
                 "name": "nbOfEltsPerCity",
                 "graph": "pie",
+                "type": "graph",
                 "doTransition": true,
                 "input": "var doit = function (depth, prop, unit, condition) {\r
         var output, elt, level;\r
@@ -1171,6 +1185,7 @@
             }, {
                 "name": "nbOfEltsPerCity",
                 "graph": "pie",
+                "type": "graph",
                 "doTransition": true,
                 "input": "var doit = function (depth, prop, unit, condition) {\r
         var output, elt, level;\r
