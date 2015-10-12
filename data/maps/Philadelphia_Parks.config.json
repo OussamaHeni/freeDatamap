@@ -3621,6 +3621,7 @@ dm_Datamap.refreshGraph(node) ;
                 "visible": false,
                 "editable": false
             },
+            /*
             "txtFontSize": 14,
             "txtFontSize.dm_props": {
                 "order": 6,
@@ -3628,6 +3629,7 @@ dm_Datamap.refreshGraph(node) ;
                 "visible": false,
                 "editable": false
             },
+            */
             "backgroundImage": "../../images/empty.jpg",
             "backgroundImage.dm_props": {
                 "order": 11,
@@ -3693,6 +3695,7 @@ dm_Datamap.refreshGraph(node) ;
                 "visible": false,
                 "editable": false
             },
+            /*
             "txtFontSize": 13,
             "txtFontSize.dm_props": {
                 "order": 6,
@@ -3700,6 +3703,7 @@ dm_Datamap.refreshGraph(node) ;
                 "visible": false,
                 "editable": false
             },
+            */
             "color": "#1f77b4",
             "color.dm_props": {
                 "order": 8,
@@ -3777,6 +3781,7 @@ dm_Datamap.refreshGraph(node) ;
                 "visible": false,
                 "editable": false
             },
+            /*
             "txtFontSize": 12,
             "txtFontSize.dm_props": {
                 "order": 6,
@@ -3784,6 +3789,7 @@ dm_Datamap.refreshGraph(node) ;
                 "visible": false,
                 "editable": false
             },
+            */
             "color": "#ff7f0e",
             "color.dm_props": {
                 "order": 8,
@@ -3861,6 +3867,7 @@ dm_Datamap.refreshGraph(node) ;
                 "visible": false,
                 "editable": false
             },
+            /*
             "txtFontSize": 12,
             "txtFontSize.dm_props": {
                 "order": 6,
@@ -3868,6 +3875,7 @@ dm_Datamap.refreshGraph(node) ;
                 "visible": false,
                 "editable": false
             },
+            */
             "color": "#2ca02c",
             "color.dm_props": {
                 "order": 8,
@@ -3945,6 +3953,7 @@ dm_Datamap.refreshGraph(node) ;
                 "visible": false,
                 "editable": false
             },
+            /*
             "txtFontSize": 10,
             "txtFontSize.dm_props": {
                 "order": 6,
@@ -3952,6 +3961,7 @@ dm_Datamap.refreshGraph(node) ;
                 "visible": false,
                 "editable": false
             },
+            */
             "color": "#c7c7c7",
             "color.dm_props": {
                 "order": 8,

@@ -18,6 +18,7 @@
                 "visible": true,
                 "label": "backgroundImage",
                 "type": "image",
+                "dontExport": true,
                 "edit": false
             }
         }, {
@@ -220,7 +221,7 @@
         "aggregate": [
             {
                 "name": "items",
-                "value": "var output = 1 ;\nif(node.children) {\n    var i = node.children.length - 1 ;\n    output = 0 ;\n    for(; i>=0; i--) {\n        output += node.children[i].rawNode[propName] ;\n    }\n}\nreturn output ;",
+                "value": "var output = 1 ;\nif(node.children && (node.children.length > 0)) {\n    var i = node.children.length - 1 ;\n    output = 0 ;\n    for(; i>=0; i--) {\n        output += node.children[i].rawNode[propName] ;\n    }\n}\nreturn output ;",
                 "funcDropdown": "count leaves",
                 "execAfterChildrenVisit": true,
                 "onlyLeaves": true
@@ -244,10 +245,6 @@
                 "visible": true,
                 "graph": "pie",
                 "doTransition": true,
-                "predefinedGraphDropdown": "pie based on property",
-                "graphProperty1": "items",
-                "graphUnit1": "item(s)",
-                "graphDepth": 1,
                 "textInPie": false,
                 "input": "var output, elt;\nvar levelMin = dm_Tools.getDepth(node) ;\nvar doIt = function(node) {\n    if (!output) {\n        output = [] ;\n    }\n    elt = {} ;\n    output.push(elt) ;\n    elt.value = node.rawNode['items'] ;\n    elt.name = node.name ; //dm_Tools.getNodePath(node, '', true, null, levelMin+1) ;\n    elt.unit = 'item(s)' ;\n};\nvar parentLevel = dm_Tools.getDepth(node) ;\nvar depth = 1 ;\nvar dive = function(node) {\n    if (node) {\n        if (dm_Tools.getDepth(node) == parentLevel + depth) {\n            doIt(node);\n        } else if ((dm_Tools.getDepth(node) < parentLevel + depth) && (node.children)) {\n            node.children.forEach(function(child) {\n                dive(child);\n            });\n        }\n    }\n} ;\ndive(node);\nreturn output;"
             }],
@@ -270,10 +267,6 @@
                 "visible": true,
                 "graph": "pie",
                 "doTransition": true,
-                "predefinedGraphDropdown": "pie based on property",
-                "graphProperty1": "items",
-                "graphUnit1": "item(s)",
-                "graphDepth": 1,
                 "textInPie": false,
                 "input": "var output, elt;\nvar levelMin = dm_Tools.getDepth(node) ;\nvar doIt = function(node) {\n    if (!output) {\n        output = [] ;\n    }\n    elt = {} ;\n    output.push(elt) ;\n    elt.value = node.rawNode['items'] ;\n    elt.name = node.name ; //dm_Tools.getNodePath(node, '', true, null, levelMin+1) ;\n    elt.unit = 'item(s)' ;\n};\nvar parentLevel = dm_Tools.getDepth(node) ;\nvar depth = 1 ;\nvar dive = function(node) {\n    if (node) {\n        if (dm_Tools.getDepth(node) == parentLevel + depth) {\n            doIt(node);\n        } else if ((dm_Tools.getDepth(node) < parentLevel + depth) && (node.children)) {\n            node.children.forEach(function(child) {\n                dive(child);\n            });\n        }\n    }\n} ;\ndive(node);\nreturn output;"
             }],
@@ -296,10 +289,6 @@
                 "visible": true,
                 "graph": "pie",
                 "doTransition": true,
-                "predefinedGraphDropdown": "pie based on property",
-                "graphProperty1": "items",
-                "graphUnit1": "item(s)",
-                "graphDepth": 1,
                 "textInPie": false,
                 "input": "var output, elt;\nvar levelMin = dm_Tools.getDepth(node) ;\nvar doIt = function(node) {\n    if (!output) {\n        output = [] ;\n    }\n    elt = {} ;\n    output.push(elt) ;\n    elt.value = node.rawNode['items'] ;\n    elt.name = node.name ; //dm_Tools.getNodePath(node, '', true, null, levelMin+1) ;\n    elt.unit = 'item(s)' ;\n};\nvar parentLevel = dm_Tools.getDepth(node) ;\nvar depth = 1 ;\nvar dive = function(node) {\n    if (node) {\n        if (dm_Tools.getDepth(node) == parentLevel + depth) {\n            doIt(node);\n        } else if ((dm_Tools.getDepth(node) < parentLevel + depth) && (node.children)) {\n            node.children.forEach(function(child) {\n                dive(child);\n            });\n        }\n    }\n} ;\ndive(node);\nreturn output;"
             }],
@@ -322,10 +311,6 @@
                 "visible": true,
                 "graph": "pie",
                 "doTransition": true,
-                "predefinedGraphDropdown": "pie based on property",
-                "graphProperty1": "items",
-                "graphUnit1": "item(s)",
-                "graphDepth": 1,
                 "textInPie": false,
                 "input": "var output, elt;\nvar levelMin = dm_Tools.getDepth(node) ;\nvar doIt = function(node) {\n    if (!output) {\n        output = [] ;\n    }\n    elt = {} ;\n    output.push(elt) ;\n    elt.value = node.rawNode['items'] ;\n    elt.name = node.name ; //dm_Tools.getNodePath(node, '', true, null, levelMin+1) ;\n    elt.unit = 'item(s)' ;\n};\nvar parentLevel = dm_Tools.getDepth(node) ;\nvar depth = 1 ;\nvar dive = function(node) {\n    if (node) {\n        if (dm_Tools.getDepth(node) == parentLevel + depth) {\n            doIt(node);\n        } else if ((dm_Tools.getDepth(node) < parentLevel + depth) && (node.children)) {\n            node.children.forEach(function(child) {\n                dive(child);\n            });\n        }\n    }\n} ;\ndive(node);\nreturn output;"
             }],
@@ -348,10 +333,6 @@
                 "visible": true,
                 "graph": "pie",
                 "doTransition": true,
-                "predefinedGraphDropdown": "pie based on property",
-                "graphProperty1": "items",
-                "graphUnit1": "item(s)",
-                "graphDepth": 1,
                 "textInPie": false,
                 "input": "var output, elt;\nvar levelMin = dm_Tools.getDepth(node) ;\nvar doIt = function(node) {\n    if (!output) {\n        output = [] ;\n    }\n    elt = {} ;\n    output.push(elt) ;\n    elt.value = node.rawNode['items'] ;\n    elt.name = node.name ; //dm_Tools.getNodePath(node, '', true, null, levelMin+1) ;\n    elt.unit = 'item(s)' ;\n};\nvar parentLevel = dm_Tools.getDepth(node) ;\nvar depth = 1 ;\nvar dive = function(node) {\n    if (node) {\n        if (dm_Tools.getDepth(node) == parentLevel + depth) {\n            doIt(node);\n        } else if ((dm_Tools.getDepth(node) < parentLevel + depth) && (node.children)) {\n            node.children.forEach(function(child) {\n                dive(child);\n            });\n        }\n    }\n} ;\ndive(node);\nreturn output;"
             }],
@@ -374,10 +355,6 @@
                 "visible": true,
                 "graph": "pie",
                 "doTransition": true,
-                "predefinedGraphDropdown": "pie based on property",
-                "graphProperty1": "items",
-                "graphUnit1": "item(s)",
-                "graphDepth": 1,
                 "textInPie": false,
                 "input": "var output, elt;\nvar levelMin = dm_Tools.getDepth(node) ;\nvar doIt = function(node) {\n    if (!output) {\n        output = [] ;\n    }\n    elt = {} ;\n    output.push(elt) ;\n    elt.value = node.rawNode['items'] ;\n    elt.name = node.name ; //dm_Tools.getNodePath(node, '', true, null, levelMin+1) ;\n    elt.unit = 'item(s)' ;\n};\nvar parentLevel = dm_Tools.getDepth(node) ;\nvar depth = 1 ;\nvar dive = function(node) {\n    if (node) {\n        if (dm_Tools.getDepth(node) == parentLevel + depth) {\n            doIt(node);\n        } else if ((dm_Tools.getDepth(node) < parentLevel + depth) && (node.children)) {\n            node.children.forEach(function(child) {\n                dive(child);\n            });\n        }\n    }\n} ;\ndive(node);\nreturn output;"
             }],
@@ -400,10 +377,6 @@
                 "visible": true,
                 "graph": "pie",
                 "doTransition": true,
-                "predefinedGraphDropdown": "pie based on property",
-                "graphProperty1": "items",
-                "graphUnit1": "item(s)",
-                "graphDepth": 1,
                 "textInPie": false,
                 "input": "var output, elt;\nvar levelMin = dm_Tools.getDepth(node) ;\nvar doIt = function(node) {\n    if (!output) {\n        output = [] ;\n    }\n    elt = {} ;\n    output.push(elt) ;\n    elt.value = node.rawNode['items'] ;\n    elt.name = node.name ; //dm_Tools.getNodePath(node, '', true, null, levelMin+1) ;\n    elt.unit = 'item(s)' ;\n};\nvar parentLevel = dm_Tools.getDepth(node) ;\nvar depth = 1 ;\nvar dive = function(node) {\n    if (node) {\n        if (dm_Tools.getDepth(node) == parentLevel + depth) {\n            doIt(node);\n        } else if ((dm_Tools.getDepth(node) < parentLevel + depth) && (node.children)) {\n            node.children.forEach(function(child) {\n                dive(child);\n            });\n        }\n    }\n} ;\ndive(node);\nreturn output;"
             }],
@@ -426,10 +399,6 @@
                 "visible": true,
                 "graph": "pie",
                 "doTransition": true,
-                "predefinedGraphDropdown": "pie based on property",
-                "graphProperty1": "items",
-                "graphUnit1": "item(s)",
-                "graphDepth": 1,
                 "textInPie": false,
                 "input": "var output, elt;\nvar levelMin = dm_Tools.getDepth(node) ;\nvar doIt = function(node) {\n    if (!output) {\n        output = [] ;\n    }\n    elt = {} ;\n    output.push(elt) ;\n    elt.value = node.rawNode['items'] ;\n    elt.name = node.name ; //dm_Tools.getNodePath(node, '', true, null, levelMin+1) ;\n    elt.unit = 'item(s)' ;\n};\nvar parentLevel = dm_Tools.getDepth(node) ;\nvar depth = 1 ;\nvar dive = function(node) {\n    if (node) {\n        if (dm_Tools.getDepth(node) == parentLevel + depth) {\n            doIt(node);\n        } else if ((dm_Tools.getDepth(node) < parentLevel + depth) && (node.children)) {\n            node.children.forEach(function(child) {\n                dive(child);\n            });\n        }\n    }\n} ;\ndive(node);\nreturn output;"
             }],
@@ -452,10 +421,6 @@
                 "visible": true,
                 "graph": "pie",
                 "doTransition": true,
-                "predefinedGraphDropdown": "pie based on property",
-                "graphProperty1": "items",
-                "graphUnit1": "item(s)",
-                "graphDepth": 1,
                 "textInPie": false,
                 "input": "var output, elt;\nvar levelMin = dm_Tools.getDepth(node) ;\nvar doIt = function(node) {\n    if (!output) {\n        output = [] ;\n    }\n    elt = {} ;\n    output.push(elt) ;\n    elt.value = node.rawNode['items'] ;\n    elt.name = node.name ; //dm_Tools.getNodePath(node, '', true, null, levelMin+1) ;\n    elt.unit = 'item(s)' ;\n};\nvar parentLevel = dm_Tools.getDepth(node) ;\nvar depth = 1 ;\nvar dive = function(node) {\n    if (node) {\n        if (dm_Tools.getDepth(node) == parentLevel + depth) {\n            doIt(node);\n        } else if ((dm_Tools.getDepth(node) < parentLevel + depth) && (node.children)) {\n            node.children.forEach(function(child) {\n                dive(child);\n            });\n        }\n    }\n} ;\ndive(node);\nreturn output;"
             }],
@@ -478,10 +443,6 @@
                 "visible": true,
                 "graph": "pie",
                 "doTransition": true,
-                "predefinedGraphDropdown": "pie based on property",
-                "graphProperty1": "items",
-                "graphUnit1": "item(s)",
-                "graphDepth": 1,
                 "textInPie": false,
                 "input": "var output, elt;\nvar levelMin = dm_Tools.getDepth(node) ;\nvar doIt = function(node) {\n    if (!output) {\n        output = [] ;\n    }\n    elt = {} ;\n    output.push(elt) ;\n    elt.value = node.rawNode['items'] ;\n    elt.name = node.name ; //dm_Tools.getNodePath(node, '', true, null, levelMin+1) ;\n    elt.unit = 'item(s)' ;\n};\nvar parentLevel = dm_Tools.getDepth(node) ;\nvar depth = 1 ;\nvar dive = function(node) {\n    if (node) {\n        if (dm_Tools.getDepth(node) == parentLevel + depth) {\n            doIt(node);\n        } else if ((dm_Tools.getDepth(node) < parentLevel + depth) && (node.children)) {\n            node.children.forEach(function(child) {\n                dive(child);\n            });\n        }\n    }\n} ;\ndive(node);\nreturn output;"
             }],
@@ -504,10 +465,6 @@
                 "visible": true,
                 "graph": "pie",
                 "doTransition": true,
-                "predefinedGraphDropdown": "pie based on property",
-                "graphProperty1": "items",
-                "graphUnit1": "item(s)",
-                "graphDepth": 1,
                 "textInPie": false,
                 "input": "var output, elt;\nvar levelMin = dm_Tools.getDepth(node) ;\nvar doIt = function(node) {\n    if (!output) {\n        output = [] ;\n    }\n    elt = {} ;\n    output.push(elt) ;\n    elt.value = node.rawNode['items'] ;\n    elt.name = node.name ; //dm_Tools.getNodePath(node, '', true, null, levelMin+1) ;\n    elt.unit = 'item(s)' ;\n};\nvar parentLevel = dm_Tools.getDepth(node) ;\nvar depth = 1 ;\nvar dive = function(node) {\n    if (node) {\n        if (dm_Tools.getDepth(node) == parentLevel + depth) {\n            doIt(node);\n        } else if ((dm_Tools.getDepth(node) < parentLevel + depth) && (node.children)) {\n            node.children.forEach(function(child) {\n                dive(child);\n            });\n        }\n    }\n} ;\ndive(node);\nreturn output;"
             }],
@@ -530,10 +487,6 @@
                 "visible": true,
                 "graph": "pie",
                 "doTransition": true,
-                "predefinedGraphDropdown": "pie based on property",
-                "graphProperty1": "items",
-                "graphUnit1": "item(s)",
-                "graphDepth": 1,
                 "textInPie": false,
                 "input": "var output, elt;\nvar levelMin = dm_Tools.getDepth(node) ;\nvar doIt = function(node) {\n    if (!output) {\n        output = [] ;\n    }\n    elt = {} ;\n    output.push(elt) ;\n    elt.value = node.rawNode['items'] ;\n    elt.name = node.name ; //dm_Tools.getNodePath(node, '', true, null, levelMin+1) ;\n    elt.unit = 'item(s)' ;\n};\nvar parentLevel = dm_Tools.getDepth(node) ;\nvar depth = 1 ;\nvar dive = function(node) {\n    if (node) {\n        if (dm_Tools.getDepth(node) == parentLevel + depth) {\n            doIt(node);\n        } else if ((dm_Tools.getDepth(node) < parentLevel + depth) && (node.children)) {\n            node.children.forEach(function(child) {\n                dive(child);\n            });\n        }\n    }\n} ;\ndive(node);\nreturn output;"
             }],
@@ -556,10 +509,6 @@
                 "visible": true,
                 "graph": "pie",
                 "doTransition": true,
-                "predefinedGraphDropdown": "pie based on property",
-                "graphProperty1": "items",
-                "graphUnit1": "item(s)",
-                "graphDepth": 1,
                 "textInPie": false,
                 "input": "var output, elt;\nvar levelMin = dm_Tools.getDepth(node) ;\nvar doIt = function(node) {\n    if (!output) {\n        output = [] ;\n    }\n    elt = {} ;\n    output.push(elt) ;\n    elt.value = node.rawNode['items'] ;\n    elt.name = node.name ; //dm_Tools.getNodePath(node, '', true, null, levelMin+1) ;\n    elt.unit = 'item(s)' ;\n};\nvar parentLevel = dm_Tools.getDepth(node) ;\nvar depth = 1 ;\nvar dive = function(node) {\n    if (node) {\n        if (dm_Tools.getDepth(node) == parentLevel + depth) {\n            doIt(node);\n        } else if ((dm_Tools.getDepth(node) < parentLevel + depth) && (node.children)) {\n            node.children.forEach(function(child) {\n                dive(child);\n            });\n        }\n    }\n} ;\ndive(node);\nreturn output;"
             }],
@@ -582,10 +531,6 @@
                 "visible": true,
                 "graph": "pie",
                 "doTransition": true,
-                "predefinedGraphDropdown": "pie based on property",
-                "graphProperty1": "items",
-                "graphUnit1": "item(s)",
-                "graphDepth": 1,
                 "textInPie": false,
                 "input": "var output, elt;\nvar levelMin = dm_Tools.getDepth(node) ;\nvar doIt = function(node) {\n    if (!output) {\n        output = [] ;\n    }\n    elt = {} ;\n    output.push(elt) ;\n    elt.value = node.rawNode['items'] ;\n    elt.name = node.name ; //dm_Tools.getNodePath(node, '', true, null, levelMin+1) ;\n    elt.unit = 'item(s)' ;\n};\nvar parentLevel = dm_Tools.getDepth(node) ;\nvar depth = 1 ;\nvar dive = function(node) {\n    if (node) {\n        if (dm_Tools.getDepth(node) == parentLevel + depth) {\n            doIt(node);\n        } else if ((dm_Tools.getDepth(node) < parentLevel + depth) && (node.children)) {\n            node.children.forEach(function(child) {\n                dive(child);\n            });\n        }\n    }\n} ;\ndive(node);\nreturn output;"
             }],
@@ -608,10 +553,6 @@
                 "visible": true,
                 "graph": "pie",
                 "doTransition": true,
-                "predefinedGraphDropdown": "pie based on property",
-                "graphProperty1": "items",
-                "graphUnit1": "item(s)",
-                "graphDepth": 1,
                 "textInPie": false,
                 "input": "var output, elt;\nvar levelMin = dm_Tools.getDepth(node) ;\nvar doIt = function(node) {\n    if (!output) {\n        output = [] ;\n    }\n    elt = {} ;\n    output.push(elt) ;\n    elt.value = node.rawNode['items'] ;\n    elt.name = node.name ; //dm_Tools.getNodePath(node, '', true, null, levelMin+1) ;\n    elt.unit = 'item(s)' ;\n};\nvar parentLevel = dm_Tools.getDepth(node) ;\nvar depth = 1 ;\nvar dive = function(node) {\n    if (node) {\n        if (dm_Tools.getDepth(node) == parentLevel + depth) {\n            doIt(node);\n        } else if ((dm_Tools.getDepth(node) < parentLevel + depth) && (node.children)) {\n            node.children.forEach(function(child) {\n                dive(child);\n            });\n        }\n    }\n} ;\ndive(node);\nreturn output;"
             }],
@@ -634,10 +575,6 @@
                 "visible": true,
                 "graph": "pie",
                 "doTransition": true,
-                "predefinedGraphDropdown": "pie based on property",
-                "graphProperty1": "items",
-                "graphUnit1": "item(s)",
-                "graphDepth": 1,
                 "textInPie": false,
                 "input": "var output, elt;\nvar levelMin = dm_Tools.getDepth(node) ;\nvar doIt = function(node) {\n    if (!output) {\n        output = [] ;\n    }\n    elt = {} ;\n    output.push(elt) ;\n    elt.value = node.rawNode['items'] ;\n    elt.name = node.name ; //dm_Tools.getNodePath(node, '', true, null, levelMin+1) ;\n    elt.unit = 'item(s)' ;\n};\nvar parentLevel = dm_Tools.getDepth(node) ;\nvar depth = 1 ;\nvar dive = function(node) {\n    if (node) {\n        if (dm_Tools.getDepth(node) == parentLevel + depth) {\n            doIt(node);\n        } else if ((dm_Tools.getDepth(node) < parentLevel + depth) && (node.children)) {\n            node.children.forEach(function(child) {\n                dive(child);\n            });\n        }\n    }\n} ;\ndive(node);\nreturn output;"
             }],
@@ -660,10 +597,6 @@
                 "visible": true,
                 "graph": "pie",
                 "doTransition": true,
-                "predefinedGraphDropdown": "pie based on property",
-                "graphProperty1": "items",
-                "graphUnit1": "item(s)",
-                "graphDepth": 1,
                 "textInPie": false,
                 "input": "var output, elt;\nvar levelMin = dm_Tools.getDepth(node) ;\nvar doIt = function(node) {\n    if (!output) {\n        output = [] ;\n    }\n    elt = {} ;\n    output.push(elt) ;\n    elt.value = node.rawNode['items'] ;\n    elt.name = node.name ; //dm_Tools.getNodePath(node, '', true, null, levelMin+1) ;\n    elt.unit = 'item(s)' ;\n};\nvar parentLevel = dm_Tools.getDepth(node) ;\nvar depth = 1 ;\nvar dive = function(node) {\n    if (node) {\n        if (dm_Tools.getDepth(node) == parentLevel + depth) {\n            doIt(node);\n        } else if ((dm_Tools.getDepth(node) < parentLevel + depth) && (node.children)) {\n            node.children.forEach(function(child) {\n                dive(child);\n            });\n        }\n    }\n} ;\ndive(node);\nreturn output;"
             }],
@@ -686,10 +619,6 @@
                 "visible": true,
                 "graph": "pie",
                 "doTransition": true,
-                "predefinedGraphDropdown": "pie based on property",
-                "graphProperty1": "items",
-                "graphUnit1": "item(s)",
-                "graphDepth": 1,
                 "textInPie": false,
                 "input": "var output, elt;\nvar levelMin = dm_Tools.getDepth(node) ;\nvar doIt = function(node) {\n    if (!output) {\n        output = [] ;\n    }\n    elt = {} ;\n    output.push(elt) ;\n    elt.value = node.rawNode['items'] ;\n    elt.name = node.name ; //dm_Tools.getNodePath(node, '', true, null, levelMin+1) ;\n    elt.unit = 'item(s)' ;\n};\nvar parentLevel = dm_Tools.getDepth(node) ;\nvar depth = 1 ;\nvar dive = function(node) {\n    if (node) {\n        if (dm_Tools.getDepth(node) == parentLevel + depth) {\n            doIt(node);\n        } else if ((dm_Tools.getDepth(node) < parentLevel + depth) && (node.children)) {\n            node.children.forEach(function(child) {\n                dive(child);\n            });\n        }\n    }\n} ;\ndive(node);\nreturn output;"
             }],
@@ -712,10 +641,6 @@
                 "visible": true,
                 "graph": "pie",
                 "doTransition": true,
-                "predefinedGraphDropdown": "pie based on property",
-                "graphProperty1": "items",
-                "graphUnit1": "item(s)",
-                "graphDepth": 1,
                 "textInPie": false,
                 "input": "var output, elt;\nvar levelMin = dm_Tools.getDepth(node) ;\nvar doIt = function(node) {\n    if (!output) {\n        output = [] ;\n    }\n    elt = {} ;\n    output.push(elt) ;\n    elt.value = node.rawNode['items'] ;\n    elt.name = node.name ; //dm_Tools.getNodePath(node, '', true, null, levelMin+1) ;\n    elt.unit = 'item(s)' ;\n};\nvar parentLevel = dm_Tools.getDepth(node) ;\nvar depth = 1 ;\nvar dive = function(node) {\n    if (node) {\n        if (dm_Tools.getDepth(node) == parentLevel + depth) {\n            doIt(node);\n        } else if ((dm_Tools.getDepth(node) < parentLevel + depth) && (node.children)) {\n            node.children.forEach(function(child) {\n                dive(child);\n            });\n        }\n    }\n} ;\ndive(node);\nreturn output;"
             }],

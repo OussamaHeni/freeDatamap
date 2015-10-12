@@ -2345,36 +2345,34 @@ return output;"
         "multicolorBrothers": true,
         "specifics": [{
             "name": "$dm_all",
-            "rawNode": {
-                "dm_geoMapDisplayStreetView.dm_props": {
-                    "order": 0,
-                    "type": "streetView",
-                    "edit": false,
-                    "visible": true,
-                    "dontExport": true
-                },
-                "dm_geometry_type.dm_props": {
-                    "label": "geometry",
-                    "edit": false,
-                    "visible": true,
-                    "dontExport": true
-                },
-                "dm_geometry_coords.dm_props": {
-                    "label": "geometry coords",
-                    "edit": false,
-                    "visible": true,
-                    "dontExport": true
-                },
-                "dm_geoMapCoordsMinMax.dm_props": {
-                    "edit": false,
-                    "visible": false,
-                    "dontExport": true
-                },
-                "dm_geoMapAggregatedGeoJson.dm_props": {
-                    "edit": false,
-                    "visible": false,
-                    "dontExport": true
-                }
+            "dm_geoMapDisplayStreetView.dm_props": {
+                "order": 0,
+                "type": "streetView",
+                "edit": false,
+                "visible": true,
+                "dontExport": true
+            },
+            "dm_geometry_type.dm_props": {
+                "label": "geometry",
+                "edit": false,
+                "visible": true,
+                "dontExport": true
+            },
+            "dm_geometry_coords.dm_props": {
+                "label": "geometry coords",
+                "edit": false,
+                "visible": true,
+                "dontExport": true
+            },
+            "dm_geoMapCoordsMinMax.dm_props": {
+                "edit": false,
+                "visible": false,
+                "dontExport": true
+            },
+            "dm_geoMapAggregatedGeoJson.dm_props": {
+                "edit": false,
+                "visible": false,
+                "dontExport": true
             }
         }],
         "maxDepthForExport": 19

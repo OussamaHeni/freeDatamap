@@ -1,6 +1,5 @@
 {
     "$schema": "http://www.freedatamap.com/jsonSchema/schema#",
-    "$circularRefs": true,
     "root": {
         "level": 0,
         "rawNode": {
@@ -24,7 +23,7 @@
                 <div class='dm_normal'>
                     <div class='dm_center'>
                         <h2>Adapt your data to your mental model</h2>
-                        <br>
+                        <br/>
                         <h3>Mind Mapping&nbsp;&nbsp;+&nbsp;&nbsp;Business Intelligence&nbsp;&nbsp;=&nbsp;&nbsp;freeDatamap</h3>
                     </div>
                 </div>",
@@ -34,8 +33,7 @@
                 "name": "Description1",
                 "level": 0,
                 "label": "Description",
-                "source": "user",
-                "__dm_uniqueId": "143740903938533598259999998845"
+                "source": "user"
             },
             "tour": "Start the tour",
             "tour.dm_props": {
@@ -49,11 +47,10 @@
                 "imageName": "../../images/rocket.png",
                 "class": "btn-success",
                 "content.exec": "dm_Datamap.focusNode(node.rawNode.connectedTo[0].nodePath || node.rawNode.connectedTo[0].nodeUniqueId) ;
-dm_Tools.validateNodeWithStickerAndGauge(node, nodes) ;",
-                "__dm_uniqueId": "14374090393853362077000001591"
+dm_Tools.validateNodeWithStickerAndGauge(node, nodes) ;"
             },
             "carousel1": "
-                    <div id='freeDatamapCarousel' class='carousel slide' style='max-width: 738px; max-height: 441px;'>
+                    <div id='freeDatamapCarousel' class='carousel slide' style='max-width: 670px; max-height: 379px;'>
                         <ol class='carousel-indicators' hidden>
                             <li data-target='#freeDatamapCarousel' data-slide-to='0' class='active'></li> 
                             <li data-target='#freeDatamapCarousel' data-slide-to='1'></li>
@@ -69,71 +66,81 @@ dm_Tools.validateNodeWithStickerAndGauge(node, nodes) ;",
                         </ol>
                         <div class='carousel-inner'>
                             <div class='item active'>
-                                <img src='data/images/freeDatamap-www/screenshots/Finance_tree_analytics.png' alt=''>
+                                
+                                <img src='data/images/freeDatamap-www/screenshots/freeDatamap_screenshot_005.png' alt=''/>
                                 <div class='carousel-caption'>
                                     <h4>Minimize cost</h4>
                                     <p>Discover your data in a radically new way and bring value to your organization.</p>
                                 </div>
                             </div>
                             <div class='item'>
-                                <img src='data/images/freeDatamap-www/screenshots/HR_tree.png' alt=''>
+                                
+                                <img src='data/images/freeDatamap-www/screenshots/freeDatamap_screenshot_008.png' alt=''/>
                                 <div class='carousel-caption'>
                                     <h4>The Web UI for big data</h4>
                                     <p>Combining BI, mindmapping and monitoring technologies, will undoubtedly help you to struggle in high volume of information.</p>
                                 </div>
                             </div>
                             <div class='item'>
-                                <img src='data/images/freeDatamap-www/screenshots/pie_3D_trucks.png' alt=''>
+                                
+                                <img src='data/images/freeDatamap-www/screenshots/freeDatamap_screenshot_007.png' alt=''/>
                                 <div class='carousel-caption'>
                                     <h4>Easy to use</h4>
                                     <p>FreeDatamap offers an insider perspective into both detailed and aggregated indicators.</p>
                                 </div>
                             </div>
                             <div class='item'>
-                                <img src='data/images/freeDatamap-www/screenshots/word_report.png' alt=''>
+                                
+                                <img src='data/images/freeDatamap-www/screenshots/freeDatamap_screenshot_025.png' alt=''/>
                                 <div class='carousel-caption'>
                                     <h4>Accurate editable reports</h4>
                                     <p>Nudge key people towards smarter decisions thanks to generated Word reports (not pdf but editable Word document).</p>
                                 </div>
                             </div>
                             <div class='item'>
-                                <img src='data/images/freeDatamap-www/screenshots/knowledge_quizz.png' alt=''>
+                                
+                                <img src='data/images/freeDatamap-www/screenshots/freeDatamap_screenshot_004.png' alt=''/>
                                 <div class='carousel-caption'>
                                     <h4>Knowledge as a service</h4>
                                     <p>Alerts and progression gauges can be displayed for each level of your organization. By this way, gain engagement of the people in charge of the operations to achieve these goals.</p>
                                 </div>
                             </div>
                             <div class='item'>
-                                <img src='data/images/freeDatamap-www/screenshots/tooltip_car.png' alt=''>
+                                
+                                <img src='data/images/freeDatamap-www/screenshots/freeDatamap_screenshot_010.png' alt=''/>
                                 <div class='carousel-caption'>
                                     <h4>Take the control and edit the map</h4>
                                     <p>From your map you can edit, move, delete any part of the data structure and re-launch the aggregation process to simulate the impact of the organization change.</p>
                                 </div>
                             </div>
                             <div class='item'>
-                                <img src='data/images/freeDatamap-www/screenshots/node_edit.png' alt=''>
+                                
+                                <img src='data/images/freeDatamap-www/screenshots/freeDatamap_screenshot_015.png' alt=''/>
                                 <div class='carousel-caption'>
                                     <h4>Change the data model</h4>
                                     <p>Take advantage of your growing amount of data with a tool flexible enough to provide model modifications in order to secure your synthetic overview whatever deep are the data changes.</p>
                                 </div>
                             </div>
                             <div class='item'>
-                                <img src='data/images/freeDatamap-www/screenshots/open_choose_merge.png' alt=''>
+                                
+                                <img src='data/images/freeDatamap-www/screenshots/freeDatamap_screenshot_021.png' alt=''/>
                                 <div class='carousel-caption'>
                                     <h4>Break silos</h4>
                                     <p>Import any other map and merge data coming from different sources. FreeDatamap allows synergies between heterogeneous data coming from different parts of the organization.</p>
                                 </div>
                             </div>
                             <div class='item'>
-                                <img src='data/images/freeDatamap-www/screenshots/open_file_upload.png' alt=''>
+                                
+                                <img src='data/images/freeDatamap-www/screenshots/freeDatamap_screenshot_020.png' alt=''/>
                                 <div class='carousel-caption'>
                                     <h4>Heterogeneous data aggregation</h4>
                                     <p>Gather in one map the portfolio of data that your team has.
-                                    <br>Connect your freeDatamap to any kind of data source.</p>
+                                    Connect your freeDatamap to any kind of data source.</p>
                                 </div>
                             </div>
                             <div class='item'>
-                                <img src='data/images/freeDatamap-www/screenshots/Finance_tree_analytics_2.png' alt=''>
+                                
+                                <img src='data/images/freeDatamap-www/screenshots/freeDatamap_screenshot_027.png' alt=''/>
                                 <div class='carousel-caption'>
                                     <h4>Understand the knowledge patterns of your business</h4>
                                     <p>Adapt the complexity of data coming from your organization to your mental model. Choreograph your data to work together based on your specific needs.</p>
@@ -149,10 +156,12 @@ dm_Tools.validateNodeWithStickerAndGauge(node, nodes) ;",
                 "name": "carousel1",
                 "label": "carousel1",
                 "leaveEventsOn": ".carousel-control",
-                "onload": "$(\"#freeDatamapCarousel\").carousel({'interval': 7000})",
+                "onload": "$(\"#freeDatamapCarousel\").carousel({'interval': 10000}) ; $(\"#freeDatamapCarousel_modal\").carousel({'interval': 10000}) ;",
                 "level": 0,
                 "source": "user",
-                "__dm_uniqueId": "143740903938533656909999990603"
+                "onModalSed": {
+                    "freeDatamapCarousel": "freeDatamapCarousel_modal"
+                }
             },
             "Description2": "
 <div class=\"dm_normal\">
@@ -174,8 +183,7 @@ FreeDatamap helps turning flat and boring sheets of data into a unique visual co
                 "name": "Description2",
                 "level": 0,
                 "label": "Description",
-                "source": "user",
-                "__dm_uniqueId": "143740903938533703109999987646"
+                "source": "user"
             },
             "Description3": "
 <div class=\"dm_normal\">
@@ -233,8 +241,7 @@ FreeDatamap delivers a fast and visually attractive user interface that <b>runs 
                 "name": "Description3",
                 "level": 0,
                 "label": "Description2",
-                "source": "user",
-                "__dm_uniqueId": "14374090393853370825000001787"
+                "source": "user"
             },
             "News1": "freeDatamap finished 2nd at the SAP Teched demojam !",
             "News1.dm_props": {
@@ -247,8 +254,7 @@ FreeDatamap delivers a fast and visually attractive user interface that <b>runs 
                 "imageName": "../../images/logo_freeDatamap.png",
                 "level": 0,
                 "label": "freeDatamap finished 2nd at the SAP Teched demojam !",
-                "source": "user",
-                "__dm_uniqueId": "143740903938533717820000019856"
+                "source": "user"
             },
             "Twitter": "Follow freeDatamap on Twitter",
             "introZik.dm_props": {
@@ -271,11 +277,11 @@ FreeDatamap delivers a fast and visually attractive user interface that <b>runs 
                 "imageName": "freeDatamap-www/logo_twitter.png",
                 "level": 0,
                 "label": "Follow freeDatamap on Twitter",
-                "source": "user",
-                "__dm_uniqueId": "143740903938533807190000006813"
+                "source": "user"
             },
             "connectedTo": [{
-                "nodePath": "freeDatamap|Features"
+                "nodePath": "freeDatamap|Features",
+                "connectNodeUniqueId": "$ref_144437650797114923400000000001"
             }],
             "dm_sourceFile": "freeDatamap.json",
             "booklet": "Booklet",
@@ -290,9 +296,8 @@ FreeDatamap delivers a fast and visually attractive user interface that <b>runs 
                 "imageName": "freeDatamap-www/download.png",
                 "content.exec": "",
                 "content.type": "window url",
-                "content.url": "doc/freeDatamap.pdf",
-                "class": "btn-info",
-                "__dm_uniqueId": "143740903938533852440000009665"
+                "content.url": "doc/freeDatamap_booklet_en.pdf",
+                "class": "btn-info"
             },
             "playBtn": "Play FreeDatamap's presentation video",
             "playBtn.dm_props": {
@@ -305,11 +310,11 @@ FreeDatamap delivers a fast and visually attractive user interface that <b>runs 
                 "image": "freeDatamap-www/video.png",
                 "imageName": "freeDatamap-www/video.png",
                 "content.type": "window url",
-                "content.url": "http://www.youtube.com/watch?v=6SUxnRL7sIY",
-                "__dm_uniqueId": "143740903938533895730000003823"
+                "content.url": "http://www.youtube.com/watch?v=6SUxnRL7sIY"
             },
             "connectedFrom": [{
-                "nodePath": "freeDatamap|Contact"
+                "nodePath": "freeDatamap|Contact",
+                "connectNodeUniqueId": "$ref_144437650797114937250000000001"
             }],
             "connectedFrom.dm_props": {
                 "name": "connectedFrom",
@@ -322,159 +327,72 @@ FreeDatamap delivers a fast and visually attractive user interface that <b>runs 
                 "label": "connectedTo",
                 "type": "transverse link",
                 "source": "user"
-            }
+            },
+            "dm_lastAggregationStamp": 1444555579151
         },
-        "id": 1,
         "name": "freeDatamap",
         "dm_config": {
             "retintIcons": false,
-            "retintIcons.dm_props": {
-                "type": "boolean",
-                "name": "retintIcons",
-                "label": "retintIcons"
-            },
             "updateAllDmProps": false,
-            "updateAllDmProps.dm_props": {
-                "type": "boolean",
-                "name": "updateAllDmProps",
-                "label": "updateAllDmProps"
-            },
             "updateAllImageSizes": false,
-            "updateAllImageSizes.dm_props": {
-                "type": "boolean",
-                "name": "updateAllImageSizes",
-                "label": "updateAllImageSizes"
-            },
             "inlineAllImages": false,
-            "inlineAllImages.dm_props": {
-                "type": "boolean",
-                "name": "inlineAllImages",
-                "label": "inlineAllImages"
-            },
+            "depth": 2,
+            "sort": "order",
+            "sortDescendant": false,
+            "txtFontSize": 12,
+            "maxDepthForExport": 4,
+            "$schema": "http://www.freedatamap.com/jsonConfigSchema/schema#",
+            "dm_DatamapName": "freeDatamap.json",
+            "columnNames": 0,
             "styles": [{
                 "name": "root",
+                "array index": 0,
                 "level": 0,
                 "rNod": 10,
                 "link": 110,
                 "color": "#9467bd",
                 "attrPaneCol": "#c5b0d5",
                 "arrow": true,
-                "arrow.dm_props": {
-                    "name": "arrow",
-                    "visible": false,
-                    "label": "arrow",
-                    "type": "boolean",
-                    "edit": false
-                },
                 "arc": false,
-                "arc.dm_props": {
-                    "name": "arc",
-                    "visible": false,
-                    "label": "arc",
-                    "type": "boolean",
-                    "edit": false
-                },
                 "titleStyle": "padding: 4px; border: 2px solid white; border-top-left-radius: 24px; border-top-right-radius: 24px; border-bottom-right-radius: 24px; border-bottom-left-radius: 24px; box-shadow: rgb(136, 136, 136) 5px 5px 5px; margin-bottom: 10px; background: rgba(255, 255, 255, 0.4);",
-                "rNod.dm_props": {
-                    "name": "rNod",
-                    "label": "rNod",
-                    "type": "text"
-                },
-                "link.dm_props": {
-                    "name": "link",
-                    "label": "link",
-                    "type": "text"
-                },
-                "color.dm_props": {
-                    "name": "color",
-                    "label": "color",
-                    "type": "text"
-                },
-                "attrPaneCol.dm_props": {
-                    "name": "attrPaneCol",
-                    "label": "attrPaneCol",
-                    "type": "text"
-                },
-                "titleStyle.dm_props": {
-                    "name": "titleStyle",
-                    "label": "titleStyle",
-                    "type": "text"
-                },
                 "backgroundImage": "freeDatamap-www/sky.jpg",
                 "backgroundImage.dm_props": {
                     "name": "backgroundImage",
                     "visible": true,
                     "label": "backgroundImage",
                     "type": "image",
-                    "edit": false,
                     "imageName": "freeDatamap-www/sky.jpg",
                     "width": 800,
                     "height": 532,
+                    "dontExport": true,
                     "scaleFactor": 1
                 }
             }, {
                 "name": "level 1",
+                "array index": 1,
                 "level": 1,
                 "rNod": 10,
                 "link": "110",
                 "color": "#1f77b4",
                 "attrPaneCol": "#aec7e8",
                 "arrow": true,
-                "arrow.dm_props": {
-                    "name": "arrow",
-                    "visible": false,
-                    "label": "arrow",
-                    "type": "boolean",
-                    "edit": false
-                },
                 "arc": false,
-                "arc.dm_props": {
-                    "name": "arc",
-                    "visible": false,
-                    "label": "arc",
-                    "type": "boolean",
-                    "edit": false
-                },
                 "titleStyle": "padding: 4px; border: 2px solid white; border-top-left-radius: 24px; border-top-right-radius: 24px; border-bottom-right-radius: 24px; border-bottom-left-radius: 24px; box-shadow: rgb(136, 136, 136) 5px 5px 5px; margin-bottom: 10px; background: rgba(255, 255, 255, 0.4);",
-                "rNod.dm_props": {
-                    "name": "rNod",
-                    "label": "rNod",
-                    "type": "text"
-                },
-                "link.dm_props": {
-                    "name": "link",
-                    "label": "link",
-                    "type": "text"
-                },
-                "color.dm_props": {
-                    "name": "color",
-                    "label": "color",
-                    "type": "text"
-                },
-                "attrPaneCol.dm_props": {
-                    "name": "attrPaneCol",
-                    "label": "attrPaneCol",
-                    "type": "text"
-                },
-                "titleStyle.dm_props": {
-                    "name": "titleStyle",
-                    "label": "titleStyle",
-                    "type": "text"
-                },
                 "backgroundImage": "freeDatamap-www/sky.jpg",
                 "backgroundImage.dm_props": {
                     "name": "backgroundImage",
                     "visible": true,
                     "label": "backgroundImage",
                     "type": "image",
-                    "edit": false,
                     "imageName": "freeDatamap-www/sky.jpg",
                     "width": 800,
                     "height": 532,
+                    "dontExport": true,
                     "scaleFactor": 1
                 }
             }, {
                 "name": "level 2",
+                "array index": 2,
                 "level": 2,
                 "rNod": 9,
                 "link": "140",
@@ -482,176 +400,53 @@ FreeDatamap delivers a fast and visually attractive user interface that <b>runs 
                 "attrPaneCol": "#CAA69E",
                 "txtCol": "#7f7f7f",
                 "arrow": true,
-                "arrow.dm_props": {
-                    "name": "arrow",
-                    "visible": false,
-                    "label": "arrow",
-                    "type": "boolean",
-                    "edit": false
-                },
                 "arc": false,
-                "arc.dm_props": {
-                    "name": "arc",
-                    "visible": false,
-                    "label": "arc",
-                    "type": "boolean",
-                    "edit": false
-                },
-                "color.dm_props": {
-                    "type": "color",
-                    "name": "color",
-                    "label": "color"
-                },
-                "rNod.dm_props": {
-                    "name": "rNod",
-                    "label": "rNod",
-                    "type": "text"
-                },
-                "link.dm_props": {
-                    "name": "link",
-                    "label": "link",
-                    "type": "text"
-                },
-                "attrPaneCol.dm_props": {
-                    "name": "attrPaneCol",
-                    "label": "attrPaneCol",
-                    "type": "text"
-                },
-                "txtCol.dm_props": {
-                    "name": "txtCol",
-                    "label": "txtCol",
-                    "type": "text"
-                },
                 "backgroundImage": "freeDatamap-www/sky.jpg",
                 "backgroundImage.dm_props": {
                     "name": "backgroundImage",
                     "visible": true,
                     "label": "backgroundImage",
                     "type": "image",
-                    "edit": false,
                     "imageName": "freeDatamap-www/sky.jpg",
                     "width": 800,
                     "height": 532,
+                    "dontExport": true,
                     "scaleFactor": 1
                 }
             }, {
                 "name": "level 3",
+                "array index": 3,
                 "level": 3,
                 "rNod": 9,
-                "link": 110,
+                "link": 130,
                 "color": "#ff7f0e",
                 "attrPaneCol": "#ffbb78",
                 "arrow": true,
-                "arrow.dm_props": {
-                    "name": "arrow",
-                    "visible": false,
-                    "label": "arrow",
-                    "type": "boolean",
-                    "edit": false
-                },
-                "arc": false,
-                "arc.dm_props": {
-                    "name": "arc",
-                    "visible": false,
-                    "label": "arc",
-                    "type": "boolean",
-                    "edit": false
-                },
-                "rNod.dm_props": {
-                    "name": "rNod",
-                    "label": "rNod",
-                    "type": "text"
-                },
-                "link.dm_props": {
-                    "name": "link",
-                    "label": "link",
-                    "type": "text"
-                },
-                "color.dm_props": {
-                    "name": "color",
-                    "label": "color",
-                    "type": "text"
-                },
-                "attrPaneCol.dm_props": {
-                    "name": "attrPaneCol",
-                    "label": "attrPaneCol",
-                    "type": "text"
-                }
+                "arc": false
             }, {
                 "name": "leaf",
+                "array index": 4,
                 "level": 19,
                 "arrow": false,
                 "arc": true,
                 "rNod": 3,
-                "link": 60,
+                "link": 120,
                 "color": "#c7c7c7",
                 "attrPaneCol": "#c7c7c7",
                 "txtCol": "#7f7f7f"
             }],
-            "depth": 2,
-            "setColumns2node": [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null],
-            "sort": "order",
-            "sortDescendant": false,
-            "txtFontSize": 12,
             "displayProps": [{
-                "name": "root",
-                "children": []
+                "name": "root"
             }, {
-                "name": "level 0",
-                "children": []
+                "name": "level 0"
             }, {
-                "name": "level 1",
-                "children": []
+                "name": "level 1"
             }, {
-                "name": "level 2",
-                "children": []
+                "name": "level 2"
             }, {
-                "name": "leaf",
-                "children": []
-            }],
-            "maxDepthForExport": 4,
-            "root.dm_props": {
-                "name": "root",
-                "label": "root",
-                "type": "text"
-            },
-            "center.dm_props": {
-                "name": "center",
-                "label": "center",
-                "type": "text"
-            },
-            "depth.dm_props": {
-                "name": "depth",
-                "label": "depth",
-                "type": "text"
-            },
-            "sort.dm_props": {
-                "name": "sort",
-                "label": "sort",
-                "type": "text"
-            },
-            "txtFontSize.dm_props": {
-                "name": "txtFontSize",
-                "label": "txtFontSize",
-                "type": "text"
-            },
-            "maxDepthForExport.dm_props": {
-                "name": "maxDepthForExport",
-                "label": "maxDepthForExport",
-                "type": "text"
-            },
-            "props4globalSearch.dm_props": {
-                "name": "props4globalSearch",
-                "label": "props4globalSearch",
-                "type": "text"
-            },
-            "sortDescendant.dm_props": {
-                "name": "sortDescendant",
-                "label": "sortDescendant",
-                "type": "boolean"
-            }
+                "name": "leaf"
+            }]
         },
-        "__dm_uniqueId": 5632,
         "children": [{
             "level": 1,
             "rawNode": {
@@ -755,7 +550,8 @@ Take advantage of your growing amount of data with a tool capable to bring an ag
                     "source": "user"
                 },
                 "connectedTo": [{
-                    "nodePath": "freeDatamap|Features|Interactive visualization"
+                    "nodePath": "freeDatamap|Features|Interactive visualization",
+                    "connectNodeUniqueId": "$ref_1444376507971149242"
                 }],
                 "booklet": "Booklet",
                 "booklet.dm_props": {
@@ -769,7 +565,7 @@ Take advantage of your growing amount of data with a tool capable to bring an ag
                     "imageName": "freeDatamap-www/download.png",
                     "content.exec": "",
                     "content.type": "window url",
-                    "content.url": "doc/freeDatamap.pdf",
+                    "content.url": "doc/freeDatamap_booklet_en.pdf",
                     "class": "btn-info"
                 },
                 "order.dm_props": {
@@ -781,7 +577,8 @@ Take advantage of your growing amount of data with a tool capable to bring an ag
                 },
                 "order": 1,
                 "connectedFrom": [{
-                    "nodePath": "freeDatamap"
+                    "nodePath": "freeDatamap",
+                    "connectNodeUniqueId": "$ref_1444376507971149222"
                 }],
                 "connectedFrom.dm_props": {
                     "name": "connectedFrom",
@@ -796,9 +593,7 @@ Take advantage of your growing amount of data with a tool capable to bring an ag
                     "source": "user"
                 }
             },
-            "id": 3,
             "name": "Features",
-            "__dm_uniqueId": 5631,
             "children": [{
                 "level": 2,
                 "rawNode": {
@@ -901,7 +696,8 @@ An icon sticker can be displayed on each node of the graph depending on the valu
                         "level": 2
                     },
                     "connectedTo": [{
-                        "nodePath": "freeDatamap|Features|Dashboards"
+                        "nodePath": "freeDatamap|Features|Dashboards",
+                        "connectNodeUniqueId": "$ref_144437650797114924750000000001"
                     }],
                     "screenshot1.dm_props": {
                         "type": "rich text",
@@ -917,7 +713,8 @@ An icon sticker can be displayed on each node of the graph depending on the valu
                         "level": 2
                     },
                     "connectedFrom": [{
-                        "nodePath": "freeDatamap|Features"
+                        "nodePath": "freeDatamap|Features",
+                        "connectNodeUniqueId": "$ref_144437650797114923400000000001"
                     }],
                     "connectedFrom.dm_props": {
                         "name": "connectedFrom",
@@ -932,9 +729,8 @@ An icon sticker can be displayed on each node of the graph depending on the valu
                         "source": "user"
                     }
                 },
-                "id": 44,
                 "name": "Interactive visualization",
-                "__dm_uniqueId": "143740903938526135030000004917"
+                "__dm_uniqueId": "1444376507971149242"
             }, {
                 "level": 2,
                 "rawNode": {
@@ -957,11 +753,26 @@ An icon sticker can be displayed on each node of the graph depending on the valu
                         "type": "graph",
                         "label": "pie chart exemple",
                         "doTransition": true,
-                        "input": "return [{'name': 'a', 'value': 65, 'unit': 'units'}, {'name': 'b', 'value': 25, 'unit': 'units'}, {'name': 'c', 'value': 10, 'unit': 'units'}] ;",
+                        "input": "return [{'name': 'a', 'value': 25, 'unit': 'units'}, {'name': 'b', 'value': 45, 'unit': 'units'}, {'name': 'c', 'value': 10, 'unit': 'units'}, {'name': 'd', 'value': 5, 'unit': 'units'}, {'name': 'e', 'value': 15, 'unit': 'units'}] ;",
                         "visible": true,
                         "name": "pie_chart_exemple",
-                        "level": 2,
-                        "source": "user"
+                        "source": "user",
+                        "textInPie": false,
+                        "namesInPie": false
+                    },
+                    "discreteBarChart_exemple": 0,
+                    "discreteBarChart_exemple.dm_props": {
+                        "type": "graph",
+                        "graphModel": "discreteBarChart",
+                        "label": "bar chart exemple",
+                        "input": "return [{'name': 'a', 'value': 25, 'unit': 'units'}, {'name': 'b', 'value': 45, 'unit': 'units'}, {'name': 'c', 'value': 10, 'unit': 'units'}, {'name': 'd', 'value': 5, 'unit': 'units'}, {'name': 'e', 'value': 15, 'unit': 'units'}] ;",
+                        "visible": true,
+                        "doSort": false,
+                        "name": "discreteBarChart_exemple",
+                        "source": "user",
+                        "doTransition": true,
+                        "textInPie": false,
+                        "namesInPie": false
                     },
                     "tour": "Go to next",
                     "tour.dm_props": {
@@ -978,7 +789,8 @@ An icon sticker can be displayed on each node of the graph depending on the valu
 dm_Tools.validateNodeWithStickerAndGauge(node, nodes) ;"
                     },
                     "connectedTo": [{
-                        "nodePath": "freeDatamap|Features|Analytics"
+                        "nodePath": "freeDatamap|Features|Analytics",
+                        "connectNodeUniqueId": "$ref_144437650797114925100000000002"
                     }],
                     "Description": "
 <div class=\"dm_normal\">
@@ -1031,8 +843,23 @@ To build an exhaustive and effective business oriented dashboard, freeDatamap pr
                         "source": "user",
                         "level": 2
                     },
+                    "lineWithFocusChart_exemple": 0,
+                    "lineWithFocusChart_exemple.dm_props": {
+                        "type": "graph",
+                        "graphModel": "lineWithFocusChart",
+                        "label": "line with focus chart exemple",
+                        "input": "return [{'area': true, 'key': 'Stream 1', 'values': [{'x':0, 'y':25}, {'x':10, 'y':35}, {'x':20, 'y':45}, {'x':30, 'y':27.5}, {'x':40, 'y':10}, {'x':50, 'y':7.5}, {'x':60, 'y':5}, {'x':70, 'y':10}, {'x':80, 'y':15}, {'x':90, 'y':20}, {'x':100, 'y':25}]}] ;",
+                        "visibleRange": [10, 40],
+                        "visible": true,
+                        "name": "lineWithFocusChart_exemple",
+                        "source": "user",
+                        "doTransition": true,
+                        "textInPie": false,
+                        "namesInPie": false
+                    },
                     "connectedFrom": [{
-                        "nodePath": "freeDatamap|Features|Interactive visualization"
+                        "nodePath": "freeDatamap|Features|Interactive visualization",
+                        "connectNodeUniqueId": "$ref_1444376507971149242"
                     }],
                     "connectedFrom.dm_props": {
                         "name": "connectedFrom",
@@ -1047,9 +874,8 @@ To build an exhaustive and effective business oriented dashboard, freeDatamap pr
                         "source": "user"
                     }
                 },
-                "id": 50,
                 "name": "Dashboards",
-                "__dm_uniqueId": "143740903938526136790000018664"
+                "__dm_uniqueId": "144437650797114924750000000001"
             }, {
                 "level": 2,
                 "rawNode": {
@@ -1083,7 +909,8 @@ To build an exhaustive and effective business oriented dashboard, freeDatamap pr
 dm_Tools.validateNodeWithStickerAndGauge(node, nodes) ;"
                     },
                     "connectedTo": [{
-                        "nodePath": "freeDatamap|Features|Operations"
+                        "nodePath": "freeDatamap|Features|Operations",
+                        "connectNodeUniqueId": "$ref_144437650797114925300000000002"
                     }],
                     "connectedTo.dm_props": {
                         "name": "connectedTo",
@@ -1197,7 +1024,8 @@ FreeDatamap can provide the formal KPI map system for measuring and promoting or
                         "level": 2
                     },
                     "connectedFrom": [{
-                        "nodePath": "freeDatamap|Features|Dashboards"
+                        "nodePath": "freeDatamap|Features|Dashboards",
+                        "connectNodeUniqueId": "$ref_144437650797114924750000000001"
                     }],
                     "connectedFrom.dm_props": {
                         "name": "connectedFrom",
@@ -1206,9 +1034,8 @@ FreeDatamap can provide the formal KPI map system for measuring and promoting or
                         "source": "user"
                     }
                 },
-                "id": 48,
                 "name": "Analytics",
-                "__dm_uniqueId": "14374090393852613797000001796"
+                "__dm_uniqueId": "144437650797114925100000000002"
             }, {
                 "level": 2,
                 "rawNode": {
@@ -1243,7 +1070,8 @@ FreeDatamap can provide the formal KPI map system for measuring and promoting or
 dm_Tools.validateNodeWithStickerAndGauge(node, nodes) ;"
                     },
                     "connectedTo": [{
-                        "nodePath": "freeDatamap|Features|Data sources"
+                        "nodePath": "freeDatamap|Features|Data sources",
+                        "connectNodeUniqueId": "$ref_14443765079711492545"
                     }],
                     "connectedTo.dm_props": {
                         "name": "connectedTo",
@@ -1280,7 +1108,8 @@ Moreover, you can create aggregation rules to define the UI properties of your m
                         "level": 2
                     },
                     "connectedFrom": [{
-                        "nodePath": "freeDatamap|Features|Analytics"
+                        "nodePath": "freeDatamap|Features|Analytics",
+                        "connectNodeUniqueId": "$ref_144437650797114925100000000002"
                     }],
                     "connectedFrom.dm_props": {
                         "name": "connectedFrom",
@@ -1289,9 +1118,8 @@ Moreover, you can create aggregation rules to define the UI properties of your m
                         "source": "user"
                     }
                 },
-                "id": 56,
                 "name": "Operations",
-                "__dm_uniqueId": "143740903938526138610000016342"
+                "__dm_uniqueId": "144437650797114925300000000002"
             }, {
                 "level": 2,
                 "rawNode": {
@@ -1325,7 +1153,8 @@ Moreover, you can create aggregation rules to define the UI properties of your m
 dm_Tools.validateNodeWithStickerAndGauge(node, nodes) ;"
                     },
                     "connectedTo": [{
-                        "nodePath": "freeDatamap|Features|Reporting"
+                        "nodePath": "freeDatamap|Features|Reporting",
+                        "connectNodeUniqueId": "$ref_14443765079711492565"
                     }],
                     "connectedTo.dm_props": {
                         "name": "connectedTo",
@@ -1367,7 +1196,8 @@ Expose the appropriate data part of your organization and contribute to the coll
                         "source": "user"
                     },
                     "connectedFrom": [{
-                        "nodePath": "freeDatamap|Features|Operations"
+                        "nodePath": "freeDatamap|Features|Operations",
+                        "connectNodeUniqueId": "$ref_144437650797114925300000000002"
                     }],
                     "connectedFrom.dm_props": {
                         "name": "connectedFrom",
@@ -1376,9 +1206,8 @@ Expose the appropriate data part of your organization and contribute to the coll
                         "source": "user"
                     }
                 },
-                "id": 58,
                 "name": "Data sources",
-                "__dm_uniqueId": "14374090393852613895999998931"
+                "__dm_uniqueId": "14443765079711492545"
             }, {
                 "level": 2,
                 "rawNode": {
@@ -1413,7 +1242,8 @@ Expose the appropriate data part of your organization and contribute to the coll
 dm_Tools.validateNodeWithStickerAndGauge(node, nodes) ;"
                     },
                     "connectedTo": [{
-                        "nodePath": "freeDatamap|Features|Mobile"
+                        "nodePath": "freeDatamap|Features|Mobile",
+                        "connectNodeUniqueId": "$ref_144437650797114925900000000001"
                     }],
                     "connectedTo.dm_props": {
                         "name": "connectedTo",
@@ -1423,7 +1253,8 @@ dm_Tools.validateNodeWithStickerAndGauge(node, nodes) ;"
                         "level": 2
                     },
                     "connectedFrom": [{
-                        "nodePath": "freeDatamap|Features|Data sources"
+                        "nodePath": "freeDatamap|Features|Data sources",
+                        "connectNodeUniqueId": "$ref_14443765079711492545"
                     }],
                     "connectedFrom.dm_props": {
                         "name": "connectedFrom",
@@ -1432,9 +1263,8 @@ dm_Tools.validateNodeWithStickerAndGauge(node, nodes) ;"
                         "source": "user"
                     }
                 },
-                "id": 52,
                 "name": "Reporting",
-                "__dm_uniqueId": "14374090393852613960999999108"
+                "__dm_uniqueId": "14443765079711492565"
             }, {
                 "level": 2,
                 "rawNode": {
@@ -1516,7 +1346,8 @@ This means that freeDatamap is compatible with iOS, Android, Windows Phone, Wind
                         "level": 2
                     },
                     "connectedTo": [{
-                        "nodePath": "freeDatamap|Features|Self service"
+                        "nodePath": "freeDatamap|Features|Self service",
+                        "connectNodeUniqueId": "$ref_144437650797114926100000000001"
                     }],
                     "connectedTo.dm_props": {
                         "name": "connectedTo",
@@ -1526,7 +1357,8 @@ This means that freeDatamap is compatible with iOS, Android, Windows Phone, Wind
                         "level": 2
                     },
                     "connectedFrom": [{
-                        "nodePath": "freeDatamap|Features|Reporting"
+                        "nodePath": "freeDatamap|Features|Reporting",
+                        "connectNodeUniqueId": "$ref_14443765079711492565"
                     }],
                     "connectedFrom.dm_props": {
                         "name": "connectedFrom",
@@ -1535,9 +1367,8 @@ This means that freeDatamap is compatible with iOS, Android, Windows Phone, Wind
                         "source": "user"
                     }
                 },
-                "id": 54,
                 "name": "Mobile",
-                "__dm_uniqueId": "143740903938526139929999990272"
+                "__dm_uniqueId": "144437650797114925900000000001"
             }, {
                 "level": 2,
                 "rawNode": {
@@ -1572,7 +1403,8 @@ This means that freeDatamap is compatible with iOS, Android, Windows Phone, Wind
 dm_Tools.validateNodeWithStickerAndGauge(node, nodes) ;"
                     },
                     "connectedTo": [{
-                        "nodePath": "freeDatamap|Solutions"
+                        "nodePath": "freeDatamap|Solutions",
+                        "connectNodeUniqueId": "$ref_144437650797114926450000000002"
                     }],
                     "Description": "
 <div class=\"dm_normal\">
@@ -1594,7 +1426,8 @@ FreeDatamap is providing the ideal environment to easily discover, access and sh
                         "level": 2
                     },
                     "connectedFrom": [{
-                        "nodePath": "freeDatamap|Features|Mobile"
+                        "nodePath": "freeDatamap|Features|Mobile",
+                        "connectNodeUniqueId": "$ref_144437650797114925900000000001"
                     }],
                     "connectedFrom.dm_props": {
                         "name": "connectedFrom",
@@ -1609,10 +1442,10 @@ FreeDatamap is providing the ideal environment to easily discover, access and sh
                         "source": "user"
                     }
                 },
-                "id": 46,
                 "name": "Self service",
-                "__dm_uniqueId": "14374090393852614030000000639"
-            }]
+                "__dm_uniqueId": "144437650797114926100000000001"
+            }],
+            "__dm_uniqueId": "144437650797114923400000000001"
         }, {
             "level": 1,
             "rawNode": {
@@ -1698,7 +1531,8 @@ To load all the examples in one shot, just open the bottom left dropup menu with
                     "source": "user"
                 },
                 "connectedTo": [{
-                    "nodePath": "freeDatamap|Solutions|HR"
+                    "nodePath": "freeDatamap|Solutions|HR",
+                    "connectNodeUniqueId": "$ref_1444376507971149268"
                 }],
                 "connectedTo.dm_props": {
                     "name": "connectedTo",
@@ -1716,7 +1550,8 @@ To load all the examples in one shot, just open the bottom left dropup menu with
                     "level": 1
                 },
                 "connectedFrom": [{
-                    "nodePath": "freeDatamap|Features|Self service"
+                    "nodePath": "freeDatamap|Features|Self service",
+                    "connectNodeUniqueId": "$ref_144437650797114926100000000001"
                 }],
                 "connectedFrom.dm_props": {
                     "name": "connectedFrom",
@@ -1725,9 +1560,7 @@ To load all the examples in one shot, just open the bottom left dropup menu with
                     "source": "user"
                 }
             },
-            "id": 4,
             "name": "Solutions",
-            "__dm_uniqueId": 5633,
             "children": [{
                 "level": 2,
                 "rawNode": {
@@ -1765,7 +1598,7 @@ dm_Tools.validateNodeWithStickerAndGauge(node, nodes) ;"
                     "Description": "
 <div class=\"dm_normal\">FreeDatamap serves the <b>enterprise 2.0</b>. It provides powerful search capabilities to discover people, projects, information that drives collaboration, and leverage ROI.<br />
 <br />
-By putting employees as key entities of human-resources&#39; centric map, authorship of projects and tasks is promoted. With both hierarchical and transversal relations, freeDatamap allows visualization, in a single map, of the organizational structure as well as &ldquo;social&rdquo; transversal connections bringing people together according to either transversal projects or common interests.
+By putting employees as key entities of human-resources&#39; centric map, authorship of projects and tasks are promoted. With both hierarchical and transversal relations, freeDatamap allows visualizing, in a single map, the whole organizational structure as well as &ldquo;social&rdquo; transversal connections bringing people together according to either transversal projects or common interests.
 <div class=\"dm_border dm_success\"><b>FreeDatamap provides new mechanisms to give the staff access to richer information, with more contextual relevance that helps achieving the transition from informing to sense-making.</b></div>
 The capability to visualize graphically the arising of new patterns from the multiplicity of interactions between teams uncovers new facets of the business value of one&rsquo;s organization. Understanding those patterns and valorizing them may lead to substantial return on investments and can be a key success factor for the enterprise 2.0.
 
@@ -1797,7 +1630,8 @@ In this example, freeDatamap is connected to the payroll system of an organizati
                         "source": "user"
                     },
                     "connectedTo": [{
-                        "nodePath": "freeDatamap|Solutions|Yellow pages"
+                        "nodePath": "freeDatamap|Solutions|Yellow pages",
+                        "connectNodeUniqueId": "$ref_1444376507971149271"
                     }],
                     "connectedTo.dm_props": {
                         "name": "connectedTo",
@@ -1818,10 +1652,12 @@ In this example, freeDatamap is connected to the payroll system of an organizati
                         "height": 401,
                         "panelMaxHeight": 888,
                         "scaleFactor": 1,
+                        "dontExport": true,
                         "source": "user"
                     },
                     "connectedFrom": [{
-                        "nodePath": "freeDatamap|Solutions"
+                        "nodePath": "freeDatamap|Solutions",
+                        "connectNodeUniqueId": "$ref_144437650797114926450000000002"
                     }],
                     "connectedFrom.dm_props": {
                         "name": "connectedFrom",
@@ -1831,9 +1667,8 @@ In this example, freeDatamap is connected to the payroll system of an organizati
                         "level": 2
                     }
                 },
-                "id": 7,
                 "name": "HR",
-                "__dm_uniqueId": "14374090393852614122999999381"
+                "__dm_uniqueId": "1444376507971149268"
             }, {
                 "level": 2,
                 "rawNode": {
@@ -1921,7 +1756,8 @@ LDAP allows IT administrators to implement company-wide policies on access to re
                         "source": "user"
                     },
                     "connectedTo": [{
-                        "nodePath": "freeDatamap|Solutions|Finance"
+                        "nodePath": "freeDatamap|Solutions|Finance",
+                        "connectNodeUniqueId": "$ref_144437650797114927350000000001"
                     }],
                     "connectedTo.dm_props": {
                         "name": "connectedTo",
@@ -1931,7 +1767,8 @@ LDAP allows IT administrators to implement company-wide policies on access to re
                         "level": 2
                     },
                     "connectedFrom": [{
-                        "nodePath": "freeDatamap|Solutions|HR"
+                        "nodePath": "freeDatamap|Solutions|HR",
+                        "connectNodeUniqueId": "$ref_1444376507971149268"
                     }],
                     "connectedFrom.dm_props": {
                         "name": "connectedFrom",
@@ -1940,9 +1777,8 @@ LDAP allows IT administrators to implement company-wide policies on access to re
                         "source": "user"
                     }
                 },
-                "id": 13,
                 "name": "Yellow pages",
-                "__dm_uniqueId": "14374090393852614166999999725"
+                "__dm_uniqueId": "1444376507971149271"
             }, {
                 "level": 2,
                 "rawNode": {
@@ -2002,7 +1838,8 @@ dm_Tools.validateNodeWithStickerAndGauge(node, nodes) ;"
                         "source": "user"
                     },
                     "connectedTo": [{
-                        "nodePath": "freeDatamap|Solutions|Assets"
+                        "nodePath": "freeDatamap|Solutions|Assets",
+                        "connectNodeUniqueId": "$ref_14443765079711492755"
                     }],
                     "connectedTo.dm_props": {
                         "name": "connectedTo",
@@ -2022,10 +1859,12 @@ dm_Tools.validateNodeWithStickerAndGauge(node, nodes) ;"
                         "width": 800,
                         "height": 619,
                         "scaleFactor": 1,
+                        "dontExport": true,
                         "source": "user"
                     },
                     "connectedFrom": [{
-                        "nodePath": "freeDatamap|Solutions|Yellow pages"
+                        "nodePath": "freeDatamap|Solutions|Yellow pages",
+                        "connectNodeUniqueId": "$ref_1444376507971149271"
                     }],
                     "connectedFrom.dm_props": {
                         "name": "connectedFrom",
@@ -2034,9 +1873,8 @@ dm_Tools.validateNodeWithStickerAndGauge(node, nodes) ;"
                         "source": "user"
                     }
                 },
-                "id": 8,
                 "name": "Finance",
-                "__dm_uniqueId": "143740903938526142089999993914"
+                "__dm_uniqueId": "144437650797114927350000000001"
             }, {
                 "level": 2,
                 "rawNode": {
@@ -2096,7 +1934,8 @@ dm_Tools.validateNodeWithStickerAndGauge(node, nodes) ;"
                         "source": "user"
                     },
                     "connectedTo": [{
-                        "nodePath": "freeDatamap|Solutions|KaaS"
+                        "nodePath": "freeDatamap|Solutions|KaaS",
+                        "connectNodeUniqueId": "$ref_14443765079711492815"
                     }],
                     "connectedTo.dm_props": {
                         "name": "connectedTo",
@@ -2117,10 +1956,12 @@ dm_Tools.validateNodeWithStickerAndGauge(node, nodes) ;"
                         "height": 500,
                         "panelMaxHeight": 888,
                         "scaleFactor": 1,
+                        "dontExport": true,
                         "source": "user"
                     },
                     "connectedFrom": [{
-                        "nodePath": "freeDatamap|Solutions|Finance"
+                        "nodePath": "freeDatamap|Solutions|Finance",
+                        "connectNodeUniqueId": "$ref_144437650797114927350000000001"
                     }],
                     "connectedFrom.dm_props": {
                         "name": "connectedFrom",
@@ -2129,9 +1970,8 @@ dm_Tools.validateNodeWithStickerAndGauge(node, nodes) ;"
                         "source": "user"
                     }
                 },
-                "id": 9,
                 "name": "Assets",
-                "__dm_uniqueId": "143740903938526142319999999017"
+                "__dm_uniqueId": "14443765079711492755"
             }, {
                 "name": "KaaS",
                 "level": 2,
@@ -2174,7 +2014,8 @@ dm_Tools.validateNodeWithStickerAndGauge(node, nodes) ;"
                         "level": 2
                     },
                     "connectedTo": [{
-                        "nodePath": "freeDatamap|Solutions|GIS"
+                        "nodePath": "freeDatamap|Solutions|GIS",
+                        "connectNodeUniqueId": "$ref_14443765079711492855"
                     }],
                     "connectedTo.dm_props": {
                         "name": "connectedTo",
@@ -2231,7 +2072,7 @@ In one tool you can :
 \t<li>Structure the knowledge of your organization by building the conceptual map of your trainings.</li>
 \t<li>Deliver the knowledge by directly accessing web sessions from within the map.</li>
 \t<li>Identify people&rsquo;s knowledge progression.</li>
-\t<li>Engage your team with a kind of gamification of knowledge thanks to ranking mecanisms and teams&rsquo; competition.</li>
+\t<li>Engage your team with a kind of gamification of knowledge thanks to ranking mechanisms and teams&rsquo; competition.</li>
 \t<li>Assess people&rsquo;s interest in different knowledge domains and identify the lacks of your organization.</li>
 </ul>
 
@@ -2250,7 +2091,8 @@ FreeDatamap&rsquo;s knowledge map provides a way to get people think on what the
                         "level": 2
                     },
                     "connectedFrom": [{
-                        "nodePath": "freeDatamap|Solutions|Assets"
+                        "nodePath": "freeDatamap|Solutions|Assets",
+                        "connectNodeUniqueId": "$ref_14443765079711492755"
                     }],
                     "connectedFrom.dm_props": {
                         "name": "connectedFrom",
@@ -2259,8 +2101,7 @@ FreeDatamap&rsquo;s knowledge map provides a way to get people think on what the
                         "source": "user"
                     }
                 },
-                "id": 62,
-                "__dm_uniqueId": "14374090393852614333000001352"
+                "__dm_uniqueId": "14443765079711492815"
             }, {
                 "name": "GIS",
                 "level": 2,
@@ -2335,7 +2176,8 @@ The map that is shown in this example is displaying the parks of the city of Phi
                         "level": 2
                     },
                     "connectedTo": [{
-                        "nodePath": "freeDatamap|Technology"
+                        "nodePath": "freeDatamap|Technology",
+                        "connectNodeUniqueId": "$ref_144437650797114928750000000002"
                     }],
                     "connectedTo.dm_props": {
                         "name": "connectedTo",
@@ -2358,7 +2200,8 @@ The map that is shown in this example is displaying the parks of the city of Phi
                         "visible": true
                     },
                     "connectedFrom": [{
-                        "nodePath": "freeDatamap|Solutions|KaaS"
+                        "nodePath": "freeDatamap|Solutions|KaaS",
+                        "connectNodeUniqueId": "$ref_14443765079711492815"
                     }],
                     "connectedFrom.dm_props": {
                         "name": "connectedFrom",
@@ -2367,9 +2210,9 @@ The map that is shown in this example is displaying the parks of the city of Phi
                         "source": "user"
                     }
                 },
-                "id": 64,
-                "__dm_uniqueId": "143740903938526143860000011045"
-            }]
+                "__dm_uniqueId": "14443765079711492855"
+            }],
+            "__dm_uniqueId": "144437650797114926450000000002"
         }, {
             "level": 1,
             "rawNode": {
@@ -2396,7 +2239,8 @@ dm_Tools.validateNodeWithStickerAndGauge(node, nodes) ;"
 </div>
 ",
                 "connectedTo": [{
-                    "nodePath": "freeDatamap|Technology|WEB"
+                    "nodePath": "freeDatamap|Technology|WEB",
+                    "connectNodeUniqueId": "$ref_144437650797114929150000000002"
                 }],
                 "Description.dm_props": {
                     "type": "rich text",
@@ -2435,7 +2279,8 @@ dm_Tools.validateNodeWithStickerAndGauge(node, nodes) ;"
                     "level": 1
                 },
                 "connectedFrom": [{
-                    "nodePath": "freeDatamap|Solutions|GIS"
+                    "nodePath": "freeDatamap|Solutions|GIS",
+                    "connectNodeUniqueId": "$ref_14443765079711492855"
                 }],
                 "connectedFrom.dm_props": {
                     "name": "connectedFrom",
@@ -2444,9 +2289,7 @@ dm_Tools.validateNodeWithStickerAndGauge(node, nodes) ;"
                     "source": "user"
                 }
             },
-            "id": 2,
             "name": "Technology",
-            "__dm_uniqueId": 5635,
             "children": [{
                 "level": 2,
                 "rawNode": {
@@ -2490,7 +2333,8 @@ dm_Tools.validateNodeWithStickerAndGauge(node, nodes) ;"
                         "source": "user"
                     },
                     "connectedTo": [{
-                        "nodePath": "freeDatamap|Technology|Third-party libraries"
+                        "nodePath": "freeDatamap|Technology|Third-party libraries",
+                        "connectNodeUniqueId": "$ref_144437650797114929850000000001"
                     }],
                     "connectedTo.dm_props": {
                         "name": "connectedTo",
@@ -2500,7 +2344,8 @@ dm_Tools.validateNodeWithStickerAndGauge(node, nodes) ;"
                         "level": 2
                     },
                     "connectedFrom": [{
-                        "nodePath": "freeDatamap|Technology"
+                        "nodePath": "freeDatamap|Technology",
+                        "connectNodeUniqueId": "$ref_144437650797114928750000000002"
                     }],
                     "connectedFrom.dm_props": {
                         "name": "connectedFrom",
@@ -2509,9 +2354,7 @@ dm_Tools.validateNodeWithStickerAndGauge(node, nodes) ;"
                         "source": "user"
                     }
                 },
-                "id": 21,
                 "name": "WEB",
-                "__dm_uniqueId": 5634,
                 "children": [{
                     "level": 3,
                     "rawNode": {
@@ -2541,9 +2384,8 @@ dm_Tools.validateNodeWithStickerAndGauge(node, nodes) ;"
                             "source": "user"
                         }
                     },
-                    "id": 15,
                     "name": "HTML",
-                    "__dm_uniqueId": "14374090393852614472000001115"
+                    "__dm_uniqueId": "144437650797114929350000000002"
                 }, {
                     "level": 3,
                     "rawNode": {
@@ -2573,9 +2415,8 @@ dm_Tools.validateNodeWithStickerAndGauge(node, nodes) ;"
                             "source": "user"
                         }
                     },
-                    "id": 16,
                     "name": "JavaScript",
-                    "__dm_uniqueId": "143740903938526144899999999325"
+                    "__dm_uniqueId": "144437650797114929450000000002"
                 }, {
                     "level": 3,
                     "rawNode": {
@@ -2605,9 +2446,8 @@ dm_Tools.validateNodeWithStickerAndGauge(node, nodes) ;"
                             "source": "user"
                         }
                     },
-                    "id": 17,
                     "name": "CSS",
-                    "__dm_uniqueId": "14374090393852614506000001711"
+                    "__dm_uniqueId": "144437650797114929550000000002"
                 }, {
                     "level": 3,
                     "rawNode": {
@@ -2636,10 +2476,10 @@ dm_Tools.validateNodeWithStickerAndGauge(node, nodes) ;"
                             "source": "user"
                         }
                     },
-                    "id": 42,
                     "name": "SVG",
-                    "__dm_uniqueId": "1437409039385261452300000019"
-                }]
+                    "__dm_uniqueId": "144437650797114929650000000001"
+                }],
+                "__dm_uniqueId": "144437650797114929150000000002"
             }, {
                 "level": 2,
                 "rawNode": {
@@ -2695,7 +2535,8 @@ Because <u><strong>open source</strong></u>&nbsp;:</h3>
                         "source": "user"
                     },
                     "connectedTo": [{
-                        "nodePath": "freeDatamap|Technology|Product"
+                        "nodePath": "freeDatamap|Technology|Product",
+                        "connectNodeUniqueId": "$ref_144437650797114936450000000002"
                     }],
                     "connectedTo.dm_props": {
                         "name": "connectedTo",
@@ -2720,7 +2561,8 @@ Because <u><strong>open source</strong></u>&nbsp;:</h3>
                         "borderRadius": "12"
                     },
                     "connectedFrom": [{
-                        "nodePath": "freeDatamap|Technology|WEB"
+                        "nodePath": "freeDatamap|Technology|WEB",
+                        "connectNodeUniqueId": "$ref_144437650797114929150000000002"
                     }],
                     "connectedFrom.dm_props": {
                         "name": "connectedFrom",
@@ -2729,9 +2571,7 @@ Because <u><strong>open source</strong></u>&nbsp;:</h3>
                         "source": "user"
                     }
                 },
-                "id": 28,
                 "name": "Third-party libraries",
-                "__dm_uniqueId": 5637,
                 "children": [{
                     "name": "d3.js",
                     "level": 3,
@@ -2761,8 +2601,6 @@ Because <u><strong>open source</strong></u>&nbsp;:</h3>
                             "source": "user"
                         }
                     },
-                    "id": 31,
-                    "__dm_uniqueId": 5636,
                     "children": [{
                         "name": "BSD License",
                         "level": 4,
@@ -2791,9 +2629,9 @@ Because <u><strong>open source</strong></u>&nbsp;:</h3>
                                 "level": 4
                             }
                         },
-                        "id": 74,
-                        "__dm_uniqueId": "14374090393852614650999999867"
-                    }]
+                        "__dm_uniqueId": "14443765079711493065"
+                    }],
+                    "__dm_uniqueId": "14443765079711493025"
                 }, {
                     "name": "Bootstrap",
                     "level": 3,
@@ -2823,8 +2661,6 @@ Because <u><strong>open source</strong></u>&nbsp;:</h3>
                             "source": "user"
                         }
                     },
-                    "id": 33,
-                    "__dm_uniqueId": 5638,
                     "children": [{
                         "name": "Apache v2.0 License",
                         "level": 4,
@@ -2853,9 +2689,9 @@ Because <u><strong>open source</strong></u>&nbsp;:</h3>
                                 "level": 4
                             }
                         },
-                        "id": 76,
-                        "__dm_uniqueId": "1437409039385261467900000207"
-                    }]
+                        "__dm_uniqueId": "144437650797114930900000000001"
+                    }],
+                    "__dm_uniqueId": "14443765079711493075"
                 }, {
                     "name": "jQuery",
                     "level": 3,
@@ -2886,8 +2722,6 @@ Because <u><strong>open source</strong></u>&nbsp;:</h3>
                             "source": "user"
                         }
                     },
-                    "id": 35,
-                    "__dm_uniqueId": 5639,
                     "children": [{
                         "name": "MIT License",
                         "level": 4,
@@ -2916,9 +2750,9 @@ Because <u><strong>open source</strong></u>&nbsp;:</h3>
                                 "source": "user"
                             }
                         },
-                        "id": 78,
-                        "__dm_uniqueId": "143740903938526147129999990284"
-                    }]
+                        "__dm_uniqueId": "14443765079711493115"
+                    }],
+                    "__dm_uniqueId": "144437650797114931000000000001"
                 }, {
                     "level": 3,
                     "rawNode": {
@@ -2947,9 +2781,7 @@ Because <u><strong>open source</strong></u>&nbsp;:</h3>
                             "level": 3
                         }
                     },
-                    "id": 37,
                     "name": "dropzone",
-                    "__dm_uniqueId": 5640,
                     "children": [{
                         "name": "MIT License",
                         "level": 4,
@@ -2978,9 +2810,9 @@ Because <u><strong>open source</strong></u>&nbsp;:</h3>
                                 "source": "user"
                             }
                         },
-                        "id": 80,
-                        "__dm_uniqueId": "143740903938526147449999989476"
-                    }]
+                        "__dm_uniqueId": "1444376507971149314"
+                    }],
+                    "__dm_uniqueId": "144437650797114931250000000002"
                 }, {
                     "level": 3,
                     "rawNode": {
@@ -3010,9 +2842,7 @@ Because <u><strong>open source</strong></u>&nbsp;:</h3>
                             "source": "user"
                         }
                     },
-                    "id": 39,
                     "name": "jsZip",
-                    "__dm_uniqueId": 5641,
                     "children": [{
                         "name": "GPL v3 License",
                         "level": 4,
@@ -3041,8 +2871,7 @@ Because <u><strong>open source</strong></u>&nbsp;:</h3>
                                 "level": 4
                             }
                         },
-                        "id": 82,
-                        "__dm_uniqueId": "14374090393852614770000000135"
+                        "__dm_uniqueId": "1444376507971149316"
                     }, {
                         "name": "MIT License",
                         "level": 4,
@@ -3071,9 +2900,9 @@ Because <u><strong>open source</strong></u>&nbsp;:</h3>
                                 "source": "user"
                             }
                         },
-                        "id": 84,
-                        "__dm_uniqueId": "143740903938526147820000005595"
-                    }]
+                        "__dm_uniqueId": "144437650797114931650000000002"
+                    }],
+                    "__dm_uniqueId": "1444376507971149315"
                 }, {
                     "level": 3,
                     "rawNode": {
@@ -3105,9 +2934,7 @@ Because <u><strong>open source</strong></u>&nbsp;:</h3>
                             "source": "user"
                         }
                     },
-                    "id": 40,
                     "name": "Hammer",
-                    "__dm_uniqueId": 5642,
                     "children": [{
                         "name": "MIT License",
                         "level": 4,
@@ -3135,9 +2962,9 @@ Because <u><strong>open source</strong></u>&nbsp;:</h3>
                                 "source": "user"
                             }
                         },
-                        "id": 86,
-                        "__dm_uniqueId": "14374090393852614803000000393"
-                    }]
+                        "__dm_uniqueId": "1444376507971149319"
+                    }],
+                    "__dm_uniqueId": "1444376507971149318"
                 }, {
                     "name": "CKEditor",
                     "level": 3,
@@ -3174,8 +3001,6 @@ Because <u><strong>open source</strong></u>&nbsp;:</h3>
                             "level": 3
                         }
                     },
-                    "id": 66,
-                    "__dm_uniqueId": 5643,
                     "children": [{
                         "name": "GPLv2 License",
                         "level": 4,
@@ -3204,8 +3029,7 @@ Because <u><strong>open source</strong></u>&nbsp;:</h3>
                                 "level": 4
                             }
                         },
-                        "id": 88,
-                        "__dm_uniqueId": "143740903938526148380000013276"
+                        "__dm_uniqueId": "144437650797114933400000000001"
                     }, {
                         "name": "LGPLv2.1 License",
                         "level": 4,
@@ -3234,8 +3058,7 @@ Because <u><strong>open source</strong></u>&nbsp;:</h3>
                                 "level": 4
                             }
                         },
-                        "id": 95,
-                        "__dm_uniqueId": "14374090393852614851999998791"
+                        "__dm_uniqueId": "14443765079711493355"
                     }, {
                         "name": "MPL1.1 License",
                         "level": 4,
@@ -3264,15 +3087,147 @@ Because <u><strong>open source</strong></u>&nbsp;:</h3>
                                 "level": 4
                             }
                         },
-                        "id": 97,
-                        "__dm_uniqueId": "14374090393852614864999999554"
-                    }]
+                        "__dm_uniqueId": "14443765079711493365"
+                    }],
+                    "__dm_uniqueId": "144437650797114932050000000002"
+                }, {
+                    "name": "Nvd3",
+                    "level": 3,
+                    "rawNode": {
+                        "icon": "freeDatamap-www/Nvd3.png",
+                        "order": 8,
+                        "order.dm_props": {
+                            "name": "order",
+                            "label": "order",
+                            "type": "text",
+                            "source": "user",
+                            "level": 3
+                        },
+                        "Description": "<embed src=\"http://nvd3.org\" style=\"width:100%; height:450px;\"></embed>",
+                        "Description.dm_props": {
+                            "name": "Description",
+                            "label": "Description",
+                            "visible": true,
+                            "type": "rich text",
+                            "source": "user",
+                            "level": 3
+                        },
+                        "icon.dm_props": {
+                            "name": "icon",
+                            "type": "image",
+                            "source": "user",
+                            "imageName": "freeDatamap-www/Nvd3.png",
+                            "width": 250,
+                            "height": 120,
+                            "scaleFactor": "6",
+                            "label": "icon",
+                            "visible": true,
+                            "level": 3
+                        }
+                    },
+                    "children": [{
+                        "name": "Apache v2.0 License",
+                        "level": 4,
+                        "rawNode": {
+                            "icon": "freeDatamap-www/License-icon.png",
+                            "icon.dm_props": {
+                                "name": "icon",
+                                "label": "icon",
+                                "visible": true,
+                                "type": "image",
+                                "source": "user",
+                                "imageName": "freeDatamap-www/License-icon.png",
+                                "width": 180,
+                                "height": 180,
+                                "panelMaxHeight": "180",
+                                "scaleFactor": "10",
+                                "level": 4
+                            },
+                            "text": "<embed src=\"libs/nvd3/LICENSE.md\" style=\"width:100%; height:450px;\"></embed>",
+                            "text.dm_props": {
+                                "name": "text",
+                                "label": "text",
+                                "visible": true,
+                                "type": "rich text",
+                                "source": "user",
+                                "level": 4
+                            }
+                        },
+                        "__dm_uniqueId": "1444376507971149339"
+                    }],
+                    "__dm_uniqueId": "1444376507971149338"
+                }, {
+                    "name": "Leaflet",
+                    "level": 3,
+                    "rawNode": {
+                        "icon": "freeDatamap-www/Leaflet.png",
+                        "order": 9,
+                        "order.dm_props": {
+                            "name": "order",
+                            "label": "order",
+                            "type": "text",
+                            "source": "user",
+                            "level": 3
+                        },
+                        "Description": "<embed src=\"http://leafletjs.com\" style=\"width:100%; height:450px;\"></embed>",
+                        "Description.dm_props": {
+                            "name": "Description",
+                            "label": "Description",
+                            "visible": true,
+                            "type": "rich text",
+                            "source": "user",
+                            "level": 3
+                        },
+                        "icon.dm_props": {
+                            "name": "icon",
+                            "type": "image",
+                            "source": "user",
+                            "imageName": "freeDatamap-www/Leaflet.png",
+                            "width": 140,
+                            "height": 140,
+                            "scaleFactor": "5",
+                            "label": "icon",
+                            "visible": true,
+                            "level": 3
+                        }
+                    },
+                    "children": [{
+                        "name": "BSD License",
+                        "level": 4,
+                        "rawNode": {
+                            "icon": "freeDatamap-www/License-icon.png",
+                            "icon.dm_props": {
+                                "name": "icon",
+                                "label": "icon",
+                                "visible": true,
+                                "type": "image",
+                                "source": "user",
+                                "imageName": "freeDatamap-www/License-icon.png",
+                                "width": 180,
+                                "height": 180,
+                                "panelMaxHeight": "180",
+                                "scaleFactor": "10",
+                                "level": 4
+                            },
+                            "text": "<embed src=\"libs/leaflet/LICENSE.txt\" style=\"width:100%; height:450px;\"></embed>",
+                            "text.dm_props": {
+                                "name": "text",
+                                "label": "text",
+                                "visible": true,
+                                "type": "rich text",
+                                "source": "user",
+                                "level": 4
+                            }
+                        },
+                        "__dm_uniqueId": "14443765079711493545"
+                    }],
+                    "__dm_uniqueId": "14443765079711493525"
                 }, {
                     "name": "Ace",
                     "level": 3,
                     "rawNode": {
                         "icon": "freeDatamap-www/ace-logo.png",
-                        "order": 8,
+                        "order": 10,
                         "order.dm_props": {
                             "name": "order",
                             "label": "order",
@@ -3303,8 +3258,6 @@ Because <u><strong>open source</strong></u>&nbsp;:</h3>
                             "level": 3
                         }
                     },
-                    "id": 68,
-                    "__dm_uniqueId": 5644,
                     "children": [{
                         "name": "BSD License",
                         "level": 4,
@@ -3333,15 +3286,15 @@ Because <u><strong>open source</strong></u>&nbsp;:</h3>
                                 "level": 4
                             }
                         },
-                        "id": 90,
-                        "__dm_uniqueId": "14374090393852614893000001757"
-                    }]
+                        "__dm_uniqueId": "14443765079711493565"
+                    }],
+                    "__dm_uniqueId": "14443765079711493555"
                 }, {
                     "name": "CodeMirror",
                     "level": 3,
                     "rawNode": {
                         "icon": "freeDatamap-www/CodeMirror.png",
-                        "order": 9,
+                        "order": 11,
                         "order.dm_props": {
                             "name": "order",
                             "label": "order",
@@ -3372,8 +3325,6 @@ Because <u><strong>open source</strong></u>&nbsp;:</h3>
                             "source": "user"
                         }
                     },
-                    "id": 70,
-                    "__dm_uniqueId": 5645,
                     "children": [{
                         "name": "MIT License",
                         "level": 4,
@@ -3402,10 +3353,11 @@ Because <u><strong>open source</strong></u>&nbsp;:</h3>
                                 "level": 4
                             }
                         },
-                        "id": 92,
-                        "__dm_uniqueId": "143740903938526149350000014238"
-                    }]
-                }]
+                        "__dm_uniqueId": "144437650797114936250000000002"
+                    }],
+                    "__dm_uniqueId": "144437650797114935800000000002"
+                }],
+                "__dm_uniqueId": "144437650797114929850000000001"
             }, {
                 "level": 2,
                 "rawNode": {
@@ -3438,7 +3390,8 @@ Because <u><strong>open source</strong></u>&nbsp;:</h3>
 dm_Tools.validateNodeWithStickerAndGauge(node, nodes) ;"
                     },
                     "connectedTo": [{
-                        "nodePath": "freeDatamap|Tutorials"
+                        "nodePath": "freeDatamap|Documentation",
+                        "connectNodeUniqueId": "$ref_144437650797123193121"
                     }],
                     "connectedTo.dm_props": {
                         "name": "connectedTo",
@@ -3456,20 +3409,20 @@ dm_Tools.validateNodeWithStickerAndGauge(node, nodes) ;"
                         "level": 2
                     },
                     "connectedFrom": [{
-                        "nodePath": "freeDatamap|Technology|Third-party libraries"
+                        "nodePath": "freeDatamap|Technology|Third-party libraries",
+                        "connectNodeUniqueId": "$ref_144437650797114929850000000001"
                     }],
                     "connectedFrom.dm_props": {
                         "name": "connectedFrom",
                         "label": "connectedFrom",
                         "type": "transverse link",
-                        "source": "user"
+                        "source": "user",
+                        "level": 2
                     }
                 },
-                "id": 60,
                 "name": "Product",
-                "__dm_uniqueId": 5646,
                 "children": [{
-                    "name": "MIT License",
+                    "name": "License",
                     "level": 4,
                     "rawNode": {
                         "icon": "freeDatamap-www/License-icon.png",
@@ -3496,8 +3449,7 @@ dm_Tools.validateNodeWithStickerAndGauge(node, nodes) ;"
                             "level": 4
                         }
                     },
-                    "id": 100,
-                    "__dm_uniqueId": "143740903938526150010000019392"
+                    "__dm_uniqueId": "144437650797114936550000000002"
                 }, {
                     "name": "Concept map",
                     "level": 3,
@@ -3529,6 +3481,7 @@ dm_Tools.validateNodeWithStickerAndGauge(node, nodes) ;"
                             "panelMaxHeight": 888,
                             "scaleFactor": 1,
                             "source": "user",
+                            "dontExport": true,
                             "level": 3
                         },
                         "order": 7,
@@ -3547,15 +3500,44 @@ dm_Tools.validateNodeWithStickerAndGauge(node, nodes) ;"
                             "content.target": "freeDatamap|Technology|Product|Concept%20map"
                         }
                     },
-                    "id": 104,
-                    "__dm_uniqueId": "143740903938526150410000009288"
-                }]
-            }]
+                    "__dm_uniqueId": "144437650797114936750000000002"
+                }],
+                "__dm_uniqueId": "144437650797114936450000000002"
+            }],
+            "__dm_uniqueId": "144437650797114928750000000002"
         }, {
-            "name": "Tutorials",
+            "name": "Documentation",
             "level": 1,
             "rawNode": {
-                "icon": "freeDatamap-www/video.png",
+                "order": 4,
+                "icon": "freeDatamap-www/doc.png",
+                "icon.dm_props": {
+                    "name": "icon",
+                    "label": "icon",
+                    "visible": true,
+                    "type": "image",
+                    "source": "user",
+                    "imageName": "freeDatamap-www/doc.png",
+                    "width": 180,
+                    "height": 177,
+                    "panelMaxHeight": 177,
+                    "scaleFactor": "5.5",
+                    "level": 1
+                },
+                "order.dm_props": {
+                    "name": "order",
+                    "label": "order",
+                    "type": "text",
+                    "level": 1,
+                    "source": "user"
+                },
+                "aggregatedConnectedFrom.dm_props": {
+                    "name": "aggregatedConnectedFrom",
+                    "label": "aggregatedConnectedFrom",
+                    "type": "text",
+                    "level": 1,
+                    "source": "user"
+                },
                 "tour": "Go to next",
                 "tour.dm_props": {
                     "name": "tour",
@@ -3563,28 +3545,238 @@ dm_Tools.validateNodeWithStickerAndGauge(node, nodes) ;"
                     "visible": true,
                     "type": "action",
                     "source": "user",
-                    "level": 1,
+                    "level": 2,
                     "image": "../../images/rocket.png",
                     "imageName": "../../images/rocket.png",
                     "class": "btn-success",
                     "content.exec": "dm_Datamap.focusNode(node.rawNode.connectedTo[0].nodePath || node.rawNode.connectedTo[0].nodeUniqueId) ;
 dm_Tools.validateNodeWithStickerAndGauge(node, nodes) ;"
                 },
-                "design_map_btn": "Design a simple map and save it ...",
-                "design_map_btn.dm_props": {
-                    "name": "design_map_btn",
-                    "label": "Design a simple map and save it ...",
+                "whitepaper": "",
+                "whitepaper.dm_props": {
+                    "name": "whitepaper",
+                    "label": "freeDatamap's whitepaper",
                     "visible": true,
                     "type": "action",
                     "source": "user",
-                    "level": 1,
-                    "image": "freeDatamap-www/video.png",
-                    "imageName": "freeDatamap-www/video.png",
+                    "level": 2,
+                    "image": "freeDatamap-www/book.png",
+                    "imageName": "freeDatamap-www/book.png",
+                    "class": "btn-info",
                     "content.type": "window url",
-                    "content.url": "http://youtu.be/ZFxO9Za6-ts",
-                    "class": "btn-info"
+                    "content.url": "doc/freeDatamap_whitepaper_en.pdf"
                 },
-                "design_map_descr": "
+                "booklet": "",
+                "booklet.dm_props": {
+                    "name": "booklet",
+                    "label": "freeDatamap's booklet",
+                    "visible": true,
+                    "type": "action",
+                    "source": "user",
+                    "image": "freeDatamap-www/book.png",
+                    "imageName": "freeDatamap-www/book.png",
+                    "class": "btn-info",
+                    "content.type": "window url",
+                    "content.url": "doc/freeDatamap_booklet_en.pdf",
+                    "level": 2
+                },
+                "presentation_ppt_1": "",
+                "presentation_ppt_1.dm_props": {
+                    "name": "presentation_ppt_1",
+                    "label": "freeDatamap's presentation",
+                    "visible": true,
+                    "type": "action",
+                    "source": "user",
+                    "image": "freeDatamap-www/presentation.png",
+                    "imageName": "freeDatamap-www/presentation.png",
+                    "class": "",
+                    "content.type": "window url",
+                    "content.url": "doc/freeDatamap_pres_en.pdf",
+                    "level": 2
+                },
+                "website_doc": "",
+                "website_doc.dm_props": {
+                    "name": "website_doc",
+                    "label": "freeDatamap's overview",
+                    "visible": true,
+                    "type": "action",
+                    "source": "user",
+                    "image": "freeDatamap-www/book.png",
+                    "imageName": "freeDatamap-www/book.png",
+                    "class": "btn-info",
+                    "content.type": "window url",
+                    "content.url": "doc/freeDatamap_doc_en.pdf",
+                    "level": 2
+                },
+                "connectedFrom": [{
+                    "nodePath": "freeDatamap|Technology|Product",
+                    "connectNodeUniqueId": "$ref_144437650797114936450000000002"
+                }],
+                "connectedFrom.dm_props": {
+                    "name": "connectedFrom",
+                    "label": "connectedFrom",
+                    "type": "transverse link",
+                    "source": "user",
+                    "level": 1
+                },
+                "connectedTo": [{
+                    "nodePath": "freeDatamap|Contact",
+                    "connectNodeUniqueId": "$ref_144437650797114937250000000001"
+                }],
+                "connectedTo.dm_props": {
+                    "name": "connectedTo",
+                    "label": "connectedTo",
+                    "type": "transverse link",
+                    "source": "user",
+                    "level": 1
+                }
+            },
+            "__dm_uniqueId": "144437650797123193121",
+            "children": [{
+                "name": "Docs",
+                "level": 2,
+                "rawNode": {
+                    "icon": "freeDatamap-www/book.png",
+                    "icon.dm_props": {
+                        "name": "icon",
+                        "visible": true,
+                        "type": "image",
+                        "source": "user",
+                        "imageName": "freeDatamap-www/book.png",
+                        "width": 215,
+                        "height": 180,
+                        "panelMaxHeight": 180,
+                        "scaleFactor": "5.5",
+                        "level": 2,
+                        "label": "icon"
+                    },
+                    "order": 1,
+                    "order.dm_props": {
+                        "name": "order",
+                        "label": "order",
+                        "type": "text",
+                        "level": 2,
+                        "source": "user"
+                    },
+                    "whitepaper": "",
+                    "whitepaper.dm_props": {
+                        "name": "whitepaper",
+                        "label": "freeDatamap's whitepaper",
+                        "visible": true,
+                        "type": "action",
+                        "source": "user",
+                        "level": 2,
+                        "image": "freeDatamap-www/book.png",
+                        "imageName": "freeDatamap-www/book.png",
+                        "class": "btn-success",
+                        "content.type": "window url",
+                        "content.url": "doc/freeDatamap_whitepaper_en.pdf"
+                    },
+                    "booklet": "",
+                    "booklet.dm_props": {
+                        "name": "booklet",
+                        "label": "freeDatamap's booklet",
+                        "visible": true,
+                        "type": "action",
+                        "source": "user",
+                        "image": "freeDatamap-www/book.png",
+                        "imageName": "freeDatamap-www/book.png",
+                        "class": "btn-success",
+                        "content.type": "window url",
+                        "content.url": "doc/freeDatamap_booklet_en.pdf",
+                        "level": 2
+                    },
+                    "website_doc": "",
+                    "website_doc.dm_props": {
+                        "name": "website_doc",
+                        "label": "freeDatamap's overview",
+                        "visible": true,
+                        "type": "action",
+                        "source": "user",
+                        "image": "freeDatamap-www/book.png",
+                        "imageName": "freeDatamap-www/book.png",
+                        "class": "btn-success",
+                        "content.type": "window url",
+                        "content.url": "doc/freeDatamap_doc_en.pdf",
+                        "level": 2
+                    }
+                },
+                "__dm_uniqueId": "14443765079714278581455"
+            }, {
+                "name": "Presentations",
+                "level": 2,
+                "rawNode": {
+                    "icon": "freeDatamap-www/presentation.png",
+                    "icon.dm_props": {
+                        "name": "icon",
+                        "label": "icon",
+                        "visible": true,
+                        "type": "image",
+                        "source": "user",
+                        "imageName": "freeDatamap-www/presentation.png",
+                        "width": 170,
+                        "height": 157,
+                        "panelMaxHeight": 180,
+                        "scaleFactor": "5.5",
+                        "level": 2
+                    },
+                    "order": 2,
+                    "order.dm_props": {
+                        "name": "order",
+                        "label": "order",
+                        "type": "text"
+                    },
+                    "presentation_ppt_1": "",
+                    "presentation_ppt_1.dm_props": {
+                        "name": "presentation_ppt_1",
+                        "label": "freeDatamap's presentation",
+                        "visible": true,
+                        "type": "action",
+                        "source": "user",
+                        "image": "freeDatamap-www/presentation.png",
+                        "imageName": "freeDatamap-www/presentation.png",
+                        "class": "",
+                        "content.type": "window url",
+                        "content.url": "doc/freeDatamap_pres_en.pdf",
+                        "level": 2
+                    }
+                },
+                "__dm_uniqueId": "14443765079714490919365"
+            }, {
+                "name": "Tutorials",
+                "level": 2,
+                "rawNode": {
+                    "icon": "freeDatamap-www/video.png",
+                    "order": 4,
+                    "tour": "Go to next",
+                    "tour.dm_props": {
+                        "name": "tour",
+                        "label": "Go to next",
+                        "visible": true,
+                        "type": "action",
+                        "source": "user",
+                        "level": 1,
+                        "image": "../../images/rocket.png",
+                        "imageName": "../../images/rocket.png",
+                        "class": "btn-success",
+                        "content.exec": "dm_Datamap.focusNode(node.rawNode.connectedTo[0].nodePath || node.rawNode.connectedTo[0].nodeUniqueId) ;
+dm_Tools.validateNodeWithStickerAndGauge(node, nodes) ;"
+                    },
+                    "design_map_btn": "Design a simple map and save it ...",
+                    "design_map_btn.dm_props": {
+                        "name": "design_map_btn",
+                        "label": "Design a simple map and save it ...",
+                        "visible": true,
+                        "type": "action",
+                        "source": "user",
+                        "level": 1,
+                        "image": "freeDatamap-www/video.png",
+                        "imageName": "freeDatamap-www/video.png",
+                        "content.type": "window url",
+                        "content.url": "http://youtu.be/ZFxO9Za6-ts",
+                        "class": "btn-info"
+                    },
+                    "design_map_descr": "
 <div class=\"dm_normal\">
 <div class=\"dm_border dm_success dm_center\">Design your own map, export it in freemind and <b>save it, in order to <u>import it back in freeDatamap after.</u></b></div>
 
@@ -3598,50 +3790,35 @@ dm_Tools.validateNodeWithStickerAndGauge(node, nodes) ;"
 </ol>
 </div>
 ",
-                "design_map_descr.dm_props": {
-                    "name": "design_map_descr",
-                    "label": "design_map_descr",
-                    "visible": true,
-                    "type": "rich text",
-                    "source": "user",
-                    "level": 1
+                    "design_map_descr.dm_props": {
+                        "name": "design_map_descr",
+                        "label": "design_map_descr",
+                        "visible": true,
+                        "type": "rich text",
+                        "source": "user",
+                        "level": 1
+                    },
+                    "icon.dm_props": {
+                        "name": "icon",
+                        "label": "icon",
+                        "visible": true,
+                        "type": "image",
+                        "source": "user",
+                        "imageName": "freeDatamap-www/video.png",
+                        "width": 180,
+                        "height": 180,
+                        "panelMaxHeight": 180,
+                        "scaleFactor": "5",
+                        "level": 1
+                    },
+                    "order.dm_props": {
+                        "name": "order",
+                        "label": "order",
+                        "type": "text"
+                    }
                 },
-                "icon.dm_props": {
-                    "name": "icon",
-                    "label": "icon",
-                    "visible": true,
-                    "type": "image",
-                    "source": "user",
-                    "imageName": "freeDatamap-www/video.png",
-                    "width": 180,
-                    "height": 180,
-                    "panelMaxHeight": 180,
-                    "scaleFactor": "5",
-                    "level": 1
-                },
-                "order": 4,
-                "connectedTo": [{
-                    "nodePath": "freeDatamap|Contact"
-                }],
-                "connectedTo.dm_props": {
-                    "name": "connectedTo",
-                    "label": "connectedTo",
-                    "type": "transverse link",
-                    "source": "user",
-                    "level": 1
-                },
-                "connectedFrom": [{
-                    "nodePath": "freeDatamap|Technology|Product"
-                }],
-                "connectedFrom.dm_props": {
-                    "name": "connectedFrom",
-                    "label": "connectedFrom",
-                    "type": "transverse link",
-                    "source": "user"
-                }
-            },
-            "id": 145,
-            "__dm_uniqueId": "1437409039385261509500000102"
+                "__dm_uniqueId": "14443765079713432482725"
+            }]
         }, {
             "level": 1,
             "rawNode": {
@@ -3720,7 +3897,7 @@ dm_Tools.validateNodeWithStickerAndGauge(node, nodes) ;"
                     "type": "image",
                     "source": "user"
                 },
-                "order": 6,
+                "order": 5,
                 "order.dm_props": {
                     "name": "order",
                     "label": "order",
@@ -3729,7 +3906,8 @@ dm_Tools.validateNodeWithStickerAndGauge(node, nodes) ;"
                     "level": 1
                 },
                 "connectedTo": [{
-                    "nodePath": "freeDatamap"
+                    "nodePath": "freeDatamap",
+                    "connectNodeUniqueId": "$ref_1444376507971149222"
                 }],
                 "connectedTo.dm_props": {
                     "name": "connectedTo",
@@ -3754,9 +3932,14 @@ dm_Tools.validateNodeWithStickerAndGauge(node, nodes) ;"
                     "content.url": "doc/freeDatamap.pdf"
                 },
                 "connectedFrom": [{
-                    "nodePath": "freeDatamap|Contact|Download"
+                    "nodePath": "freeDatamap|Contact|Download",
+                    "connectNodeUniqueId": "$ref_144437650797114937450000000001"
                 }, {
-                    "nodePath": "freeDatamap|Tutorials"
+                    "nodePath": "freeDatamap|Tutorials",
+                    "connectNodeUniqueId": "$ref_144437650797114936950000000002"
+                }, {
+                    "nodePath": "freeDatamap|Documentation",
+                    "connectNodeUniqueId": "$ref_144437650797123193121"
                 }],
                 "connectedFrom.dm_props": {
                     "name": "connectedFrom",
@@ -3765,9 +3948,7 @@ dm_Tools.validateNodeWithStickerAndGauge(node, nodes) ;"
                     "source": "user"
                 }
             },
-            "id": 6,
             "name": "Contact",
-            "__dm_uniqueId": 5647,
             "children": [{
                 "name": "Download",
                 "level": 2,
@@ -3831,7 +4012,8 @@ dm_Tools.validateNodeWithStickerAndGauge(node, nodes) ;"
                     },
                     "order": 1,
                     "connectedTo": [{
-                        "nodePath": "freeDatamap|Contact"
+                        "nodePath": "freeDatamap|Contact",
+                        "connectNodeUniqueId": "$ref_144437650797114937250000000001"
                     }],
                     "connectedTo.dm_props": {
                         "name": "connectedTo",
@@ -3848,8 +4030,7 @@ dm_Tools.validateNodeWithStickerAndGauge(node, nodes) ;"
                         "level": 1
                     }
                 },
-                "id": 72,
-                "__dm_uniqueId": "14374090393852615222000000358"
+                "__dm_uniqueId": "144437650797114937450000000001"
             }, {
                 "level": 2,
                 "rawNode": {
@@ -3906,13 +4087,13 @@ dm_Tools.validateNodeWithStickerAndGauge(node, nodes) ;"
                         "source": "user"
                     }
                 },
-                "id": 14,
                 "name": "eMail",
-                "__dm_uniqueId": "143740903938526152490000022226"
-            }]
+                "__dm_uniqueId": "144437650797114937600000000002"
+            }],
+            "__dm_uniqueId": "144437650797114937250000000001"
         }],
         "dm_DatamapName": "freeDatamap.json",
-        "$circularRefs": true,
-        "selected": false
+        "__dm_uniqueId": "1444376507971149222",
+        "dm_lastAggregationStamp": 1444556868652
     }
 }

@@ -32,6 +32,7 @@
                 "imageName": "../../config/images/config/config.jpg",
                 "width": 1200,
                 "height": 850,
+                "dontExport": true,
                 "scaleFactor": 1
             }
         }, {
@@ -342,6 +343,7 @@
             "name": "$dm_root",
             "rawNode": {
                 "setEmptyDefaults": "
+node.rawNode.dm_DatamapName = node.rawNode.dm_DatamapName || '' ;
 node.rawNode.depth = node.rawNode.depth || 2 ;
 //node.rawNode.sort = node.rawNode.sort || '' ;
 //node.rawNode.root = node.rawNode.root || '' ;
@@ -368,75 +370,113 @@ if((node.rawNode.displayArrowsOfTransversalConnections !== false) && (node.rawNo
                     "order": 1,
                     "type": "image"
                 },
-                "depth.dm_props": {
+                "dm_DatamapName.dm_props": {
                     "order": 2,
                     "visible": true,
+                    "edit": true
+                },
+                "depth.dm_props": {
+                    "order": 3,
+                    "visible": true,
                     "edit": false,
-                    "type": "dropdown",
-                    "name": "depth",
-                    "dropdownList": "[1, 2, 3, 4]",
+                    "type": "slider",
+                    "label": "Depth",
+                    "min": 1,
+                    "max": 4,
+                    "unit": "",
+                    "period": 1,
+                    "onlyRoundedValues": true,
+                    "onlyTicksValues": true,
                     "displayEvenIfUndefined": true
                 },
+                "possibleProperties": null,
+                "possibleProperties.dm_props": {
+                    "order": 4,
+                    "visible": false,
+                    "edit": false
+                },
                 "sort.dm_props": {
-                    "order": 3,
+                    "order": 5,
                     "visible": true,
                     "edit": false,
                     "type": "dropdown",
                     "name": "sort",
-                    "dropdownList": "['random : no sort'].concat(dm_Tools.feedPossibleProperties(node)) ;",
+                    "dropdownList": "
+node.rawNode['possibleProperties.dm_props'].value = node.rawNode['possibleProperties.dm_props'].value || dm_Tools.feedPossibleProperties(node) ;
+['random : no sort'].concat(node.rawNode['possibleProperties.dm_props'].value) ;",
                     "displayEvenIfUndefined": true
                 },
                 "sortDescendant.dm_props": {
-                    "order": 4,
+                    "order": 6,
                     "type": "boolean",
                     "displayEvenIfUndefined": true
                 },
                 "root.dm_props": {
-                    "order": 5,
+                    "order": 7,
                     "displayEvenIfUndefined": true
                 },
                 "center.dm_props": {
-                    "order": 6,
+                    "order": 8,
                     "displayEvenIfUndefined": true
                 },
                 "csvSepIsSemicolon.dm_props": {
-                    "order": 7,
-                    "type": "boolean"
-                },
-                "displayTransversalConnections.dm_props": {
-                    "order": 8,
-                    "type": "boolean"
-                },
-                "displayArrowsOfTransversalConnections.dm_props": {
                     "order": 9,
                     "type": "boolean"
                 },
-                "noLeafInReport.dm_props": {
+                "displayTransversalConnections.dm_props": {
                     "order": 10,
-                    "type": "boolean",
-                    "displayEvenIfUndefined": true
+                    "type": "boolean"
                 },
-                "maxDepthForExport.dm_props": {
+                "displayArrowsOfTransversalConnections.dm_props": {
                     "order": 11,
-                    "displayEvenIfUndefined": true
+                    "type": "boolean"
                 },
-                "isLngFirst.dm_props": {
+                "noLeafInReport.dm_props": {
                     "order": 12,
                     "type": "boolean",
                     "displayEvenIfUndefined": true
                 },
-                "maxNbOfColumns2tree.dm_props": {
+                "maxDepthForExport.dm_props": {
                     "order": 13,
-                    "type": "dropdown",
+                    "displayEvenIfUndefined": true
+                },
+                "isLngFirst.dm_props": {
+                    "order": 14,
+                    "type": "boolean",
+                    "displayEvenIfUndefined": true
+                },
+                "maxNbOfColumns2tree.dm_props": {
+                    "order": 15,
                     "visible": true,
                     "edit": false,
                     "label": "max number of columns to tree",
-                    "dropdownList": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]",
+                    "type": "slider",
+                    "min": 1,
+                    "max": 19,
+                    "unit": "",
+                    "period": 1,
+                    "onlyRoundedValues": true,
+                    "onlyTicksValues": true,
                     "displayEvenIfUndefined": true
                 },
                 "multicolorBrothers.dm_props": {
-                    "order": 14,
+                    "order": 16,
                     "type": "boolean",
+                    "displayEvenIfUndefined": true
+                },
+                "txtFontSize.dm_props": {
+                    "order": 17,
+                    "visible": true,
+                    "edit": false,
+                    "type": "slider",
+                    "label": "Text font size",
+                    "min": 8,
+                    "max": 32,
+                    "defaultValue": 12,
+                    "unit": "",
+                    "period": 1,
+                    "onlyRoundedValues": true,
+                    "onlyTicksValues": true,
                     "displayEvenIfUndefined": true
                 },
                 "reloadBtn": "Reload data file",
@@ -759,7 +799,11 @@ dm_Tools.alignConfigTreeToColumnsNumber(parent) ;
                     "class": "btn-info",
                     "content.exec" : "
 // get latest entered value even if return key was not pressed
-var uiId = dm_Attributes.getId('attribute_text_', {'name': 'newAggregEltName'}, node) ;
+var isInModal = null ;
+if($('#attributes-modal').hasClass('in')) {
+    isInModal = 'attributes-modal' ;
+}
+var uiId = dm_Attributes.getId('attribute_text_', {'name': 'newAggregEltName'}, node, {'isInModal': isInModal}) ;
 node.rawNode.newAggregEltName = document.getElementById(uiId).value ;
 
 if(node.rawNode.newAggregEltName) {
@@ -1070,7 +1114,19 @@ dm_Datamap.refreshGraph(node);
                     "order": 5
                 },
                 "txtFontSize.dm_props": {
-                    "order": 6                    
+                    "order": 6,
+                    "visible": true,
+                    "edit": false,
+                    "type": "slider",
+                    "label": "Text font size",
+                    "min": 8,
+                    "max": 32,
+                    "defaultValue": 12,
+                    "unit": "",
+                    "period": 1,
+                    "onlyRoundedValues": true,
+                    "onlyTicksValues": true,
+                    "displayEvenIfUndefined": true
                 },
                 "link.dm_props": {
                     "order": 7
@@ -1085,7 +1141,8 @@ dm_Datamap.refreshGraph(node);
                     "order": 10
                 },
                 "backgroundImage.dm_props": {
-                    "order": 11
+                    "order": 11,
+                    "type": "image"
                 }
             }
         },
@@ -1173,115 +1230,46 @@ dm_Datamap.refreshGraph(node);
                     "order": 90,
                     "type": "borderIn"
                 },
+                "propertyAddName": "",
+                "propertyAddName.dm_props": {
+                    "order": 91,
+                    "type": "text",
+                    "visible": true,
+                    "edit": true,
+                    "label": "Name of the property to create"
+                },
                 "propertyAddDropdown": "",
                 "propertyAddDropdown.dm_props": {
-                    "order": 91,
+                    "order": 92,
                     "type": "dropdown",
                     "visible": true,
                     "edit": false,
                     "dropdownList": "
-var doit = function() {
-    var output = dm_Tools.getDisplayPropsNames(node) ;
-    output = dm_Tools.feedPossibleProperties(node, output) ;
-    return output ;    
-}
-doit() ;
+var output = dm_Tools.getDisplayPropsNames(node) ;
+output = dm_Tools.feedPossibleProperties(node, output) ;
 ",
                     "name": "propertyAddDropdown",
-                    "label": "Choose existing property",
+                    "label": "Or choose existing property",
                     "placeHolder": "no property to add...",
                     "onChange": "
 node.rawNode.propertyAddName = node.rawNode.propertyAddDropdown ;
-node.rawNode.label = node.rawNode.propertyAddDropdown ;
-var dp = dm_Tools.getFirstDisplayProp(node, node.rawNode.propertyAddName) ;
-if(dp) {
-    dm_Tools.copyPropsFromOrderRange(dp, 100, 200, node, true) ;
-}
-if(node.rawNode.type != 'graph') {
-    delete node.rawNode.borderIn1 ;
-    delete node.rawNode.graph ;
-    delete node.rawNode.doTransition ;
-    delete node.rawNode.predefinedGraphDropdown ;
-    delete node.rawNode.graphProperty1 ;
-    delete node.rawNode.graphDepth ;
-    delete node.rawNode.textInPie ;
-    delete node.rawNode.graphUnit1 ;
-    delete node.rawNode.setFuncBtn ;
-    delete node.rawNode.br ;
-    delete node.rawNode.input ;
-    delete node.rawNode.borderOut1 ;
-}
+
+dm_Tools.configConfigPrepareEltProps(node) ;
+
 dm_Datamap.focusNode(node) ;
 dm_Datamap.refreshGraph(node);
 "
                 },
                 "execute1": "
 if(node.rawNode.propertyAddDropdown != node.rawNode.propertyAddName) {
-    if(!node.rawNode.propertyAddName || (node.rawNode.propertyAddName == '')) {
-        node.rawNode.propertyAddName = node.rawNode.propertyAddDropdown ;
-    }
-    var dp = dm_Tools.getFirstDisplayProp(node, node.rawNode.propertyAddName) ;
-    if(dp) {
-        dm_Tools.copyPropsFromOrderRange(dp, 100, 200, node, true) ;
-    }
-    if(!node.rawNode.label || (node.rawNode.label == '')) {
-        node.rawNode.label = node.rawNode.propertyAddDropdown ;
-    }
-    if(node.rawNode.type != 'graph') {
-        delete node.rawNode.borderIn1 ;
-        delete node.rawNode.graph ;
-        delete node.rawNode.doTransition ;
-        delete node.rawNode.predefinedGraphDropdown ;
-        delete node.rawNode.graphProperty1 ;
-        delete node.rawNode.graphDepth ;
-        delete node.rawNode.textInPie ;
-        delete node.rawNode.graphUnit1 ;
-        delete node.rawNode.setFuncBtn ;
-        delete node.rawNode.br ;
-        delete node.rawNode.input ;
-        delete node.rawNode.borderOut1 ;
-    }
+    dm_Tools.configConfigPrepareEltProps(node) ;
 }
 ",
                 "execute1.dm_props": {
-                    "order": 92,
-                    "type": "execute"
-                },
-                "propertyAddName": "",
-                "propertyAddName.dm_props": {
                     "order": 93,
-                    "type": "text",
-                    "visible": true,
-                    "edit": true,
-                    "label": "Name of property to display"
+                    "type": "execute"
                 },
                 /* --------------------------------------------------------------------- property options --------------------------------------------------*/
-                "execute2": "
-var output ;
-if(node.rawNode.type != 'graph') {
-    delete node.rawNode.borderIn1 ;
-    delete node.rawNode.graph ;
-    delete node.rawNode.doTransition ;
-    delete node.rawNode.predefinedGraphDropdown ;
-    delete node.rawNode.graphProperty1 ;
-    delete node.rawNode.graphDepth ;
-    delete node.rawNode.textInPie ;
-    delete node.rawNode.graphUnit1 ;
-    delete node.rawNode.setFuncBtn ;
-    delete node.rawNode.br ;
-    delete node.rawNode.input ;
-    delete node.rawNode.borderOut1 ;
-    output = '#dm_STOP_AND_REDRAW_ATTRIBUTES_PANEL#101' ;
-} else {
-    node.rawNode.borderIn1 = 'graphIn' ;
-    node.rawNode.borderOut1 = 'graphOut' ;    
-}
-output ;
-",
-                "execute2.dm_props": {
-                    "order": 100,
-                    "type": "execute"
-                },
                 "visible": true,
                 "visible.dm_props": {
                     "type": "boolean",
@@ -1306,158 +1294,34 @@ output ;
                     "type": "dropdown",
                     "visible": true,
                     "edit": false,
-                    "dropdownList": "['text', 'graph', 'music']",
+                    "dropdownList": "['text', 'graph', 'music', 'slider']",
                     "name": "type",
                     "label": "type :",
                     "onChange": "
-if(node.rawNode.type == 'graph') {
-    node.rawNode.borderIn1 = 'graphIn' ;
-    node.rawNode.graph = 'pie' ;
-    node.rawNode.doTransition = true ;
-    node.rawNode.predefinedGraphDropdown = '' ;
-    
-    var possibleProps = dm_Tools.feedPossibleProperties(node) ;
-    if(possibleProps.indexOf(node.rawNode.propertyAddName) >= 0) {
-        node.rawNode.graphProperty1 = node.rawNode.propertyAddName ;
-    } else {
-        node.rawNode.graphProperty1 = possibleProps[0] ;
-    }
+dm_Tools.deletePropsFromOrderRange(node, 110, 130) ;
+node.rawNode['value.dm_props'] = {
+    'label': 'Value',
+    'order': 123,
+    'visible': true,
+    'edit': true
+} ;
 
-    node.rawNode.graphDepth = '' ;
-    node.rawNode.textInPie = false ;
-    node.rawNode.graphUnit1 = '' ;
-    node.rawNode.setFuncBtn = 'Update graph function' ;
-    //node.rawNode.br1 = '<br/>' ;
-    node.rawNode.input = '' ;
-    node.rawNode.borderOut1 = 'graphOut' ;
-} else {
-    delete node.rawNode.borderIn1 ;
-    delete node.rawNode.graph ;
-    delete node.rawNode.doTransition ;
-    delete node.rawNode.predefinedGraphDropdown ;
-    delete node.rawNode.graphProperty1 ;
-    delete node.rawNode.graphDepth ;
-    delete node.rawNode.textInPie ;
-    delete node.rawNode.graphUnit1 ;
-    delete node.rawNode.setFuncBtn ;
-    delete node.rawNode.br ;
-    delete node.rawNode.input ;
-    delete node.rawNode.borderOut1 ;
+if(node.rawNode.type != 'slider') {
+    node.rawNode.value = node.rawNode.value || '' ;
 }
+node.rawNode['value.dm_props'].type = node.rawNode.type ;
+node.rawNode['value.dm_props'].edit = true ;
+node.rawNode['value.dm_props'].displayEvenIfUndefined = true ;
+
 dm_Datamap.focusNode(node) ;
 dm_Datamap.refreshGraph(node);
 "
                 },
-                "borderIn1.dm_props": {
-                    "order": 110,
-                    "type": "borderIn",
-                    "visible": true,
-                    "displayEvenIfUndefined": true
-                },
-                "graph.dm_props": {
-                    "order": 111,
-                    "type": "dropdown",
-                    "visible": true,
-                    "edit": false,
-                    "dropdownList": "['pie']",
-                    "name": "graph",
-                    "label": "graph :",
-                    "source": "user"
-                },
-                "doTransition.dm_props": {
-                    "order": 112,
-                    "type": "boolean"
-                },
-                "predefinedGraphDropdown.dm_props": {
-                    "order": 113,
-                    "type": "dropdown",
-                    "visible": true,
-                    "edit": false,
-                    "dropdownList": "['pie based on property']",
-                    "name": "predefinedGraphDropdown",
-                    "label": "predefined graph :",
-                    "onChange": "
-var possibleProps = dm_Tools.feedPossibleProperties(node) ;
-if(node.rawNode.predefinedGraphDropdown == 'pie based on property') {
-    if(possibleProps.indexOf(node.rawNode.propertyAddName) >= 0) {
-        node.rawNode.graphProperty1 = node.rawNode.propertyAddName ;
-    }
-}
-"
-                },
-                "graphProperty1.dm_props": {
-                    "order": 114,
-                    "type": "dropdown",
-                    "visible": true,
-                    "edit": false,
-                    "dropdownList": "dm_Tools.feedPossibleProperties(node);",
-                    "name": "graphProperty1",
-                    "label": "property :"
-                },
-                "graphUnit1.dm_props": {
-                    "order": 115,
-                    "type": "text",
-                    "visible": true,
-                    "edit": true,
-                    "label": "Unit"
-                },
-                "graphDepth.dm_props": {
-                    "order": 116,
-                    "type": "dropdown",
-                    "visible": true,
-                    "edit": false,
-                    "dropdownList": "['1', '2', '3', '4']",
-                    "name": "graphDepth",
-                    "label": "depth level :"
-                },
-                "textInPie.dm_props": {
-                    "order": 117,
-                    "type": "boolean"
-                },
-                "br0": "<br/>",
-                "br0.dm_props": {
-                    "order": 118,
-                    "type": "rich text",
-                    "edit": false
-                },
-                "setFuncBtn.dm_props": {
-                    "order": 120,
-                    "name": "setFuncBtn",
-                    "label": "Update graph function",
-                    "visible": true,
-                    "edit": false,
-                    "type": "action",
-                    "image": "../../images/refresh.png",
-                    "imageName": "../../images/refresh.png",
-                    "class": "btn-info",
-                    "content.exec" : "
-var configRoot = node ;
-while(configRoot.parent) configRoot = configRoot.parent ;
-node.rawNode.input = dm_Tools.getChild(configRoot, 'displayProps').rawNode.predefinedGraphFunctions[node.rawNode.predefinedGraphDropdown] ;
-node.rawNode.input = dm_Tools.replaceByProperties(node, node.rawNode.input) ;
-dm_Datamap.focusNode(node) ;
-dm_Datamap.refreshGraph(node) ;
-"
-                },
-                "br1.dm_props": {
-                    "order": 121,
-                    "type": "rich text",
-                    "edit": false
-                },
-                "input.dm_props": {
-                    "order": 122,
-                    "type": "javascript",
+                 "value.dm_props": {
+                    "label": "Value",
+                    "order": 150,
                     "visible": true,
                     "edit": true
-                },
-                "borderOut1.dm_props": {
-                    "order": 130,
-                    "type": "borderOut",
-                    "visible": true,
-                    "displayEvenIfUndefined": true
-                },
-                "ifCenter.dm_props": {
-                    "type": "boolean"
                 },
                 /* -------------------------------------------------------------------- end property options -----------------------------------------------*/
                 "addPropertyBtn": "Add property to all levels",
@@ -1473,19 +1337,35 @@ dm_Datamap.refreshGraph(node) ;
                     "imageName": "../../images/plus.png",
                     "class": "btn-success",
                     "content.exec" : "
-var dpLevel, newNode ;
 var newDPName = node.rawNode.propertyAddName ;
-for(var i=0; i<node.children.length; i++) {
-    newNode = null ;
-    dpLevel = node.children[i] ;
-    if(dpLevel.children) {
-        newNode = dm_Tools.getChild(dpLevel, newDPName) ;
+var addIt = function(parentNode) {
+    var newNode ;
+    if(parentNode.children) {
+        newNode = dm_Tools.getChild(parentNode, newDPName) ;
     }
     if(!newNode) {
-        newNode = dm_Datamap.createNode(dpLevel, newDPName, true, true) ;
+        newNode = dm_Datamap.createNode(parentNode, newDPName, true, true) ;
     }
+
     if(!newNode.rawNode) newNode.rawNode = {} ;
-    dm_Tools.copyPropsFromOrderRange(node, 100, 200, newNode, true) ;
+
+    dm_Tools.copyPropsFromOrderRange(node, 101, 200, newNode, true) ;
+    
+    if(node.rawNode.type != 'graph') {
+        dm_Tools.copyProps(node.rawNode['value.dm_props'], newNode.rawNode, ['dm_uniqueId', '__dm_uniqueId', 'name', 'label', 'edit', 'visible', 'order', 'type']) ;
+        newNode.rawNode.value = node.rawNode.value ;
+    }
+}
+var dpLevel = dm_Tools.configConfigIsDPRootOrLevelOrDP(node) ;
+var parentNode ;
+if(dpLevel == 'displayProps') {
+    for(var i=0; i<node.children.length; i++) {
+        newNode = null ;
+        parentNode = node.children[i] ;
+        addIt(parentNode) ;
+    }
+} else if(dpLevel == 'dpLevel') {
+    addIt(node) ;
 }
 dm_Datamap.focusNode(node) ;
 dm_Datamap.refreshGraph(node);
@@ -1514,27 +1394,31 @@ dm_Datamap.refreshGraph(node);
                     "visible": true,
                     "edit": false,
                     "dropdownList": "
-var doit = function() {
-    var output ;
-    var dpLevel, dp ;
-    for(var i=0; i<node.children.length; i++) {
-        dpLevel = node.children[i] ;
-        if(dpLevel.children) {
-            for(var j=0; j<dpLevel.children.length; j++) {
-                dp = dpLevel.children[j] ;
-                if(!output) output = [] ;
-                if(output.indexOf(dp.name) < 0) {
-                    output.push(dp.name) ;
-                }
+var output ;
+var dp ;
+var dpLevel = dm_Tools.configConfigIsDPRootOrLevelOrDP(node) ;
+var doit = function(parentNode) {
+    if(parentNode.children) {
+        for(var j=0; j<parentNode.children.length; j++) {
+            dp = parentNode.children[j] ;
+            if(!output) output = [] ;
+            if(output.indexOf(dp.name) < 0) {
+                output.push(dp.name) ;
             }
         }
     }
-    return output ;
 }
-doit() ;
-                    ",
+if(dpLevel == 'displayProps') {
+    for(var i=0; i<node.children.length; i++) {
+        doit(node.children[i]) ;
+    }
+} else if(dpLevel == 'dpLevel') {
+    doit(node) ;
+}
+output ;
+",
                     "name": "propertyDeleteDropdown",
-                    "label": "propertyDeleteDropdown",
+                    "label": "Delete property :",
                     "source": "user",
                     "placeHolder": "no property to delete..."
                 },
@@ -1551,59 +1435,33 @@ doit() ;
                     "imageName": "../../images/delete.png",
                     "class": "btn-danger",
                     "content.exec" : "
-var dpLevel, newNode ;
-var newDPName = node.rawNode.propertyDeleteDropdown ;
-for(var i=0; i<node.children.length; i++) {
-    dpLevel = node.children[i] ;
+var newNode ;
+var dpName2delete = node.rawNode.propertyDeleteDropdown ;
+var doit = function(parentNode) {
     var alreadyThere ;
-    if(dpLevel.children) {
-        alreadyThere = dm_Tools.getChild(dpLevel, newDPName) ;
+    if(parentNode.children) {
+        alreadyThere = dm_Tools.getChild(parentNode, dpName2delete) ;
     }
     if(alreadyThere) {
         dm_Datamap.removeNode(alreadyThere) ;
     }
 }
+var dpLevel = dm_Tools.configConfigIsDPRootOrLevelOrDP(node) ;
+if(dpLevel == 'displayProps') {
+    for(var i=0; i<node.children.length; i++) {
+        doit(node.children[i]) ;
+    }
+} else if(dpLevel == 'dpLevel') {
+    doit(node) ;
+}
 dm_Datamap.focusNode(node) ;
 dm_Datamap.refreshGraph(node);
 "
-                },
-                "predefinedGraphFunctions": {
-                    "pie based on property": "var output, elt;
-var levelMin = node.level ;
-var doIt = function(node) {
-    if (!output) {
-        output = [] ;
-    }
-    elt = {} ;
-    output.push(elt) ;
-    elt.value = node.rawNode['#replaceMeBy_graphProperty1#'] ;
-    elt.name = dm_Tools.getNodePath(node, '\\n', true, null, levelMin+1) ;
-    elt.unit = '#replaceMeBy_graphUnit1#' ;
-};
-var parentLevel = node.level ;
-var depth = #replaceMeBy_graphDepth# ;
-var dive = function(node) {
-    if (node) {
-        if (node.level == parentLevel + depth) {
-            doIt(node);
-        } else if ((node.level < parentLevel + depth) && (node.children)) {
-            node.children.forEach(function(child) {
-                dive(child);
-            });
-        }
-    }
-} ;
-dive(node);
-return output;"
                 },
                 "borderDelPropOut": "borderDelPropOut",
                 "borderDelPropOut.dm_props": {
                     "order": 207,
                     "type": "borderOut"
-                },
-                "predefinedGraphFunctions.dm_props": {
-                    "visible": false,
-                    "edit": false
                 }
             }
         },
@@ -1621,12 +1479,14 @@ return output;"
                     "edit": false,
                     "visible": false
                 },
-                "edit.dm_props": {
+                "lvl_visible.dm_props": {
+                    "label": "visible",
                     "type": "boolean",
                     "order": 10,
                     "displayEvenIfUndefined": true
                 },
-                "visible.dm_props": {
+                "lvl_edit.dm_props": {
+                    "label": "edit",
                     "type": "boolean",
                     "order": 11,
                     "displayEvenIfUndefined": true
@@ -1651,6 +1511,23 @@ for(var i=0; i<parent.children.length; i++) {
 //dm_Datamap.focusNode(node) ;
 //dm_Datamap.refreshGraph(node);
 "
+                },
+                "loadPropsFromParent": "
+if(!node.rawNode['loadPropsFromParent.dm_props'].alreadyLoaded) {
+    dm_Tools.copyPropsFromOrderRange(node.parent, 90, 1000, node, null, null, 'eraseOnlyDmProps') ;
+    node.rawNode.addPropertyBtn = 'Add property' ;
+    node.rawNode['addPropertyBtn.dm_props'].label = 'Add property' ;
+    node.rawNode.deletePropertyBtn = 'Delete property' ;
+    node.rawNode['deletePropertyBtn.dm_props'].label = 'Delete property' ;
+
+    node.rawNode['loadPropsFromParent.dm_props'].alreadyLoaded = true ;
+
+    '#dm_STOP_AND_REDRAW_ATTRIBUTES_PANEL#90' ;
+}
+",
+                "loadPropsFromParent.dm_props": {
+                    "order": 22,
+                    "type": "execute"
                 }
             }
         },
@@ -1661,30 +1538,16 @@ for(var i=0; i<parent.children.length; i++) {
             "name": "$dm_root|displayProps|*|*",
             "rawNode": {
                 "loadPropsFromGdParent": "
-var configRoot = node ;
-while(configRoot.parent) configRoot = configRoot.parent ;
-var displayPropsNode = dm_Tools.getChild(configRoot, 'displayProps') ;
-dm_Tools.copyPropsFromOrderRange(displayPropsNode, 100, 200, node, false, true) ;
+if(!node.rawNode['loadPropsFromGdParent.dm_props'].alreadyLoaded) {
+    if(node.rawNode.type == null) node.rawNode.type = 'text' ;
+    dm_Tools.copyPropsFromOrderRange(node.parent.parent, 100, 200, node, null, null, 'eraseOnlyDmProps') ;
+    dm_Tools.configConfigPrepareEltProps(node) ;
+    dm_Tools.copyRawNodeProps2ValueDmProps(node, node, true) ;
 
-if(node.rawNode.type != 'graph') {
-    delete node.rawNode.borderIn1 ;
-    delete node.rawNode.graph ;
-    delete node.rawNode.doTransition ;
-    delete node.rawNode.predefinedGraphDropdown ;
-    delete node.rawNode.graphProperty1 ;
-    delete node.rawNode.graphDepth ;
-    delete node.rawNode.textInPie ;
-    delete node.rawNode.graphUnit1 ;
-    delete node.rawNode.setFuncBtn ;
-    delete node.rawNode.br ;
-    delete node.rawNode.input ;
-    delete node.rawNode.borderOut1 ;
-} else {
-    node.rawNode.borderIn1 = 'graphIn' ;
-    node.rawNode.borderOut1 = 'graphOut' ;    
+    node.rawNode['loadPropsFromGdParent.dm_props'].alreadyLoaded = true ;
+
+    '#dm_STOP_AND_REDRAW_ATTRIBUTES_PANEL#100' ;
 }
-
-'#dm_STOP_AND_REDRAW_ATTRIBUTES_PANEL#' ;
 ",
                 "loadPropsFromGdParent.dm_props": {
                     "order": 0,
